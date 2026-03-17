@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_17-32-57",
+            "content": "@@ -54,24 +54,14 @@\n ln(%22\n-cenouras laranja\n+qxcode\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_17-36-31",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -53,20 +53,26 @@\n tln(\n-bob esponja)%0A\n+%22cenouras laranja%22\n )%0A%7D\n+%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_17-42-30",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    fmt.Println(bob esponja)\n)\n}",
+            "lines": "10"
+        }
+    ]
+}

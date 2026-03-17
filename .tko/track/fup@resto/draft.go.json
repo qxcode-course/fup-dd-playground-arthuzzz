@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-18-12",
+            "content": "@@ -37,288 +37,32 @@\n ) %7B%0A\n-%0A    var num1, num2 int%0A    var quociente, resto int%0A%0A    fmt.Print(%22Digite o primeiro n%C3%BAmero:%22)%0A    fmt.Scan(&num1)%0A%0A    fmt.Print(%22Digite o segundo n%C3%BAmero:%22)%0A    fmt.Scan(&num2)%0A%0A    quociente = num1/num2%0A    resto = num1 %25 num2%0A%0A    fmt.Println(quociente)%0A    fmt.Println(resto\n+    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-15-44",
+            "content": "@@ -99,20 +99,105 @@\n fmt.\n-Scan(&num1)%0A\n+Print(%22Digite o primeiro n%C3%BAmero:%22)%0A    fmt.Scan(&num1)%0A%0A    fmt.Print(%22Digite o segundo n%C3%BAmero:%22)\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-16_18-17-56",
+            "content": "@@ -201,23 +201,39 @@\n ln(quociente\n-, \n+)%0A    fmt.Println(\n resto)%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-16_18-22-51",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var num1, num2 int\n    var quociente, resto int\n\n    fmt.Scan(&num1)\n\n    fmt.Scan(&num2)\n\n    quociente = num1/num2\n    resto = num1 % num2\n\n    fmt.Println(quociente, resto)\n}\n",
+            "lines": "16"
+        }
+    ]
+}
