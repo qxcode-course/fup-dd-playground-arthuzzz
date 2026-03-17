@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-18-16",
+            "content": "@@ -10,41 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22go/scanner%22%0A)%0A\n func\n@@ -41,221 +41,28 @@\n     \n-var quan1, quan2, quan3 int%0A    var prod1, prod2, prod3 float64%0A    var money float64%0A%0A    fmt.Scan(&quan1)%0A    fmt.Scan(&quan2)%0A    fmt.Scan(&quan3)%0A%0A    fmt.Scan(&prod1)%0A    fmt.Scan(&prod2)%0A    fmt.Scan(&prod3)%0A\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_17-32-50",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"go/scanner\"\n)\nfunc main() {\n    var quan1, quan2, quan3 int\n    var prod1, prod2, prod3 float64\n    var money float64\n\n    fmt.Scan(&quan1)\n    fmt.Scan(&quan2)\n    fmt.Scan(&quan3)\n\n    fmt.Scan(&prod1)\n    fmt.Scan(&prod2)\n    fmt.Scan(&prod3)\n\n}\n",
+            "lines": "20"
+        }
+    ]
+}
