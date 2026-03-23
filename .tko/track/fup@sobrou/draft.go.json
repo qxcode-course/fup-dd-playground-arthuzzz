@@ -7,8 +7,23 @@
         },
         {
             "label": "2026-03-17_17-32-50",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"go/scanner\"\n)\nfunc main() {\n    var quan1, quan2, quan3 int\n    var prod1, prod2, prod3 float64\n    var money float64\n\n    fmt.Scan(&quan1)\n    fmt.Scan(&quan2)\n    fmt.Scan(&quan3)\n\n    fmt.Scan(&prod1)\n    fmt.Scan(&prod2)\n    fmt.Scan(&prod3)\n\n}\n",
+            "content": "@@ -23,18 +23,31 @@\n %0A%09%22fmt%22%0A\n+%09%22go/scanner%22%0A\n )\n-%0A\n %0Afunc ma\n@@ -276,28 +276,6 @@\n 3)%0A%0A\n-    fmt.Scan(&money)%0A%0A\n %7D%0A\n",
             "lines": "20"
+        },
+        {
+            "label": "2026-03-17_18-08-39",
+            "content": "@@ -154,26 +154,52 @@\n uan1\n-, &quan2, \n+)%0A    fmt.Scan(&quan2)%0A    fmt.Scan(\n &quan3)%0A\n     \n@@ -194,16 +194,17 @@\n &quan3)%0A\n+%0A\n     fmt.\n@@ -218,26 +218,52 @@\n rod1\n-, &prod2, \n+)%0A    fmt.Scan(&prod2)%0A    fmt.Scan(\n &prod3)%0A\n     \n@@ -258,16 +258,17 @@\n &prod3)%0A\n+%0A\n     fmt.\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-17_18-14-09",
+            "content": "@@ -231,147 +231,6 @@\n y)%0A%0A\n-    Gasto := float64(quan1)*prod1 + float64(quan2)*prod2 + float64(quan3)*prod3%0A%0A    Troco := money - Gasto%0A%0A    fmt.Printf(%22%25.2f%5Cn%22, Troco)%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_18-21-06",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n    var quan1, quan2, quan3 int\n    var prod1, prod2, prod3 float64\n    var money float64\n\n    fmt.Scan(&quan1, &quan2, &quan3)\n    fmt.Scan(&prod1, &prod2, &prod3)\n    fmt.Scan(&money)\n\n    Gasto := float64(quan1)*prod1 + float64(quan2)*prod2 + float64(quan3)*prod3\n\n    Troco := money - Gasto\n\n    fmt.Printf(\"%.2f\\n\", Troco)\n}\n",
+            "lines": "21"
         }
     ]
 }

@@ -12,8 +12,53 @@
         },
         {
             "label": "2026-03-16_17-42-30",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    fmt.Println(bob esponja)\n)\n}",
+            "content": "@@ -10,21 +10,35 @@\n ain%0A\n+%0A\n import \n+(%0A%09\n %22fmt%22%0A\n+%09%22math%22%0A)%0A\n func\n@@ -67,16 +67,20 @@\n tln(\n-%22qxcode%22\n+bob esponja)%0A\n )%0A%7D\n-%0A\n",
             "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-34-35",
+            "content": "@@ -41,163 +41,28 @@\n     \n-Status := false%0A    %0A    if Status:= false%7B%0A    fmt.Println(%22A lampada est%C3%A1 apagada%22)%7D%0A%0A    else if Status := true%7B%0A    fmt.Println(%22A lampada est%C3%A1 acesa%22)%7D\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_17-56-37",
+            "content": "@@ -53,16 +53,20 @@\n = false%0A\n+    \n %0A    if \n@@ -71,18 +71,17 @@\n f Status\n- =\n+:\n = false%7B\n@@ -144,17 +144,17 @@\n  Status \n-=\n+:\n = true%7B%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-57-21",
+            "content": "@@ -119,18 +119,19 @@\n pagada%22)\n-%0A\n %7D\n+%0A%0A\n     else\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_17-57-59",
+            "content": "@@ -47,19 +47,20 @@\n atus := \n-tru\n+fals\n e%0A%0A    i\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-58-12",
+            "content": "@@ -47,18 +47,20 @@\n atus := \n-on\n+true\n %0A%0A    if\n@@ -74,11 +74,13 @@\n  == \n-off\n+false\n %7B%0A  \n@@ -146,10 +146,12 @@\n  == \n-on\n+true\n %7B%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-58-52",
+            "content": "@@ -47,20 +47,18 @@\n atus := \n-true\n+on\n %0A%0A    if\n@@ -72,13 +72,11 @@\n  == \n-false\n+off\n %7B%0A  \n@@ -142,12 +142,10 @@\n  == \n-true\n+on\n %7B%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_17-59-32",
+            "content": "@@ -89,33 +89,33 @@\n fmt.Println(%22A l\n-%C3%A2\n+a\n mpada est%C3%A1 apaga\n@@ -172,9 +172,9 @@\n %22A l\n-%C3%A2\n+a\n mpad\n@@ -192,171 +192,7 @@\n a%22)%7D\n-%0A%0Afmt.Println(%22e%22)%0A%0AStatusd := true%0A%0Aif Statusd == false%7B%0A    fmt.Println(%22a porta est%C3%A1 fechada%22)%0A%7D else if Statusd == true%7B%0A    fmt.Println(%22a porta est%C3%A1 aberta%22)\n %0A%7D%0A\n-%7D\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-17_18-04-52",
+            "content": "@@ -219,20 +219,19 @@\n tusd := \n-fals\n+tru\n e%0A%0Aif St\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-17_18-05-21",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    Status := true\n\n    if Status == false{\n    fmt.Println(\"A l\u00e2mpada est\u00e1 apagada\")\n}    else if Status == true{\n    fmt.Println(\"A l\u00e2mpada est\u00e1 acesa\")}\n\nfmt.Println(\"e\")\n\nStatusd := false\n\nif Statusd == false{\n    fmt.Println(\"a porta est\u00e1 fechada\")\n} else if Statusd == true{\n    fmt.Println(\"a porta est\u00e1 aberta\")\n}\n}",
+            "lines": "20"
         }
     ]
 }
