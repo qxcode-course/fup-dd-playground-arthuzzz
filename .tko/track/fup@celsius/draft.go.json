@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-16-50",
+            "content": "@@ -41,46 +41,28 @@\n     \n-var T_f float32%0A    fmt.Scan(&T_f)%0A    \n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-24-15",
+            "content": "@@ -43,17 +43,17 @@\n   var T_\n-c\n+f\n  float32\n@@ -73,65 +73,14 @@\n (&T_\n-c)%0A%0A    T_f := 1.8*T_c+32%0A%0A    fmt.Println(%22%25.4f%5Cn%22, T_f)%0A\n+f)%0A    \n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-23_17-28-49",
+            "content": "@@ -54,10 +54,10 @@\n loat\n-64\n+32\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-29-01",
+            "content": "@@ -115,17 +115,17 @@\n ntln(%22%25.\n-6\n+4\n f%5Cn%22, T_\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-29-17",
+            "content": "@@ -113,14 +113,15 @@\n rint\n-f\n+ln\n (%22%25.\n-4\n+6\n f%5Cn%22\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-30-46",
+            "content": "@@ -50,18 +50,18 @@\n _c float\n-32\n+64\n %0A    fmt\n@@ -114,17 +114,17 @@\n intf(%22%25.\n-6\n+4\n f%5Cn%22, T_\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-31-05",
+            "content": "@@ -54,10 +54,10 @@\n loat\n-64\n+32\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-23_17-31-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var T_c float64\n    fmt.Scan(&T_c)\n\n    T_f := 1.8*T_c+32\n\n    fmt.Printf(\"%.6f\\n\", T_f)\n\n}\n",
+            "lines": "11"
+        }
+    ]
+}

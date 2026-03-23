@@ -57,8 +57,98 @@
         },
         {
             "label": "2026-03-17_18-05-21",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    Status := true\n\n    if Status == false{\n    fmt.Println(\"A l\u00e2mpada est\u00e1 apagada\")\n}    else if Status == true{\n    fmt.Println(\"A l\u00e2mpada est\u00e1 acesa\")}\n\nfmt.Println(\"e\")\n\nStatusd := false\n\nif Statusd == false{\n    fmt.Println(\"a porta est\u00e1 fechada\")\n} else if Statusd == true{\n    fmt.Println(\"a porta est\u00e1 aberta\")\n}\n}",
+            "content": "@@ -207,9 +207,9 @@\n ln(%22\n-,\n+e\n %22)%0A%0A\n@@ -357,172 +357,7 @@\n a%22)%0A\n+\n %7D%0A\n-%0Afmt.Println(%22e%22)%0A%0APCStatus := false%0Aif PCStatus == false%7B%0A    fmt.Println(%22o PC est%C3%A1 desligado%22)%0A%7D else if PCStatus == true%7B%0A    fmt.Println(%22o PC est%C3%A1 ligado%22)%0A%7D%0A%0A\n %7D\n",
             "lines": "20"
+        },
+        {
+            "label": "2026-03-23_17-03-48",
+            "content": "@@ -37,185 +37,8 @@\n ) %7B%0A\n-    Fonte := true%0A    if Fonte == false%7B%0A        fmt.Println(%22O gerador est%C3%A1 desligado!%22)%0A    %7D else if Fonte == true%7B%0A        fmt.Println(%22O gerador est%C3%A1 ligado!%22)%0A    %7D%0A%0A%0A%0A%0A%0A%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-23_17-06-53",
+            "content": "@@ -206,16 +206,20 @@\n     %7D%0A%0A%0A\n+%0A%0A%0A%0A\n     Stat\n@@ -232,83 +232,8 @@\n true\n-%0A    if Fonte == false%7B%0A        fmt.Println(%22A l%C3%A2mpada est%C3%A1 apagada%22)%0A    %7D\n %0A%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-03-23_17-10-13",
+            "content": "@@ -46,20 +46,19 @@\n onte := \n-fals\n+tru\n e%0A    if\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-23_17-10-29",
+            "content": "@@ -296,29 +296,29 @@\n gada%22)%0A    %7D\n- else\n+%0A%0A   \n  if Status =\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-23_17-10-52",
+            "content": "@@ -217,28 +217,27 @@\n   Status := \n-fals\n+tru\n e%0A    if Fon\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-23_17-11-09",
+            "content": "@@ -221,19 +221,20 @@\n atus := \n-tru\n+fals\n e%0A    if\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-23_17-11-20",
+            "content": "@@ -42,27 +42,28 @@\n    Fonte := \n-tru\n+fals\n e%0A    if Fon\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-23_17-11-32",
+            "content": "@@ -291,17 +291,16 @@\n  apagada\n-,\n %22)%0A    %7D\n@@ -364,17 +364,16 @@\n  apagada\n-,\n %22)%0A%7D    \n@@ -437,12 +437,29 @@\n cesa\n+%22)%7D%0A%0Afmt.Println(%22\n ,%22)\n-%7D\n %0A%0ASt\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-23_17-12-21",
+            "content": "@@ -629,35 +629,8 @@\n lse%0A\n-if Fonte == false%7B%0A%0A%7D else \n if P\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_17-13-01",
+            "content": "@@ -619,19 +619,20 @@\n atus := \n-tru\n+fals\n e%0Aif Fon\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-23_17-13-13",
+            "content": "@@ -46,20 +46,19 @@\n onte := \n-fals\n+tru\n e%0A    if\n@@ -517,18 +517,16 @@\n  fechada\n- e\n %22)%0A%7D els\n@@ -587,16 +587,32 @@\n erta\n- e\n %22)%0A%7D%0A%0A\n+fmt.Println(%22e%22)%0A%0A\n PCSt\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-23_17-13-55",
+            "content": "@@ -634,42 +634,8 @@\n se%7B%0A\n-fmt.Println(%22o PC est%C3%A1 desligado%22)\n %0A%7D e\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_17-14-26",
+            "content": "@@ -42,27 +42,28 @@\n    Fonte := \n-tru\n+fals\n e%0A    if Fon\n@@ -799,9 +799,10 @@\n ado%22)%0A%7D%0A\n+%0A\n %7D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-23_17-14-48",
+            "content": "@@ -517,16 +517,18 @@\n  fechada\n+ e\n %22)%0A%7D els\n@@ -585,16 +585,18 @@\n %C3%A1 aberta\n+ e\n %22)%0A%7D%0A%0APC\n@@ -634,34 +634,32 @@\n e%7B%0Afmt.Println(%22\n-e \n o PC est%C3%A1 deslig\n@@ -702,34 +702,32 @@\n    fmt.Println(%22\n-e \n o PC est%C3%A1 deslig\n@@ -777,18 +777,16 @@\n rintln(%22\n-e \n o PC est\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-23_17-15-18",
+            "content": "@@ -46,20 +46,19 @@\n onte := \n-fals\n+tru\n e%0A    if\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-23_17-15-31",
+            "content": "@@ -114,20 +114,19 @@\n est%C3%A1 des\n-ativ\n+lig\n ado!%22)%0A \n@@ -193,12 +193,11 @@\n st%C3%A1 \n-ativ\n+lig\n ado!\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-23_17-16-00",
+            "content": "@@ -42,27 +42,28 @@\n    Fonte := \n-tru\n+fals\n e%0A    if Fon\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-23_17-16-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    Fonte := true\n    if Fonte == false{\n        fmt.Println(\"O gerador est\u00e1 desativado!\")\n    } else if Fonte == true{\n        fmt.Println(\"O gerador est\u00e1 ativado!\")\n    }\n\n\n    Status := true\n    if Fonte == false{\n        fmt.Println(\"A l\u00e2mpada est\u00e1 apagada,\")\n    } else if Status == false{\n    fmt.Println(\"A l\u00e2mpada est\u00e1 apagada,\")\n}    else if Status == true{\n    fmt.Println(\"A l\u00e2mpada est\u00e1 acesa,\")}\n\nStatusd := false\n\nif Statusd == false{\n    fmt.Println(\"a porta est\u00e1 fechada\")\n} else if Statusd == true{\n    fmt.Println(\"a porta est\u00e1 aberta\")\n}\n\nPCStatus := true\nif Fonte == false{\nfmt.Println(\"e o PC est\u00e1 desligado\")\n} else if PCStatus == false{\n    fmt.Println(\"e o PC est\u00e1 desligado\")\n} else if PCStatus == true{\n    fmt.Println(\"e o PC est\u00e1 ligado\")\n}\n}",
+            "lines": "36"
         }
     ]
 }
