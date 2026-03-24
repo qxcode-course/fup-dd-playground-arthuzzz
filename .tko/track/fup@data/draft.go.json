@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_16-53-27",
+            "content": "@@ -41,159 +41,35 @@\n     \n-var hh, mm, dd, MM, aa int%0A    fmt.Scan(&hh, &mm, &dd, &MM, aa)%0A    %0A    ano := aa%25100%0A%0A    fmt.Printf(%22%2502d:%2502d %2502d/%2502d/%2502d%5Cn%22, hh, mm, dd, MM, aa\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_17-11-46",
+            "content": "@@ -187,14 +187,13 @@\n d, MM, a\n-no\n+a\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_17-11-57",
+            "content": "@@ -111,17 +111,18 @@\n   %0A    a\n-a\n+no\n  := aa%251\n@@ -187,13 +187,14 @@\n d, MM, a\n-a\n+no\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_17-13-06",
+            "content": "@@ -111,18 +111,17 @@\n   %0A    a\n-no\n+a\n  := aa%251\n@@ -190,10 +190,9 @@\n M, a\n-no\n+a\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_17-13-17",
+            "content": "@@ -123,11 +123,9 @@\n = aa\n- %25 \n+%25\n 100%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_17-14-14",
+            "content": "@@ -106,16 +106,35 @@\n a)%0A    %0A\n+    ano := aa %25 100\n %0A%0A    fm\n@@ -189,13 +189,14 @@\n d, MM, a\n-a\n+no\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_17-15-42",
+            "content": "@@ -97,17 +97,16 @@\n d, &MM, \n-&\n aa)%0A    \n@@ -110,27 +110,8 @@\n    %0A\n-    ano := aa %25 100\n %0A%0A  \n@@ -174,10 +174,9 @@\n M, a\n-no\n+a\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-24_17-17-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var hh, mm, dd, MM, aa int\n    fmt.Scan(&hh, &mm, &dd, &MM, &aa)\n    \n    ano := aa % 100\n\n    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\\n\", hh, mm, dd, MM, ano)\n}\n",
+            "lines": "10"
+        }
+    ]
+}
