@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_16-39-53",
+            "content": "@@ -41,231 +41,35 @@\n     \n-var A, B int%0A    fmt.Scan(&A, &B)%0A%0A    soma := A+B%0A    sub := A-B%0A    mult := A*B%0A    div := A/B%0A    resto := A%25B%0A%0A    fmt.Println(soma)%0A    fmt.Println(sub)%0A    fmt.Println(mult)%0A    fmt.Println(div)%0A    fmt.Println(resto)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_16-45-29",
+            "content": "@@ -134,31 +134,11 @@\n  := \n-float64(A) / float64(B)\n+A/B\n %0A   \n@@ -234,20 +234,11 @@\n rint\n-f(%22%25.2f%5Cn%22, \n+ln(\n div)\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-24_16-47-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A, &B)\n\n    soma := A+B\n    sub := A-B\n    mult := A*B\n    div := float64(A) / float64(B)\n    resto := A%B\n\n    fmt.Println(soma)\n    fmt.Println(sub)\n    fmt.Println(mult)\n    fmt.Printf(\"%.2f\\n\", div)\n    fmt.Println(resto)\n\n}\n",
+            "lines": "19"
+        }
+    ]
+}
