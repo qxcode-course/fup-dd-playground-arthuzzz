@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-08-22",
+            "content": "@@ -1,9 +1,8 @@\n-%0A\n package \n@@ -41,84 +41,35 @@\n     \n-var A, B int%0A    fmt.Scan(&A, &B)%0A    abs(&A0)%0A%0A    fmt.Println((A-B)*(-1))%0A%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-36-48",
+            "content": "@@ -71,16 +71,29 @@\n (&A, &B)\n+%0A    abs(&A0)\n %0A%0A    fm\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_17-36-57",
+            "content": "@@ -96,16 +96,17 @@\n ((A-B)*(\n+-\n 1))%0A%0A%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_17-39-25",
+            "content": "@@ -75,63 +75,8 @@\n  &B)\n-%0A    Result := A-B%0A    if Result %3C 0 %7BResult = -Result%7D\n %0A%0A  \n@@ -93,14 +93,19 @@\n tln(\n-Result)\n+(A-B)*(1))%0A%0A\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_18-01-33",
+            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A, &B)\n    Result := A-B\n    if Result < 0 {Result = -Result}\n\n    fmt.Println(Result)\n}\n",
+            "lines": "11"
+        }
+    ]
+}
