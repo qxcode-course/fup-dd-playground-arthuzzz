@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-22-56",
+            "content": "@@ -41,125 +41,35 @@\n     \n-var a int%0A    fmt.Scan(&a)%0A%0A    if a/7 = 1 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else %7B%0A        fmt.Println(%22NAO%22)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-26-13",
+            "content": "@@ -76,13 +76,11 @@\n  if \n-(\n a/7\n-)\n  = 1\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-26-27",
+            "content": "@@ -78,11 +78,9 @@\n f (a\n- / \n+/\n 7) =\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-26-35",
+            "content": "@@ -79,17 +79,16 @@\n  (a \n-%25 7 == 0)\n+/ 7) = 1\n  %7B%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-29-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if (a % 7 == 0) {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n\n}\n",
+            "lines": "13"
+        }
+    ]
+}

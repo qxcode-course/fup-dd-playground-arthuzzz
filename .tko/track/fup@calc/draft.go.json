@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-30-22",
+            "content": "@@ -41,100 +41,35 @@\n     \n-var a, b int%0A    var c string%0A    %0A    fmt.Scan(&a, &b, &c)%0A%0A    fmt.Println(a, c, b)%0A%0A%0A    %0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-35-55",
+            "content": "@@ -115,17 +115,16 @@\n rint\n-f(a + c +\n+ln(a, c,\n  b)%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-37-08",
+            "content": "@@ -118,18 +118,16 @@\n tf(a\n-, c, b == \n+ + c + b\n )%0A%0A%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-38-19",
+            "content": "@@ -106,47 +106,30 @@\n     \n-result := a c b%0A%0A    fmt.Println(result\n+fmt.Printf(a, c, b == \n )%0A%0A%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-39-28",
+            "content": "@@ -95,27 +95,34 @@\n , &b\n-)%0A    fmt.Scanf(&c)\n+, &c)%0A%0A    result := a c b\n %0A%0A  \n@@ -139,15 +139,14 @@\n tln(\n-a, b, c\n+result\n )%0A%0A%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-31_17-41-00",
+            "content": "@@ -95,196 +95,53 @@\n , &b\n-, &c\n )%0A    \n-%0A    switch c %7B%0A    case %22+%22:%0A        fmt.Println(a+b)%0A    case %22-%22:%0A        fmt.Println(a-b)%0A    case %22*%22:%0A        fmt.Println(a*b)%0A    case %22/%22:%0A        fmt.Println(a/b)%0A%0A    %7D\n+fmt.Scanf(&c)%0A%0A    fmt.Println(a, b, c)\n %0A%0A%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_17-50-12",
+            "content": "@@ -273,16 +273,17 @@\n ln(a/b)%0A\n+%0A\n     %7D%0A%0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-31_17-50-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    var c string\n    \n    fmt.Scan(&a, &b, &c)\n    \n    switch c {\n    case \"+\":\n        fmt.Println(a+b)\n    case \"-\":\n        fmt.Println(a-b)\n    case \"*\":\n        fmt.Println(a*b)\n    case \"/\":\n        fmt.Println(a/b)\n    }\n\n\n    \n\n}\n",
+            "lines": "23"
+        }
+    ]
+}

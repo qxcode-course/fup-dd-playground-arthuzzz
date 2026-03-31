@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-11-19",
+            "content": "@@ -41,132 +41,35 @@\n     \n-var a int%0A    fmt.Scan(&a)%0A%0A    if a = %3E=0 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else a = %3C0 %7B%0A        fmt.Println(%22NAO%22)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-17-28",
+            "content": "@@ -78,17 +78,16 @@\n f a = %3E=\n- \n 0 %7B%0A    \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-17-38",
+            "content": "@@ -80,10 +80,10 @@\n a = \n-=\n %3E\n+=\n  0 %7B\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-17-44",
+            "content": "@@ -79,9 +79,12 @@\n  a =\n-%3E\n+ =%3E \n 0 %7B%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-17-59",
+            "content": "@@ -78,11 +78,10 @@\n f a \n+=\n %3E\n-= \n 0 %7B%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-18-10",
+            "content": "@@ -125,10 +125,11 @@\n e a \n+= \n %3C\n- \n 0 %7B%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-18-21",
+            "content": "@@ -75,16 +75,17 @@\n   if a %3E\n+=\n  0 %7B%0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-18-30",
+            "content": "@@ -77,10 +77,8 @@\n if a\n- =\n  %3E 0\n@@ -118,16 +118,22 @@\n  %7D else \n+a %3C 0 \n %7B%0A      \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-19-47",
+            "content": "@@ -75,17 +75,16 @@\n   if a =\n-=\n  %3E 0 %7B%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-19-53",
+            "content": "@@ -78,16 +78,17 @@\n f a == %3E\n+ \n 0 %7B%0A    \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-20-05",
+            "content": "@@ -78,10 +78,12 @@\n f a \n+== \n %3E\n- \n 0 %7B%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-21-25",
+            "content": "@@ -79,9 +79,8 @@\n  a %3E\n-=\n  0 %7B\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-21-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if a >= 0 {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n\n}\n",
+            "lines": "13"
+        }
+    ]
+}

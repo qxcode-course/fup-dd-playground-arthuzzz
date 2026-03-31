@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-56-25",
+            "content": "@@ -10,40 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math/rand%22%0A)%0A\n func\n@@ -41,42 +41,35 @@\n     \n-rand.Intn(5)%0A    fmt.Println(Valor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-59-38",
+            "content": "@@ -59,117 +59,8 @@\n %0A   \n- const pedra int = 0%0A    const papel int = 1%0A    const tesoura int = 2%0A%0A    var jog1, jog2 int%0A%0A%0A    valor :=\n  ran\n@@ -69,17 +69,16 @@\n Intn(5)%0A\n-%0A\n     fmt.\n@@ -86,308 +86,12 @@\n rint\n-(%22Jog1: digite 0 (pedra), 1 (papel) ou tesoura(2) : )%0A    fmt.Scan(&jog1)%0A%0A    fmt.Print(%22Jog2: digite 0 (pedra), 1 (papel) ou tesoura(2): )%0A    fmt.Scan(&jog2)%0A%0A    if jog1 == jog2 %7B%0A        fmt.Println(%22empate%22)%0A    %7D else if (jog1 == pedra && jog2 == tesoura) %7C%7C%0A    (jog1 ==  )%0A%0A    fmt.Println(v\n+ln(V\n alor\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-31_18-15-37",
+            "content": "@@ -475,172 +475,10 @@\n  == \n-papel && jog2 == pedra) %7C%7C%0A    (jog1 == tesoura && jog2 == papel) %7B%0A        fmt.Println(Jogador 1 venceu!)%0A    %7D else %7B%0A        fmt.Println(Jogador 2 venceu!)%0A    %7D\n+ )\n %0A%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-31_18-24-06",
+            "content": "@@ -156,16 +156,37 @@\n t%0A%0A%0A    \n+valor := rand.Intn(5)\n %0A%0A    fm\n@@ -219,33 +219,35 @@\n edra), 1 (papel)\n-,\n+ ou\n  tesoura(2) : )%0A\n@@ -315,17 +315,19 @@\n  (papel)\n-,\n+ ou\n  tesoura\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-31_18-27-27",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n)\nfunc main() {\n    const pedra int = 0\n    const papel int = 1\n    const tesoura int = 2\n\n    var jog1, jog2 int\n\n\n    \n\n    fmt.Print(\"Jog1: digite 0 (pedra), 1 (papel), tesoura(2) : )\n    fmt.Scan(&jog1)\n\n    fmt.Print(\"Jog2: digite 0 (pedra), 1 (papel), tesoura(2): )\n    fmt.Scan(&jog2)\n\n    if jog1 == jog2 {\n        fmt.Println(\"empate\")\n    } else if (jog1 == pedra && jog2 == tesoura) ||\n    (jog1 == papel && jog2 == pedra) ||\n    (jog1 == tesoura && jog2 == papel) {\n        fmt.Println(Jogador 1 venceu!)\n    } else {\n        fmt.Println(Jogador 2 venceu!)\n    }\n\n    fmt.Println(valor)\n}\n",
+            "lines": "34"
+        }
+    ]
+}

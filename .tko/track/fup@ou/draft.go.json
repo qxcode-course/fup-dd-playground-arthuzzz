@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-57-22",
+            "content": "@@ -41,96 +41,35 @@\n     \n-var a int%0A    fmt.Scan(&a)%0A%0A    if a = 3; 5 %7B%0A        fmt.Println(%22SIM%22)%0A    %7D else if %0A%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_17-01-34",
+            "content": "@@ -115,13 +115,22 @@\n %22)%0A    %7D\n+ else if \n %0A%0A%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-01-41",
+            "content": "@@ -119,59 +119,9 @@\n    %7D\n- else if a = int %7B%0A        fmt.Println(%22N%C3%83O%22)%0A    %7D\n+%0A\n %0A%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-03-02",
+            "content": "@@ -81,11 +81,9 @@\n  = 3\n- %7C%7C\n+;\n  5 %7B\n@@ -121,16 +121,27 @@\n  %7D else \n+if a = int \n %7B%0A      \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-06-41",
+            "content": "@@ -75,17 +75,16 @@\n   if a =\n-=\n  3 %7C%7C 5 \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-06-56",
+            "content": "@@ -81,21 +81,16 @@\n  == 3 %7C%7C\n- a ==\n  5 %7B%0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-10-07",
+            "content": "@@ -157,9 +157,9 @@\n n(%22N\n-A\n+%C3%83\n O%22)%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-10-18",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if a == 3 || a == 5 {\n        fmt.Println(\"SIM\")\n    } else {\n        fmt.Println(\"NAO\")\n    }\n\n}\n",
+            "lines": "13"
+        }
+    ]
+}
