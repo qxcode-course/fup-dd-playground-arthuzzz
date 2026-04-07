@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_16-18-29",
+            "content": "@@ -54,32 +54,21 @@\n ln(%22\n-you must connect to wifi\n+Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_16-19-05",
+            "content": "@@ -36,145 +36,8 @@\n () %7B\n-%0A%0A    var wifi, login, admin bool%0A%0A    fmt.Scan(&wifi, &login, &admin)%0A%0A    false := 0%0A    true := 1 %0A%0A    if wifi true %7B%0A%0A    %7D%0A%0A    %7D%0A%0A\n %0A   \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_16-37-23",
+            "content": "@@ -151,231 +151,73 @@\n ifi \n-== false %7B%0A        fmt.Println(%22you must connect to wifi%22)%0A    %7D%0A    if login == false %7B%0A        fmt.Println(%22you need to login first%22)%0A    %7D%0A    if admin == false %7B%0A        fmt.Println(%22you must login as admin%22)%0A    %7D%0A%0A    %7D%0A\n+true %7B%0A%0A    %7D%0A%0A    %7D%0A%0A%0A    fmt.Println(%22you must connect to wifi%22)%0A%7D\n %0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_16-42-41",
+            "content": "@@ -139,17 +139,16 @@\n 1 %0A%0A    \n-%7B\n if wifi \n@@ -369,69 +369,8 @@\n    %7D\n- else wifi; login; admin %7B%0A        fmt.Println(%22done%22)%7D%0A    %7D\n %0A%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-06_16-46-49",
+            "content": "@@ -380,31 +380,23 @@\n wifi\n-,\n+;\n  login\n-,\n+;\n  admin \n-== true \n %7B%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-06_16-47-53",
+            "content": "@@ -428,21 +428,16 @@\n (%22done%22)\n-%0A    \n %7D%0A    %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-06_16-48-13",
+            "content": "@@ -108,16 +108,47 @@\n n)%0A%0A\n+    false := 0%0A    true := 1 %0A%0A\n     %7Bif \n !wif\n@@ -143,17 +143,16 @@\n     %7Bif \n-!\n wifi == \n@@ -212,26 +212,24 @@\n %22)%0A    %7D\n- else\n+%0A   \n  if \n-!\n login ==\n@@ -238,24 +238,27 @@\n alse %7B%0A     \n+  \n+ \n fmt.Println(\n@@ -292,20 +292,17 @@\n     \n- %7D else\n+%7D%0A   \n  if \n-!\n admi\n@@ -316,24 +316,26 @@\n lse %7B%0A      \n+ \n+ \n fmt.Println(\n@@ -369,17 +369,42 @@\n     \n-  \n %7D else \n+wifi, login, admin == true \n %7B%0A  \n@@ -431,16 +431,20 @@\n one%22)%0A  \n+  %7D%0A\n     %7D%0A%0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-06_16-58-31",
+            "content": "@@ -118,18 +118,27 @@\n f !wifi \n+== false \n %7B%0A\n-\n         \n@@ -198,16 +198,25 @@\n  !login \n+== false \n %7B%0A     f\n@@ -253,16 +253,16 @@\n first%22)%0A\n-\n      %7D e\n@@ -275,16 +275,25 @@\n  !admin \n+== false \n %7B%0A      \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-00-33",
+            "content": "@@ -117,16 +117,17 @@\n if !wifi\n+ \n %7B%0A      \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-01-01",
+            "content": "@@ -167,21 +167,16 @@\n  wifi%22)%0A\n-%0A    \n     %7D el\n@@ -194,28 +194,16 @@\n n %7B%0A    \n-%0A           \n  fmt.Pri\n@@ -234,31 +234,16 @@\n first%22)%0A\n-               \n      %7D e\n@@ -258,34 +258,16 @@\n admin %7B%0A\n-                  \n       fm\n@@ -313,56 +313,17 @@\n     \n-                   %7D else %7B%0A                    \n+%7D else %7B%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-03-10",
+            "content": "@@ -167,16 +167,17 @@\n  wifi%22)%0A\n+%0A\n         \n@@ -191,24 +191,29 @@\n if !login %7B%0A\n+    %0A\n             \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-06_17-03-26",
+            "content": "@@ -447,8 +447,6 @@\n    %7D\n-%0A%7D\n %0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-31-32",
+            "content": "@@ -330,19 +330,16 @@\n ou must \n-to \n login as\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-06_17-33-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var wifi, login, admin bool\n\n    fmt.Scan(&wifi, &login, &admin)\n\n    {if !wifi{\n        fmt.Println(\"you must connect to wifi\")\n        } else if !login {\n            fmt.Println(\"you need to login first\")\n                    } else if !admin {\n                        fmt.Println(\"you must to login as admin\")\n                         } else {\n                            fmt.Println(\"done\")\n      }\n\n    }\n}\n\n",
+            "lines": "21"
+        }
+    ]
+}

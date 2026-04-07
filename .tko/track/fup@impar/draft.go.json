@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_18-08-52",
+            "content": "@@ -41,200 +41,35 @@\n     \n-var P int%0A    var D1, D2 int%0A    fmt.Scan(&D1, D2)%0A    fmt.Scan(&P)%0A%0A    if P == 0 %7B%0A        fmt.Println(Alice gritou %22par%22)%0A    %7D else if P == 1 %7B%0A        fmt.Println(Bob gritou %C3%ADmpar)%0A    %7D%0A%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_18-20-43",
+            "content": "@@ -155,19 +155,21 @@\n  gritou \n+%22\n par\n+%22\n )%0A    %7D \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-06_18-21-04",
+            "content": "@@ -142,17 +142,16 @@\n Println(\n-%22\n Alice gr\n@@ -158,17 +158,16 @@\n itou par\n-%22\n )%0A    %7D \n@@ -203,17 +203,16 @@\n Println(\n-%22\n Bob grit\n@@ -219,17 +219,16 @@\n ou %C3%ADmpar\n-%22\n )%0A    %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-06_18-22-46",
+            "content": "@@ -110,33 +110,8 @@\n P)%0A%0A\n-    P := (D1 + D2) / 2 %0A%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-06_18-24-54",
+            "content": "@@ -113,16 +113,17 @@\n %0A    P :\n+=\n  (D1 + D\n@@ -129,11 +129,12 @@\n D2) \n-%25\n+/\n  2\n+ \n %0A%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_18-28-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P int\n    var D1, D2 int\n    fmt.Scan(&D1, D2)\n    fmt.Scan(&P)\n\n    P : (D1 + D2) % 2\n\n    if P == 0 {\n        fmt.Println(\"Alice gritou par\")\n    } else if P == 1 {\n        fmt.Println(\"Bob gritou \u00edmpar\")\n    }\n\n\n}\n",
+            "lines": "18"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_17-36-06",
+            "content": "@@ -37,121 +37,39 @@\n ) %7B%0A\n-var a, b, c int%0Afmt.Scan(&a, &b, &c)%0A%0Aif a == b %7B%0A    fmt.Println(2)%0A%7D else if b == c %7B%0A    fmt.Println(2)%0A%7D%0A%0A    \n+    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_17-41-44",
+            "content": "@@ -145,117 +145,8 @@\n 2)%0A%7D\n- else if a == c %7B%0A    fmt.Println(2)%0A%7D else if a == b == c %7B%0A    fmt.Println(3)%0A%7D else %7B%0A    fmt.Println(0)%0A%7D\n %0A%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-06_17-43-41",
+            "content": "@@ -174,24 +174,67 @@\n .Println(2)%0A\n+%7D else if a == b == c %7B%0A    fmt.Println(3)%0A\n %7D else %7B%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-44-06",
+            "content": "@@ -75,31 +75,8 @@\n c)%0A%0A\n-tr%C3%AAs := a + b - (c*2)%0A%0A\n if a\n@@ -182,49 +182,8 @@\n (2)%0A\n-%7D else if tr%C3%AAs == 0 %7B%0A    fmt.Println(3)%0A\n %7D el\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-06_17-47-58",
+            "content": "@@ -71,16 +71,39 @@\n b, &c)%0A%0A\n+tr%C3%AAs := a + b - (c*2)%0A%0A\n if a == \n@@ -215,22 +215,12 @@\n  if \n-a + b -  (c*2)\n+tr%C3%AAs\n  == \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-06_17-50-56",
+            "content": "@@ -192,15 +192,13 @@\n  if \n-(\n a + b\n-)\n  -  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-51-44",
+            "content": "@@ -205,10 +205,10 @@\n   (c\n-+b\n+*2\n ) ==\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-52-00",
+            "content": "@@ -206,16 +206,17 @@\n  (c+b) =\n+=\n  0 %7B%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-52-07",
+            "content": "@@ -49,12 +49,11 @@\n , c \n-bool\n+int\n %0Afmt\n@@ -197,16 +197,17 @@\n a + b) -\n+ \n  (c+b) =\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-52-28",
+            "content": "@@ -45,19 +45,20 @@\n a, b, c \n-int\n+bool\n %0Afmt.Sca\n@@ -189,16 +189,35 @@\n else if \n+(a + b) - (c+b) = 0\n  %7B%0A    f\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-52-47",
+            "content": "@@ -192,19 +192,8 @@\n  if \n-a == c == b\n  %7B%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-53-16",
+            "content": "@@ -195,12 +195,14 @@\n  a =\n+=\n  c =\n+=\n  b %7B\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-53-32",
+            "content": "@@ -194,20 +194,15 @@\n f a \n-+ b == (c*2)\n+= c = b\n  %7B%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-54-02",
+            "content": "@@ -194,16 +194,20 @@\n f a \n-;\n++\n  b == \n-c\n+(c*2)\n  %7B%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_17-56-47",
+            "content": "@@ -192,24 +192,18 @@\n  if \n-c == a &&\n+a ;\n  b == \n-a\n+c\n  %7B%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_18-01-05",
+            "content": "@@ -188,22 +188,22 @@\n else if \n-a\n+c\n  == \n-b\n+a\n  && b ==\n@@ -199,25 +199,25 @@\n = a && b == \n-c\n+a\n  %7B%0A    fmt.P\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_18-01-39",
+            "content": "@@ -85,27 +85,83 @@\n = b \n-%7C%7C b == c %7C%7C c\n+%7B%0A    fmt.Println(2)%0A%7D else if b == c %7B%0A    fmt.Println(2)%0A%7D else if a\n  == \n-a\n+c\n  %7B%0A \n@@ -178,18 +178,16 @@\n ntln(2)%0A\n-%7D%0A\n %7D else i\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-06_18-05-32",
+            "content": "@@ -85,18 +85,18 @@\n = b \n-&&\n+%7C%7C\n  b == c \n %7B%0A  \n@@ -91,16 +91,26 @@\n  b == c \n+%7C%7C c == a \n %7B%0A    fm\n@@ -123,11 +123,13 @@\n tln(\n-3\n+2\n )%0A\n+%7D%0A\n %7D el\n@@ -137,34 +137,34 @@\n e if a == b \n-%7C%7C\n+&&\n  b == c \n %7C%7C c == a %7B%0A\n@@ -147,34 +147,24 @@\n b && b == c \n-%7C%7C c == a \n %7B%0A    fmt.Pr\n@@ -169,17 +169,17 @@\n Println(\n-2\n+3\n )%0A%7D else\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-06_18-06-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\nvar a, b, c int\nfmt.Scan(&a, &b, &c)\n\nif a == b && b == c {\n    fmt.Println(3)\n} else if a == b || b == c || c == a {\n    fmt.Println(2)\n} else {\n    fmt.Println(0)\n}\n\n    \n}\n",
+            "lines": "16"
+        }
+    ]
+}
