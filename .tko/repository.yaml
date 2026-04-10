@@ -15,12 +15,14 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@for1
+- fup@if2
 - fup@if1
 flags:
   inbox: all
-  panel: help
+  panel: skills
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@impar
+selected: fup@bhaskara

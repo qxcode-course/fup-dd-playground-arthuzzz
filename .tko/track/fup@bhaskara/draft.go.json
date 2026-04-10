@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-10_16-07-32",
+            "content": "@@ -43,11 +43,33 @@\n   fmt.Pr\n+intln(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-10_16-10-25",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -41,278 +41,13 @@\n     \n-var delta float64%0A    var a, b, c, x float64%0A%0A    fmt.Scan(&delta, &a, &b, &c)%0A%0A    delta = (math.Pow(b, 2)) - (4*a*c)%0A    Raiz1 = ((-b) + (math.Sqrt(delta))) / 2%0A    Raiz2 = ((-b) - (math.Sqrt(delta))) / 2%0A%0A    if delta %3E= 0 %7B%0A        fmt.Printf(%25.2f%5Cn, %22Raiz1%22)%0A    %7D%0A%0A\n+fmt.Pr\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-10_16-23-30",
+            "content": "@@ -300,17 +300,16 @@\n rintf(%25.\n- \n 2f%5Cn, %22R\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-10_16-23-38",
+            "content": "@@ -302,23 +302,24 @@\n ntf(\n-%22\n %25. 2f%5Cn\n-%22\n ,\n+ %22\n Raiz1\n+%22\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-10_16-24-05",
+            "content": "@@ -86,21 +86,17 @@\n , b, c, \n-Raiz1\n+x\n  float64\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-10_16-24-47",
+            "content": "@@ -95,15 +95,8 @@\n aiz1\n-, Raiz2\n  flo\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-10_16-24-59",
+            "content": "@@ -335,73 +335,8 @@\n    %7D\n- else if delta == 0 %7B%0A        fmt.Println(%22%25. 2f%5Cn%22,Raiz2)%0A    %7D%0A\n %0A%0A%0A%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-10_16-26-58",
+            "content": "@@ -308,24 +308,25 @@\n t.Printf(%22%25.\n+ \n 2f%5Cn%22,Raiz1)\n@@ -376,16 +376,17 @@\n ntln(%22%25.\n+ \n 2f%5Cn%22,Ra\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-10_16-27-26",
+            "content": "@@ -361,33 +361,34 @@\n        fmt.Print\n-f\n+ln\n (%22%25.2f%5Cn%22,Raiz2)\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-10_16-27-38",
+            "content": "@@ -329,43 +329,8 @@\n z1)%0A\n-        fmt.Printf(%22%25.2f%5Cn%22,Raiz2)%0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-10_16-28-14",
+            "content": "@@ -423,60 +423,9 @@\n Raiz\n-1)%0A    %7D else %7B%0A        fmt.Println(nao ha raiz real\n+2\n )%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-10_16-31-12",
+            "content": "@@ -455,17 +455,16 @@\n Println(\n-%22\n nao ha r\n@@ -471,17 +471,16 @@\n aiz real\n-%22\n )%0A    %7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-10_16-31-26",
+            "content": "@@ -84,16 +84,30 @@\n  a, b, c\n+, Raiz1, Raiz2\n  float64\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-10_16-31-56",
+            "content": "@@ -88,22 +88,8 @@\n b, c\n-, Raiz1, Raiz2\n  flo\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-10_16-32-15",
+            "content": "@@ -82,61 +82,15 @@\n ar a\n- float64%0A    var b float64%0A    var c float64%0A    %0A   \n+, b, c,\n  Rai\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-10_16-33-17",
+            "content": "@@ -132,21 +132,16 @@\n    %0A    \n- var \n Raiz1, R\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-10_16-33-41",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var delta float64\n    var a float64\n    var b float64\n    var c float64\n    \n     var Raiz1, Raiz2 float64\n\n    fmt.Scan(&delta, &a, &b, &c)\n\n    delta = (math.Pow(b, 2)) - (4*a*c)\n    Raiz1 = ((-b) + (math.Sqrt(delta))) / 2\n    Raiz2 = ((-b) - (math.Sqrt(delta))) / 2\n\n    if delta >= 0 {\n        fmt.Printf(\"%.2f\\n\",Raiz1)\n        fmt.Printf(\"%.2f\\n\",Raiz2)\n    } else if delta == 0 {\n        fmt.Printf(\"%.2f\\n\",Raiz1)\n    } else {\n        fmt.Println(\"nao ha raiz real\")\n    }\n\n\n\n}\n",
+            "lines": "32"
+        }
+    ]
+}

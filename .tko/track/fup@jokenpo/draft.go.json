@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-41-14",
+            "content": "@@ -41,329 +41,35 @@\n     \n-var R, P, S int%0A    var j1, j2 string%0A    fmt.Scan(&R, &P, &S)%0A    fmt.Scan(&j1, &j2)%0A%0A    if (j1 == R && j2 == S) %7C%7C (j1 == P && j2 == R) %7C%7C (j1 == S && j2 == P) %7B%0A        fmt.Println(Jog1)%0A    %7D else if %7B(j2 == R && j1 == S) %7C%7C (j2 == P && j1 == R) %7C%7C (j2 == S && j1 == P)%0A    %7D else %7B%0A        fmt.Println(empate)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_18-01-17",
+            "content": "@@ -49,22 +49,19 @@\n R, P, S \n-str\n in\n-g\n+t\n %0A    var\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-02-54",
+            "content": "@@ -45,21 +45,69 @@\n var \n-j1, j2 string\n+R, P, S string%0A    var j1, j2 string%0A    fmt.Scan(&R, &P, &S)\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-03-10",
+            "content": "@@ -45,69 +45,21 @@\n var \n-R, P, S string%0A    var j1, j2 string%0A    fmt.Scan(&R, &P, &S)\n+j1, j2 string\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_18-03-37",
+            "content": "@@ -45,21 +45,69 @@\n var \n-j1, j2 string\n+R, P, S string%0A    var j1, j2 string%0A    fmt.Scan(&R, &P, &S)\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-04-58",
+            "content": "@@ -89,27 +89,25 @@\n   if (j1 == \n-%22R%22\n+R\n  && j2 == %22S\n@@ -100,27 +100,25 @@\n  R && j2 == \n-%22S%22\n+S\n ) %7C%7C (j1 == \n@@ -113,27 +113,25 @@\n ) %7C%7C (j1 == \n-%22P%22\n+P\n  && j2 == %22R\n@@ -124,27 +124,25 @@\n  P && j2 == \n-%22R%22\n+R\n ) %7C%7C (j1 == \n@@ -137,27 +137,25 @@\n ) %7C%7C (j1 == \n-%22S%22\n+S\n  && j2 == %22P\n@@ -152,19 +152,17 @@\n & j2 == \n-%22P%22\n+P\n ) %7B%0A    \n@@ -205,19 +205,17 @@\n %7B(j2 == \n-%22R%22\n+R\n  && j1 =\n@@ -216,19 +216,17 @@\n & j1 == \n-%22S%22\n+S\n ) %7C%7C (j2\n@@ -229,19 +229,17 @@\n  (j2 == \n-%22P%22\n+P\n  && j1 =\n@@ -244,11 +244,9 @@\n  == \n-%22R%22\n+R\n ) %7C%7C\n@@ -257,11 +257,9 @@\n  == \n-%22S%22\n+S\n  && \n@@ -268,11 +268,9 @@\n  == \n-%22P%22\n+P\n )%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_18-06-14",
+            "content": "@@ -294,42 +294,8 @@\n %22P%22)\n- %7B%0A        fmt.Println(Jog2)%0A    %7D\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_18-07-26",
+            "content": "@@ -193,14 +193,12 @@\n tln(\n-%22\n Jog1\n-%22\n )%0A  \n@@ -209,16 +209,17 @@\n else if \n+%7B\n (j2 == %22\n@@ -317,15 +317,19 @@\n tln(\n-%22\n Jog2\n-%22\n )\n+%0A    %7D\n %0A   \n@@ -364,17 +364,16 @@\n n(empate\n-%22\n )%0A    %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_18-08-15",
+            "content": "@@ -90,16 +90,88 @@\n  if \n+(\n j1 == \n-j2\n+%22R%22 && j2 == %22S%22) %7C%7C (j1 == %22P%22 && j2 == %22R%22) %7C%7C (j1 == %22S%22 && j2 == %22P%22)\n  %7B%0A \n@@ -194,14 +194,12 @@\n ln(%22\n-empate\n+Jog1\n %22)%0A \n@@ -209,25 +209,25 @@\n %7D else if (j\n-1\n+2\n  == %22R%22 && j\n@@ -218,33 +218,33 @@\n  (j2 == %22R%22 && j\n-2\n+1\n  == %22S%22) %7C%7C (j1 \n@@ -233,33 +233,33 @@\n j1 == %22S%22) %7C%7C (j\n-1\n+2\n  == %22P%22 && j2 ==\n@@ -246,33 +246,33 @@\n  (j2 == %22P%22 && j\n-2\n+1\n  == %22R%22) %7C%7C (j1 \n@@ -261,33 +261,33 @@\n j1 == %22R%22) %7C%7C (j\n-1\n+2\n  == %22S%22 && j2 ==\n@@ -274,33 +274,33 @@\n  (j2 == %22S%22 && j\n-2\n+1\n  == %22P%22) %7B%0A     \n@@ -310,33 +310,33 @@\n fmt.Println(%22Jog\n-1\n+2\n %22)%0A    %7D else %7B%0A\n@@ -347,33 +347,34 @@\n     fmt.Println(\n-%22Jog2\n+empate\n %22)%0A    %7D%0A%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_18-10-27",
+            "content": "@@ -245,17 +245,17 @@\n rintln(%22\n-j\n+J\n og1%22)%0A  \n@@ -286,17 +286,17 @@\n rintln(%22\n-j\n+J\n og2%22)%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_18-10-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var j1, j2 string\n    fmt.Scan(&j1, &j2)\n\n    if j1 == j2 {\n        fmt.Println(\"empate\")\n    } else if (j1 == \"R\" && j2 == \"S\") || (j1 == \"P\" && j2 == \"R\") || (j1 == \"S\" && j2 == \"P\") {\n        fmt.Println(\"jog1\")\n    } else {\n        fmt.Println(\"jog2\")\n    }\n\n}\n",
+            "lines": "15"
+        }
+    ]
+}

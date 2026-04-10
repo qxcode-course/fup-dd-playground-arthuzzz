@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_16-40-34",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -41,187 +41,35 @@\n     \n-var op string%0A    var num float64%0A%0A    fmt.Scan(&op, &num)%0A%0A    if op == c %7B%0A        fmt.Println(math.Ceil(num))%0A    %7D else if op == f %7B%0A        fmt.Println(math.Floor(num))%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_16-54-27",
+            "content": "@@ -234,69 +234,8 @@\n    %7D\n- else if op == r %7B%0A        fmt.Println(math.Round(num))%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_16-55-12",
+            "content": "@@ -128,11 +128,9 @@\n  == \n-%22c%22\n+c\n  %7B%0A \n@@ -188,11 +188,9 @@\n  == \n-%22f%22\n+f\n  %7B%0A \n@@ -249,11 +249,9 @@\n  == \n-%22r%22\n+r\n  %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_16-55-40",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var op string\n    var num float64\n\n    fmt.Scan(&op, &num)\n\n    if op == \"c\" {\n        fmt.Println(math.Ceil(num))\n    } else if op == \"f\" {\n        fmt.Println(math.Floor(num))\n    } else if op == \"r\" {\n        fmt.Println(math.Round(num))\n    }\n\n}\n",
+            "lines": "21"
+        }
+    ]
+}

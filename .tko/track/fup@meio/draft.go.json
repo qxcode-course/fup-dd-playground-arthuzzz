@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_17-15-00",
+            "content": "@@ -41,291 +41,35 @@\n     \n-var scratt1, scratt2,scratt3 int%0A    fmt.Scan(&scratt1, &scratt2, &scratt3)%0A%0A    if scratt1 %3C scratt2 %7C%7Cscratt1 %3E scratt3 %7B%0A        fmt.Println(scratt1)%0A    %7D else if scratt2 %3C scratt3 %7C%7C scratt2 %3E scratt3 %7B%0A        fmt.Println(scratt2)%0A    %7D else %7B%0A        fmt.Println(scratt3)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_17-23-24",
+            "content": "@@ -141,17 +141,16 @@\n ratt2 %7C%7C\n- \n scratt1 \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-24-02",
+            "content": "@@ -242,17 +242,17 @@\n %3E scratt\n-1\n+3\n  %7B%0A     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-24-16",
+            "content": "@@ -221,17 +221,17 @@\n %3C scratt\n-1\n+3\n  %7C%7C scra\n@@ -234,33 +234,33 @@\n scratt2 %3E scratt\n-3\n+1\n  %7B%0A        fmt.P\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-24-29",
+            "content": "@@ -290,50 +290,8 @@\n lse \n-if scratt3 %3C scratt1 %7C%7C scratt3 %3E scratt2 \n %7B%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-26-09",
+            "content": "@@ -363,260 +363,8 @@\n t3)%0A\n-    %7D else if scratt1 %3E scratt2 %7C%7C scratt1 %3C scratt3 %7B%0A        fmt.Println(scratt1)%0A    %7D else if scratt2 %3E scratt1 %7C%7C scratt2 %3C scratt3 %7B%0A        fmt.Println(scratt2)%0A    %7D else if scratt3 %3E scratt1 %7C%7C scratt3 %3C scratt2 %7B%0A        fmt.Println(scratt3)%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-28-32",
+            "content": "@@ -359,16 +359,268 @@\n cratt3)%0A\n+    %7D else if scratt1 %3E scratt2 %7C%7C scratt1 %3C scratt3 %7B%0A        fmt.Println(scratt1)%0A    %7D else if scratt2 %3E scratt1 %7C%7C scratt2 %3C scratt3 %7B%0A        fmt.Println(scratt2)%0A    %7D else if scratt3 %3E scratt1 %7C%7C scratt3 %3C scratt2 %7B%0A        fmt.Println(scratt3)%0A\n     %7D%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-28-56",
+            "content": "@@ -124,30 +124,8 @@\n   if\n- (scratt2 %3E scratt1 &&\n  scr\n@@ -141,35 +141,12 @@\n ratt\n-3)\n+2\n  %7C%7C\n- (scratt2 %3C scratt1 &&\n  scr\n@@ -159,17 +159,16 @@\n  scratt3\n-)\n  %7B%0A     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-36-34",
+            "content": "@@ -147,25 +147,25 @@\n  && scratt1 \n-%3E\n+%3C\n  scratt3) %7C%7C\n@@ -187,33 +187,33 @@\n att1 && scratt1 \n-%3C\n+%3E\n  scratt3) %7B%0A    \n@@ -254,19 +254,8 @@\n e if\n- (scratt1 %3E\n  scr\n@@ -263,72 +263,38 @@\n tt2 \n-&&\n+%3C\n  scratt\n-2 %3E scratt3) %7C%7C (scratt1 %3C scratt2 && scratt2 %3C\n+1 %7C%7C scratt2 %3E\n  scratt3\n ) %7B%0A\n@@ -281,33 +281,32 @@\n cratt2 %3E scratt3\n-)\n  %7B%0A        fmt.P\n@@ -332,16 +332,57 @@\n  %7D else \n+if scratt3 %3C scratt1 %7C%7C scratt3 %3E scratt2\n  %7B%0A     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-07_17-39-07",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var scratt1, scratt2,scratt3 int\n    fmt.Scan(&scratt1, &scratt2, &scratt3)\n\n    if (scratt2 > scratt1 && scratt1 > scratt3) || (scratt2 < scratt1 && scratt1 < scratt3) {\n        fmt.Println(scratt1)\n    } else if (scratt1 > scratt2 && scratt2 > scratt3) || (scratt1 < scratt2 && scratt2 < scratt3) {\n        fmt.Println(scratt2)\n    } else  {\n        fmt.Println(scratt3)\n    }\n}\n",
+            "lines": "14"
+        }
+    ]
+}

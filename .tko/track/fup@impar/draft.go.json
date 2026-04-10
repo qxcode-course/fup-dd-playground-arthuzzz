@@ -27,8 +27,23 @@
         },
         {
             "label": "2026-04-06_18-28-17",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P int\n    var D1, D2 int\n    fmt.Scan(&D1, D2)\n    fmt.Scan(&P)\n\n    P : (D1 + D2) % 2\n\n    if P == 0 {\n        fmt.Println(\"Alice gritou par\")\n    } else if P == 1 {\n        fmt.Println(\"Bob gritou \u00edmpar\")\n    }\n\n\n}\n",
-            "lines": "18"
+            "content": "@@ -1,144 +1,86 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var P int%0A    var D1, D2 int%0A    fmt.Scan(&D1, D2)%0A    fmt.Scan(&P)%0A%0A    soma := (D1 + D2) %25 2%0A%0A\n+@@ -114,15 +114,11 @@%0A     %0A-soma%0A+P%0A  :%0A-=%0A  (D1%0A@@ -133,29 +133,8 @@%0A  2%250A%250A%0A-\n     \n@@ -92,113 +92,100 @@\n ma%252\n+52\n  == 0 \n-%7B%0A    if P == 0 %7B%0A        fmt.Println(0)%0A    %7D%0A    %7D else if P == 1 %7B%0A        fmt.Println(1)%0A    %7D%0A%0A%0A%7D\n+%257B%250A%0A     %0A@@ -169,16 +169,27 @@%0A tln(%0A-0)%250A    %257D%0A+%2522Alice gritou par%2522)%0A %250A   \n %0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_16-35-06",
+            "content": "@@ -127,17 +127,21 @@\n D1 + D2)\n+ %25 2\n %0A\n-\n %0A    if \n@@ -202,120 +202,32 @@\n    %7D\n- else %7B%0A        fmt.Println(1)%0A    %7D else %7B%0A        if P == 0 %7B%0A            fmt.Println(1)%0A        %7D else %7B%0A    \n+%0A    %7D else if P == 1 %7B%0A\n     \n@@ -246,20 +246,10 @@\n tln(\n-0)%0A        %7D\n+1)\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_16-39-15",
+            "content": "@@ -254,17 +254,17 @@\n if P == \n-1\n+0\n  %7B%0A     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-07_16-40-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P int\n    var D1, D2 int\n    fmt.Scan(&D1, D2)\n    fmt.Scan(&P)\n\n    soma := (D1 + D2)\n\n    if soma%2 == 0 {\n    if P == 0 {\n        fmt.Println(0)\n    } else {\n        fmt.Println(1)\n    } else {\n        if P == 1 {\n            fmt.Println(1)\n        } else {\n            fmt.Println(0)\n        }\n    }\n\n\n}\n",
+            "lines": "25"
         }
     ]
 }
