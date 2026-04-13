@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_16-02-50",
+            "content": "@@ -41,85 +41,35 @@\n     \n-var A, B int%0A    fmt.Scan(&A, &B)%0A%0A    for true %7B%0A        println(%22oiw%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_16-12-35",
+            "content": "@@ -72,17 +72,16 @@\n A, &B)%0A%0A\n-%0A\n     for \n@@ -99,123 +99,21 @@\n     \n-if A %3E B %7B%0A            break%0A        %7D %0A        if A %25 2 == 0 %7B%0A            continue%0A        %7D %0A        fmt.Print(A\n+println(%22oiw%22\n )%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-13_16-18-38",
+            "content": "@@ -164,24 +164,8 @@\n 0 %7B%0A\n-            A++%0A\n     \n@@ -217,20 +217,8 @@\n (A)%0A\n-        A++%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_16-20-04",
+            "content": "@@ -1,303 +1,188 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var A, B int%0A    fmt.Scan(&A, &B)%0A%0A    fmt.Print(%22%5B%22)%0A%0A%0A    for true %7B%0A        if A %3E B %7B%0A            break%0A        %7D %0A        if A %25 2 == 0 %7B%0A            A++%0A            continue%0A        %7D %0A        fmt.Print(%22 %22, A)%0A        A++%0A    %7D%0A    fmt.Print(%22 %5D%5Cn%22)%0A%7D\n+@@ -76,28 +76,8 @@%0A B)%250A%250A%0A-    fmt.Print(%2522%255B%2522)%250A%250A%0A %250A   %0A@@ -230,13 +230,8 @@%0A int(%0A-%2522 %2522, %0A A)%250A %0A@@ -251,28 +251,6 @@%0A   %257D%250A%0A-    fmt.Print(%2522 %255D%255Cn%2522)%250A%0A %257D%250A\n %0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_16-21-03",
+            "content": "@@ -192,16 +192,19 @@\n         \n+A++\n %0A       \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_16-21-28",
+            "content": "@@ -188,27 +188,24 @@\n             \n-A++\n %0A           \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_16-22-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A, &B)\n\n    fmt.Print(\"[\")\n\n\n    for true {\n        if A > B {\n            break\n        } \n        if A % 2 == 0 {\n            A++\n            continue\n        } \n        fmt.Print(\" \", A)\n        A++\n    }\n    fmt.Print(\" ]\\n\")\n}\n",
+            "lines": "22"
+        }
+    ]
+}

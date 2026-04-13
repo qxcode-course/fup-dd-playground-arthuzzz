@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_15-56-05",
+            "content": "@@ -41,136 +41,34 @@\n     \n-var A, B int%0A    fmt.Scan(&A, &B)%0A%0A    fmt.Print(%22%5B%22)%0A%0A    for ;A %3E B; A-- %7B%0A        fmt.Print(%22 %22, A)%0A    %7D%0A    fmt.Print(%22 %5D%5Cn\n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_15-57-22",
+            "content": "@@ -96,27 +96,8 @@\n %22)%0A%0A\n-    if A %3E B %7B%0A    \n     \n@@ -114,20 +114,16 @@\n ; A-- %7B%0A\n-    \n         \n@@ -148,20 +148,9 @@\n     \n-   \n- %7D%0A    %7D%0A\n+%7D\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-13_15-59-37",
+            "content": "@@ -182,87 +182,8 @@\n    %7D\n- else %7B%0A        for ;B %3E A; A-- %7B%0A            fmt.Print(%22 %22, B)%0A        %7D%0A    %7D\n %0A%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-00-41",
+            "content": "@@ -206,17 +206,17 @@\n ;B %3E A; \n-B\n+A\n -- %7B%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_16-01-45",
+            "content": "@@ -203,18 +203,18 @@\n or ;\n-A %3C B; A++\n+B %3E A; B--\n  %7B%0A \n@@ -231,33 +231,33 @@\n  fmt.Print(%22 %22, \n-A\n+B\n )%0A        %7D%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_16-02-35",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A, &B)\n\n    fmt.Print(\"[\")\n\n    if A > B {\n        for ;A > B; A-- {\n            fmt.Print(\" \", A)\n        }\n    } else {\n        for ;A < B; A++ {\n            fmt.Print(\" \", A)\n        }\n    }\n\n    fmt.Print(\" ]\\n\")\n}\n",
+            "lines": "20"
+        }
+    ]
+}

@@ -107,3 +107,5 @@
 2026-04-10 16:33:19, EXEC, v:1, k:fup@bhaskara, mode:FULL, fail:COMP
 2026-04-10 16:33:41, EXEC, v:1, k:fup@bhaskara, mode:FULL, rate:0, size:32
 2026-04-10 16:33:44, MOVE, v:1, k:fup@bhaskara, mode:BACK
+2026-04-10 16:33:41, MOVE, v:1, k:fup@bhaskara, mode:EDIT
+2026-04-10 16:33:37, MOVE, v:1, k:fup@bhaskara, mode:EDIT

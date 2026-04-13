@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_15-29-02",
+            "content": "@@ -41,111 +41,35 @@\n     \n-var A int%0A    var B int%0A%0A    fmt.Scan(&A, &B)%0A%0A    for A := 1; A %3C B; A++ %7B%0A        fmt.Println(A)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_15-39-19",
+            "content": "@@ -92,17 +92,24 @@\n     for \n-;\n+A := 1; \n A %3C B; A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_15-42-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A int\n    var B int\n\n    fmt.Scan(&A, &B)\n\n    for ;A < B; A++ {\n        fmt.Println(A)\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

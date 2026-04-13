@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_15-43-26",
+            "content": "@@ -41,104 +41,35 @@\n     \n-var A int%0A    var B int%0A%0A    fmt.Scan(&A, &B)%0A%0A    for ;A %3C B; A++ %7B%0A        fmt.Println(A)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_15-45-38",
+            "content": "@@ -123,16 +123,18 @@\n mt.Print\n+ln\n (A)%0A    \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_15-45-49",
+            "content": "@@ -128,19 +128,9 @@\n int(\n-%22%5B%22, A, %22%5D%22\n+A\n )%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_15-48-21",
+            "content": "@@ -130,16 +130,21 @@\n t(%22%5B%22, A\n+, %22%5D%22\n )%0A    %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_15-48-43",
+            "content": "@@ -88,28 +88,8 @@\n B)%0A%0A\n-    fmt.Print(%22%5B%22)%0A%0A\n     \n@@ -124,16 +124,21 @@\n t.Print(\n+%22%5B%22, \n A)%0A    %7D\n@@ -142,25 +142,6 @@\n   %7D%0A\n-    fmt.Print(%22%5B%22)%0A\n %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_15-50-05",
+            "content": "@@ -172,9 +172,9 @@\n nt(%22\n-%5D\n+%5B\n %22)%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-50-12",
+            "content": "@@ -148,13 +148,8 @@\n int(\n-%22 %22, \n A)%0A \n@@ -168,15 +168,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-51-05",
+            "content": "@@ -179,10 +179,8 @@\n (%22 %5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-51-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A int\n    var B int\n\n    fmt.Scan(&A, &B)\n\n    fmt.Print(\"[\")\n\n    for ;A < B; A++ {\n        fmt.Print(\" \", A)\n    }\n    fmt.Print(\" ]\\n\")\n}\n",
+            "lines": "15"
+        }
+    ]
+}
