@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-15-56",
+            "content": "@@ -41,56 +41,35 @@\n     \n-var M, a, b int%0A    fmt.Scan(&M, &a, &b)%0A%0A    if \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-21-22",
+            "content": "@@ -87,20 +87,10 @@\n     \n-fmt.Println()\n+if \n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-13_17-23-46",
+            "content": "@@ -46,34 +46,12 @@\n ar M\n- int%0A    var a int%0A    var\n+, a,\n  b i\n@@ -95,13 +95,12 @@\n Println(\n-M\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-13_17-24-47",
+            "content": "@@ -105,34 +105,8 @@\n b)%0A%0A\n-    Idade := M - (a + b)%0A%0A\n     \n@@ -121,13 +121,9 @@\n tln(\n-Idade\n+M\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-13_17-26-35",
+            "content": "@@ -135,78 +135,25 @@\n     \n-if a %3E b %7B%0A        fmt.Println(a)%0A    %7D else %7B%0A    fmt.Println(b)%0A    %7D\n+fmt.Println(Idade)\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_17-28-31",
+            "content": "@@ -180,23 +180,10 @@\n lse \n-if a %3C b %7B%0A    \n+%7B%0A\n     \n@@ -201,44 +201,8 @@\n (b)%0A\n-    %7D else %7B%0A    fmt.Println(Idade)%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-31-47",
+            "content": "@@ -137,17 +137,16 @@\n   if a %3E\n-=\n  b %7B%0A   \n@@ -225,34 +225,8 @@\n lse \n-if a %3C Idade && b %3C Idade \n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-32-56",
+            "content": "@@ -125,16 +125,163 @@\n  (a + b)\n+%0A%0A    if a %3E= b %7B%0A        fmt.Println(a)%0A    %7D else if a %3C b %7B%0A        fmt.Println(b)%0A    %7D else if a %3C Idade && b %3C Idade %7B%0A    fmt.Println(Idade)\n %0A    %7D%0A%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-34-32",
+            "content": "@@ -105,17 +105,21 @@\n b)%0A%0A    \n-c\n+Idade\n  := M - \n@@ -130,157 +130,12 @@\n  b)%0A\n-%0A    if a %3E c && a %3E b %7B%0A        fmt.Println(a)%0A    %7D else if b %3E a && b %3E c %7B%0A        fmt.Println(b)%0A    %7D else %7B%0A        fmt.Println(c)%0A    %7D%0A    %7D \n+    %7D\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-13_17-37-09",
+            "content": "@@ -273,8 +273,10 @@\n %0A    %7D %0A\n+%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-37-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var M int\n    var a int\n    var b int\n    fmt.Scan(&M, &a, &b)\n\n    c := M - (a + b)\n\n    if a > c && a > b {\n        fmt.Println(a)\n    } else if b > a && b > c {\n        fmt.Println(b)\n    } else {\n        fmt.Println(c)\n    }\n    } \n",
+            "lines": "18"
+        }
+    ]
+}

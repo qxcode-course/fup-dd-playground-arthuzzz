@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_16-46-54",
+            "content": "@@ -10,35 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22math%22%0A)%0A\n func\n@@ -41,156 +41,35 @@\n     \n-var x1, y1 int%0A    var x2, y2 int%0A    fmt.Scan(&x1, &y1, &x2,&y2)%0A%0A    Distancia = math.Sqrt(pow(x2 - x1) + pow(y2 - y1))%0A%0A    fmt.Println(Distacia)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_16-54-06",
+            "content": "@@ -144,17 +144,16 @@\n th.Sqrt(\n-(\n pow(x2 -\n@@ -172,17 +172,16 @@\n 2 - y1))\n-)\n %0A%0A    fm\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-54-32",
+            "content": "@@ -144,26 +144,17 @@\n th.Sqrt(\n-math.Pow()\n+(\n pow(x2 -\n@@ -164,18 +164,8 @@\n ) + \n-math.Pow()\n pow(\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-54-52",
+            "content": "@@ -192,16 +192,17 @@\n 2 - y1))\n+)\n %0A%0A    fm\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-55-02",
+            "content": "@@ -144,17 +144,16 @@\n th.Sqrt(\n-(\n math.Pow\n@@ -157,16 +157,21 @@\n Pow(\n+)pow(\n x2 - x1)\n ) + \n@@ -170,13 +170,11 @@\n  x1)\n-)\n  + \n-(\n math\n@@ -178,16 +178,21 @@\n ath.Pow(\n+)pow(\n y2 - y1)\n@@ -192,17 +192,16 @@\n 2 - y1))\n-)\n %0A%0A    fm\n@@ -215,17 +215,16 @@\n ln(Dista\n-n\n cia)%0A%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-56-22",
+            "content": "@@ -136,9 +136,8 @@\n cia \n-:\n = ma\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-56-55",
+            "content": "@@ -62,23 +62,19 @@\n  x1, y1 \n-float64\n+int\n %0A    var\n@@ -85,15 +85,11 @@\n  y2 \n-float64\n+int\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-57-12",
+            "content": "@@ -143,17 +143,16 @@\n ncia := \n-(\n math.Sqr\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-57-49",
+            "content": "@@ -143,16 +143,17 @@\n ncia := \n+(\n math.Sqr\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-58-12",
+            "content": "@@ -154,16 +154,21 @@\n h.Sqrt((\n+math.\n Pow(x2 -\n@@ -176,16 +176,21 @@\n x1)) + (\n+math.\n Pow(y2 -\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_16-58-57",
+            "content": "@@ -135,100 +135,59 @@\n    D\n-1 :=  (x1 - x2)%0A    D2 := (y1 - y2)%0A    Distancia := math.Sqrt((math.Pow(D1) + (math.Pow(D2)\n+istancia := math.Sqrt((Pow(x2 - x1)) + (Pow(y2 - y1\n )))%0A\n@@ -219,12 +219,6 @@\n a)%0A%0A\n-    %0A%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_17-03-21",
+            "content": "@@ -184,17 +184,32 @@\n ncia := \n-(\n+math.Sqrt((math.\n Pow(D1) \n@@ -211,16 +211,21 @@\n (D1) + (\n+math.\n Pow(D2))\n@@ -225,16 +225,17 @@\n ow(D2)))\n+)\n %0A%0A    fm\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-06-19",
+            "content": "@@ -135,75 +135,79 @@\n    D\n-istancia := math.Sqrt((math.Pow(x1 - x2, 2) + (math.Pow(y1 - y2, 2)\n+1 :=  (x1 - x2)%0A    D2 := (y1 - y2)%0A    Distancia := (Pow(D1) + (Pow(D2\n )))%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-08-07",
+            "content": "@@ -223,19 +223,8 @@\n tln(\n-%22%25. 2f%5Cn%22, \n Dist\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-08-37",
+            "content": "@@ -223,18 +223,19 @@\n tln(\n+%22\n %25. 2f%5Cn\n+%22\n , \n-%22\n Dist\n@@ -239,17 +239,16 @@\n istancia\n-%22\n )%0A%0A    %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-09-05",
+            "content": "@@ -228,16 +228,17 @@\n . 2f%5Cn, \n+%22\n Distanci\n@@ -238,16 +238,17 @@\n istancia\n+%22\n )%0A%0A    %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-09-10",
+            "content": "@@ -223,17 +223,15 @@\n tln(\n-%22\n %25. 2f%5Cn\n-%22\n , Di\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-09-23",
+            "content": "@@ -216,17 +216,18 @@\n mt.Print\n-f\n+ln\n (%22%25. 2f%5C\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-09-41",
+            "content": "@@ -221,16 +221,17 @@\n intf(%22%25.\n+ \n 2f%5Cn%22, D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-09-51",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var x1, y1 float64\n    var x2, y2 float64\n    fmt.Scan(&x1, &y1, &x2,&y2)\n\n    Distancia := math.Sqrt((math.Pow(x1 - x2, 2) + (math.Pow(y1 - y2, 2))))\n\n    fmt.Printf(\"%.2f\\n\", Distancia)\n\n    \n\n}\n",
+            "lines": "18"
+        }
+    ]
+}
