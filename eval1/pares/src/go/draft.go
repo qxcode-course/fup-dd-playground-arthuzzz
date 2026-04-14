@@ -1,17 +1,18 @@
 package main
 import "fmt"
 func main() {
-    var A, B int
-    fmt.Scan(&A,&B)
+    var a, b int
+    var soma int = 0
+    fmt.Scan(&a, &b)
 
-    if A > B {
+    if a > b {
         fmt.Println("invalido")
     } else {
-        for ;A <= B; A++ {
-            if A % 2 == 0 {
-                soma +=
+        for i:= a; i <= b; i++ {
+            if i % 2 == 0 {
+                soma += i
             }
         }
-
-    }
+        fmt.Println(soma)
+    
 }

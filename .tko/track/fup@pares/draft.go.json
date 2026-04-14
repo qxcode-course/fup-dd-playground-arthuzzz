@@ -12,8 +12,38 @@
         },
         {
             "label": "2026-04-13_18-08-59",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    var soma int = 0\n    fmt.Scan(&a, &b)\n\n    if a > b {\n        fmt.Println(\"invalido\")\n    } else {\n        for ;a > b; a++ {\n            if a % 2 == 0{\n                soma += a\n            \n            fmt.Println(soma)\n        }\n    }\n}\n}\n",
+            "content": "@@ -244,15 +244,24 @@\n     \n-%7D%0A    %7D\n+    %0A           \n  fmt\n@@ -275,12 +275,28 @@\n n(soma)%0A\n+        %7D%0A    %7D%0A\n %7D%0A%7D%0A\n",
             "lines": "19"
+        },
+        {
+            "label": "2026-04-14_16-29-55",
+            "content": "@@ -247,13 +247,31 @@\n  %7D%0A    %7D\n+ fmt.Println(soma)\n %0A%7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_16-30-11",
+            "content": "@@ -236,42 +236,8 @@\n = a%0A\n-                fmt.Println(soma)%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_16-30-42",
+            "content": "@@ -252,29 +252,8 @@\n     \n-%0A        %7D%0A    %7D%0A    \n fmt.\n@@ -266,12 +266,28 @@\n n(soma)%0A\n+        %7D%0A    %7D%0A\n %7D%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_16-32-52",
+            "content": "@@ -204,17 +204,16 @@\n %25 2 == 0\n- \n %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-14_16-33-10",
+            "content": "@@ -169,24 +169,17 @@\n for \n-i:= a; i %3C=\n+;a %3E\n  b; \n-i\n+a\n ++ %7B\n@@ -194,17 +194,17 @@\n      if \n-i\n+a\n  %25 2 == \n@@ -231,17 +231,17 @@\n soma += \n-i\n+a\n %0A       \n@@ -237,33 +237,36 @@\n = a%0A            \n-%7D\n+    \n %0A        %7D%0A     \n@@ -260,24 +260,26 @@\n       %7D%0A    \n+%7D%0A\n     fmt.Prin\n@@ -288,16 +288,12 @@\n n(soma)%0A\n-    \n %7D%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-14_16-40-14",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    var soma int = 0\n    fmt.Scan(&a, &b)\n\n    if a > b {\n        fmt.Println(\"invalido\")\n    } else {\n        for i:= a; i <= b; i++ {\n            if i % 2 == 0 {\n                soma += i\n            }\n        }\n        fmt.Println(soma)\n    }\n}\n",
+            "lines": "18"
         }
     ]
 }

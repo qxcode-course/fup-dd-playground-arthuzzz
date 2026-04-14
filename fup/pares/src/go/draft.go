@@ -8,12 +8,11 @@ func main() {
     if a > b {
         fmt.Println("invalido")
     } else {
-        for ;a > b; a++ {
-            if a % 2 == 0{
-                soma += a
-            
-            fmt.Println(soma)
+        for i:= a; i <= b; i++ {
+            if i % 2 == 0 {
+                soma += i
+            }
         }
+        fmt.Println(soma)
     }
-}
 }

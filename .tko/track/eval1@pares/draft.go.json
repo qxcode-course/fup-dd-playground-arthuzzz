@@ -52,8 +52,23 @@
         },
         {
             "label": "2026-04-13_17-59-13",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A,&B)\n\n    if A < B {\n        for ;B > A; B++ {\n                continue\n         fmt.Println(B)\n        }\n        } else {\n            fmt.Println(\"invalido\")\n        }\n}\n",
+            "content": "@@ -84,9 +84,9 @@\n f A \n-%3E\n+%3C\n  B %7B\n@@ -99,114 +99,92 @@\n    f\n-mt.Println(%22invalido%22)%0A    %7D else %7B%0A        for ;A %3C= B; A++ %7B%0A            if A %25 2 == 0 %7B%0A\n+or ;B %3E A; B++ %7B%0A                continue%0A         fmt.Println(B)%0A   \n      \n-  \n+%7D%0A\n         \n  som\n@@ -183,16 +183,16 @@\n     \n- soma +=\n+%7D else %7B\n %0A   \n@@ -204,21 +204,36 @@\n     \n-%7D%0A        %7D%0A%0A\n+fmt.Println(%22invalido%22)%0A    \n     \n",
             "lines": "15"
+        },
+        {
+            "label": "2026-04-14_16-43-21",
+            "content": "@@ -45,37 +45,16 @@\n var \n-a, b int%0A    var soma int = 0\n+A, B int\n %0A   \n@@ -68,13 +68,12 @@\n an(&\n-a, &b\n+A,&B\n )%0A%0A \n@@ -82,13 +82,13 @@\n  if \n-a %3E b\n+A %3E B\n  %7B%0A \n@@ -147,24 +147,18 @@\n for \n-i:= a; i\n+;A\n  %3C= \n-b; i\n+B; A\n ++ %7B\n@@ -173,17 +173,17 @@\n      if \n-i\n+A\n  %25 2 == \n@@ -209,18 +209,16 @@\n  soma +=\n- i\n %0A       \n@@ -238,33 +238,8 @@\n   %7D%0A\n-        fmt.Println(soma)\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_16-43-46",
+            "content": "@@ -294,11 +294,12 @@\n ma)%0A    \n+%7D\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_16-44-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    var soma int = 0\n    fmt.Scan(&a, &b)\n\n    if a > b {\n        fmt.Println(\"invalido\")\n    } else {\n        for i:= a; i <= b; i++ {\n            if i % 2 == 0 {\n                soma += i\n            }\n        }\n        fmt.Println(soma)\n    \n}\n",
+            "lines": "18"
         }
     ]
 }

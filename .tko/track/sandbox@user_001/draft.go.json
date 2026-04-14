@@ -147,8 +147,138 @@
         },
         {
             "label": "2026-03-23_17-16-17",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    Fonte := true\n    if Fonte == false{\n        fmt.Println(\"O gerador est\u00e1 desativado!\")\n    } else if Fonte == true{\n        fmt.Println(\"O gerador est\u00e1 ativado!\")\n    }\n\n\n    Status := true\n    if Fonte == false{\n        fmt.Println(\"A l\u00e2mpada est\u00e1 apagada,\")\n    } else if Status == false{\n    fmt.Println(\"A l\u00e2mpada est\u00e1 apagada,\")\n}    else if Status == true{\n    fmt.Println(\"A l\u00e2mpada est\u00e1 acesa,\")}\n\nStatusd := false\n\nif Statusd == false{\n    fmt.Println(\"a porta est\u00e1 fechada\")\n} else if Statusd == true{\n    fmt.Println(\"a porta est\u00e1 aberta\")\n}\n\nPCStatus := true\nif Fonte == false{\nfmt.Println(\"e o PC est\u00e1 desligado\")\n} else if PCStatus == false{\n    fmt.Println(\"e o PC est\u00e1 desligado\")\n} else if PCStatus == true{\n    fmt.Println(\"e o PC est\u00e1 ligado\")\n}\n}",
+            "content": "@@ -41,35 +41,770 @@\n     \n-fmt.Println(%22Hello, World!%22)%0A%7D%0A\n+Fonte := true%0A    if Fonte == false%7B%0A        fmt.Println(%22O gerador est%C3%A1 desativado!%22)%0A    %7D else if Fonte == true%7B%0A        fmt.Println(%22O gerador est%C3%A1 ativado!%22)%0A    %7D%0A%0A%0A    Status := true%0A    if Fonte == false%7B%0A        fmt.Println(%22A l%C3%A2mpada est%C3%A1 apagada,%22)%0A    %7D else if Status == false%7B%0A    fmt.Println(%22A l%C3%A2mpada est%C3%A1 apagada,%22)%0A%7D    else if Status == true%7B%0A    fmt.Println(%22A l%C3%A2mpada est%C3%A1 acesa,%22)%7D%0A%0AStatusd := false%0A%0Aif Statusd == false%7B%0A    fmt.Println(%22a porta est%C3%A1 fechada%22)%0A%7D else if Statusd == true%7B%0A    fmt.Println(%22a porta est%C3%A1 aberta%22)%0A%7D%0A%0APCStatus := true%0Aif Fonte == false%7B%0Afmt.Println(%22e o PC est%C3%A1 desligado%22)%0A%7D else if PCStatus == false%7B%0A    fmt.Println(%22e o PC est%C3%A1 desligado%22)%0A%7D else if PCStatus == true%7B%0A    fmt.Println(%22e o PC est%C3%A1 ligado%22)%0A%7D%0A%7D\n",
             "lines": "36"
+        },
+        {
+            "label": "2026-04-14_16-48-16",
+            "content": "@@ -19,18 +19,16 @@\n t %22fmt%22%0A\n-%0A%0A\n func mai\n@@ -41,74 +41,35 @@\n     \n-var lista %5B%5D int = %5B%5Dint %7B1, 4, 2, 5, 7, 6%7D%0A    fmt.Println(lista)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_16-48-52",
+            "content": "@@ -47,77 +47,46 @@\n var \n-nomes\n+lista\n  %5B%5D \n-str\n in\n-g\n+t\n  = %5B%5D\n-str\n in\n-g %7Buva, bacaxi, laranja, coco, apple, buceta\n+t %7B1, 4, 2, 5, 7, 6\n %7D%0A  \n@@ -103,16 +103,13 @@\n tln(\n-nomes%5B0%5D\n+lista\n )%0A%0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_16-52-06",
+            "content": "@@ -75,61 +75,49 @@\n ng %7B\n-%22\n uva\n-%22\n , \n-%22\n bacaxi\n-%22\n , \n-%22\n laranja\n-%22\n , \n-%22\n coco\n-%22\n , \n-%22\n apple\n-%22\n , \n-%22\n buceta\n-%22\n %7D%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_16-53-50",
+            "content": "@@ -155,60 +155,8 @@\n %5B0%5D)\n-%0A    nomes%5B2%5D = %22macarr%C3%A3o%22%0A    fmt.Println(nomes%5B2%5D)\n %0A%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_16-54-34",
+            "content": "@@ -187,97 +187,27 @@\n    f\n-rutas_preferidas := nomes%5B0%5D%0A    fmt.Println(nomes%5B2%5D)%0A    fmt.Println( frutas_preferidas\n+mt.Println(nomes%5B2%5D\n )%0A%0A%7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-14_16-55-46",
+            "content": "@@ -254,16 +254,17 @@\n Println(\n+ \n frutas_p\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_16-56-04",
+            "content": "@@ -152,9 +152,9 @@\n mes%5B\n-8\n+0\n %5D)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_16-56-43",
+            "content": "@@ -152,9 +152,9 @@\n mes%5B\n-3\n+8\n %5D)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_16-58-11",
+            "content": "@@ -47,38 +47,201 @@\n var \n-idad\n+nom\n es %5B%5D \n-int\n+string = %5B%5Dstring %7B%22uva%22, %22bacaxi%22, %22laranja%22, %22coco%22, %22apple%22, %22buceta%22%7D%0A    fmt.Println(nomes%5B3%5D)%0A    nomes%5B2%5D\n  = \n+%22\n ma\n-ke(%5B%5Dint, 10\n+carr%C3%A3o%22%0A    frutas_preferidas := nomes%5B0%5D%0A    fmt.Println(nomes%5B2%5D\n )%0A  \n@@ -258,13 +258,25 @@\n tln(\n+frutas_prefer\n ida\n-de\n+s\n )%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_16-59-17",
+            "content": "@@ -39,43 +39,8 @@\n ) %7B%0A\n-    var qtd int%0A    fmt.Scan(&qtd)%0A\n     \n@@ -96,14 +96,13 @@\n ln(idade\n-s\n )%0A%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_17-00-16",
+            "content": "@@ -106,19 +106,18 @@\n (%5B%5Dint, \n-qtd\n+10\n )%0A    fm\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-14_17-00-48",
+            "content": "@@ -39,110 +39,85 @@\n ) %7B%0A\n-%0Aarr := %5B%5Dint %7B9, 8, 7, 5, 4, 3, 1%7D%0A%0A   for _,valor := range arr %7B%0A    fmt.Printf(%22%25.d%22, valor)%0A%0A   %7D%0A\n+    var qtd int%0A    fmt.Scan(&qtd)%0A    var idades %5B%5D int = make(%5B%5Dint, qtd)%0A \n    f\n@@ -128,17 +128,18 @@\n rint\n-(%22%5D%5Cn%22)%0A%0A\n+ln(idades)\n %0A%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-14_17-15-19",
+            "content": "@@ -74,24 +74,8 @@\n , 1%7D\n-%0Afmt.Print(%22%5B %22)\n %0A%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-16-07",
+            "content": "@@ -35,20 +35,16 @@\n ain() %7B%0A\n-    \n %0Aarr := \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_17-16-48",
+            "content": "@@ -35,16 +35,20 @@\n ain() %7B%0A\n+    \n %0Aarr := \n@@ -171,17 +171,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A%0A%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_17-16-55",
+            "content": "@@ -145,17 +145,16 @@\n %22, valor\n- \n )%0A%0A   %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_17-17-23",
+            "content": "@@ -148,16 +148,17 @@\n valor )%0A\n+%0A\n    %7D%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_17-18-11",
+            "content": "@@ -136,17 +136,17 @@\n intf(%22%25.\n-v\n+d\n %22, valor\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-19-26",
+            "content": "@@ -135,16 +135,17 @@\n rintf(%22%25\n+.\n v%22, valo\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-19-54",
+            "content": "@@ -138,10 +138,8 @@\n tf(%22\n- ,\n %25v%22,\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-20-10",
+            "content": "@@ -95,17 +95,17 @@\n %0A   for \n-i\n+_\n ,valor :\n@@ -122,54 +122,8 @@\n r %7B%0A\n-    if i != 0 %7B%0A        fmt.Print(%22, %22)%0A    %7D%0A\n     \n@@ -134,16 +134,18 @@\n Printf(%22\n+ ,\n %25v%22, val\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-21-36",
+            "content": "@@ -40,44 +40,8 @@\n  %7B%0A%0A\n-func mostrar_vetor(arr %5B%5Dint) %7B%0A    \n arr \n@@ -224,24 +224,8 @@\n %22)%0A%0A\n-%7D%0A%0Amostrar_vetor\n %0A%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-14_17-24-10",
+            "content": "@@ -35,16 +35,52 @@\n ain() %7B%0A\n+%0Afunc mostrar_vetor(arr %5B%5Dint) %7B%0A   \n  arr := \n@@ -128,43 +128,8 @@\n %22)%0A%0A\n-func mostrar_vetor (arr %5B%5D int) %7B%0A%0A\n    f\n@@ -276,19 +276,8 @@\n etor\n-(arr, %22--%22)\n %0A%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-14_17-25-38",
+            "content": "@@ -39,13 +39,8 @@\n ) %7B%0A\n-    %0A\n  arr\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-14_17-50-20",
+            "content": "@@ -1,52 +1,87 @@\n-func mostrar_vetor(\n+package main%0Aimport %22fmt%22%0A%0A%0Afunc main() %7B%0A    %0A \n arr\n+ :=\n  %5B%5Dint\n-, sep string) %7B%0A    \n+ %7B9, 8, 7, 5, 4, 3, 1%7D%0A\n fmt.\n@@ -92,12 +92,48 @@\n t(%22%5B\n+ \n %22)%0A\n- \n+%0Afunc mostrar_vetor (arr %5B%5D int) %7B%0A%0A\n    f\n@@ -137,22 +137,22 @@\n   for i,\n- \n valor\n+ \n := range\n@@ -162,20 +162,16 @@\n r %7B%0A    \n-  \n-  \n if i != \n@@ -178,28 +178,24 @@\n 0 %7B%0A        \n-    \n fmt.Print(se\n@@ -196,27 +196,20 @@\n int(\n-sep)%0A   \n+%22, %22)%0A\n     \n- \n %7D%0A\n-    \n     \n@@ -230,25 +230,24 @@\n %22, valor\n+ \n )%0A   \n- \n %7D%0A\n- \n    fmt.P\n@@ -256,12 +256,43 @@\n nt(%22\n+ \n %5D%5Cn%22)%0A\n+%0A%7D%0A%0Amostrar_vetor(arr, %22--%22)%0A%0A\n %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_17-51-01",
+            "content": "func mostrar_vetor(arr []int, sep string) {\n    fmt.Print(\"[\")\n    for i, valor:= range arr {\n        if i != 0 {\n            fmt.Print(sep)\n        }\n        fmt.Printf(\"%v\", valor)\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "10"
         }
     ]
 }

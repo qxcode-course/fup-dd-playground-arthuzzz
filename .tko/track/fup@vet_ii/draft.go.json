@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_18-02-30",
+            "content": "@@ -29,355 +29,47 @@\n nc m\n-ostrar_vetor(arr %5B%5Dint, sep string) %7B%0A    for i, valor:= range arr %7B%0A        if i != 0 %7B%0A            fmt.Print(sep)%0A        %7D%0A        fmt.Printf(%22%25v%22, valor)%0A    %7D%0A    fmt.Print(%22 %5D%22)%0A%7D%0Afunc main() %7B%0A %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A    var arr %5B%5Dint = make(%5B%5Dint, qtd) %0A%0Afor i := range arr %7B%0A    fmt.Scan(&arr%5Bi%5D)%0A%7D%0Amostrar_vetor(arr,%22%5Cn%22)%0A%7D\n+ain() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_18-03-37",
+            "content": "@@ -67,28 +67,8 @@\n ) %7B%0A\n-    fmt.Print(%22%5B %22)%0A\n     \n@@ -372,11 +372,12 @@\n ,%22%5Cn%22)%0A%7D\n+)\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-14_18-04-22",
+            "content": "@@ -188,17 +188,24 @@\n mt.Print\n-(\n+f(%22%25v%22, \n valor)%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-04-48",
+            "content": "@@ -379,16 +379,17 @@\n or(arr,%22\n- \n+%5Cn\n %22)%0A%7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-04-56",
+            "content": "@@ -223,10 +223,8 @@\n (%22 %5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-05-11",
+            "content": "@@ -217,16 +217,17 @@\n .Print(%22\n+ \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-05-25",
+            "content": "@@ -198,13 +198,8 @@\n alor\n-, %22 %22\n )%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-06-15",
+            "content": "@@ -384,17 +384,16 @@\n tor(arr,\n- \n %22 %22)%0A%7D%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-06-43",
+            "content": "@@ -384,16 +384,16 @@\n tor(\n-%22 %22, arr\n+arr, %22 %22\n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-07-48",
+            "content": "@@ -379,13 +379,23 @@\n ar_vetor\n+(%22 %22, arr)\n %0A%7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-08-50",
+            "content": "@@ -383,13 +383,8 @@\n etor\n-(arr)\n %0A%7D%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-09-24",
+            "content": "@@ -383,19 +383,14 @@\n etor(arr\n-, %22 %22\n )%0A%7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-09-42",
+            "content": "@@ -194,16 +194,21 @@\n nt(valor\n+, %22 %22\n )%0A    %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-10-23",
+            "content": "@@ -217,17 +217,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-10-58",
+            "content": "@@ -204,82 +204,10 @@\n     \n-    fmt.Print(%22 %5D%5Cn%22)%0A    %7D else if i == 0 %7B%0A        fmt.Print(valor)%0A    \n+%7D%0A\n     \n@@ -224,22 +224,16 @@\n %22 %5D%5Cn%22)%0A\n-    %7D%0A\n %7D%0Afunc m\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-14-15",
+            "content": "@@ -230,14 +230,25 @@\n     \n+%7D\n  else \n+if i == 0 \n %7B%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-14_18-14-51",
+            "content": "@@ -231,20 +231,12 @@\n     \n-   if i == 0\n+else\n  %7B%0A \n@@ -293,18 +293,16 @@\n     %7D%0A%7D%0A\n-%7D%0A\n func mai\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-14_18-16-01",
+            "content": "@@ -204,21 +204,45 @@\n     \n-%7D else\n+    fmt.Print(%22 %5D%5Cn%22)%0A       \n  if i =\n+=\n  0 %7B\n@@ -254,15 +254,29 @@\n     \n+fmt.Print(valor)\n %0A    \n-%7D%0A\n     \n@@ -293,16 +293,24 @@\n %22 %5D%5Cn%22)%0A\n+    %7D%0A%7D%0A\n %7D%0Afunc m\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-14_18-16-39",
+            "content": "@@ -196,16 +196,47 @@\n (valor)%0A\n+    %7D else if i = 0 %7B%0A        %0A\n     %7D%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_18-16-55",
+            "content": "@@ -217,16 +217,17 @@\n .Print(%22\n+ \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-17-10",
+            "content": "@@ -165,59 +165,8 @@\n ep)%0A\n-        %7D else %7B%0A            fmt.Print(valor, %22 %22)%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-18-26",
+            "content": "@@ -162,32 +162,73 @@\n t(sep)%0A        %7D\n+ else %7B%0A            fmt.Print(valor, %22 %22)\n %0A        %7D%0A     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_18-18-56",
+            "content": "@@ -167,24 +167,34 @@\n )%0A        %7D%0A\n+        %7D%0A\n         fmt.\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-14_18-19-06",
+            "content": "@@ -217,17 +217,16 @@\n .Print(%22\n- \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-14_18-19-16",
+            "content": "package main\nimport \"fmt\"\nfunc mostrar_vetor(arr []int, sep string) {\n    fmt.Print(\"[ \")\n    for i, valor:= range arr {\n        if i != 0 {\n            fmt.Print(sep)\n        }\n        fmt.Print(valor)\n    }\n    fmt.Print(\" ]\\n\")\n}\nfunc main() {\n {\n    var qtd int\n    fmt.Scan(&qtd)\n    var arr []int = make([]int, qtd) \n\nfor i := range arr {\n    fmt.Scan(&arr[i])\n}\nmostrar_vetor(arr, \" \")\n}\n}\n",
+            "lines": "24"
+        }
+    ]
+}
