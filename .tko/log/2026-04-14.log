@@ -190,3 +190,10 @@
 2026-04-14 18:18:56, EXEC, v:1, k:fup@vet_ii, mode:FULL, size:25, fail:COMP
 2026-04-14 18:19:06, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:25, size:24
 2026-04-14 18:19:16, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:24
+2026-04-14 18:19:59, MOVE, v:1, k:fup@vet_ii, mode:BACK
+2026-04-14 18:20:18, MOVE, v:1, k:eval1@pares, mode:PICK
+2026-04-14 18:20:20, EXEC, v:1, k:eval1@pares, mode:FULL, fail:COMP
+2026-04-14 18:20:34, EXEC, v:1, k:eval1@pares, mode:FULL, rate:100, size:18
+2026-04-14 18:20:36, EXEC, v:1, k:eval1@pares, mode:FULL, rate:100
+2026-04-14 18:20:36, MOVE, v:1, k:eval1@pares, mode:BACK
+2026-04-14 18:20:46, SELF, v:1, k:eval1@pares, self:1, rate:100
