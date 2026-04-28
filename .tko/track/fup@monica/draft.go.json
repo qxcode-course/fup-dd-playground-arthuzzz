@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_16-59-10",
+            "content": "@@ -41,291 +41,35 @@\n     \n-var M int%0A    var A int%0A    var B int%0A%0A    fmt.Scan(&M, &A, &B)%0A%0A    idade := M - (A+B)%0A%0A    if idade %3E A && idade %3E B %7B%0A        fmt.Println(idade)%0A    %7D else if %7B%0A        A %3E B && A %3E idade %7B%0A            fmt.Println(A)%0A        %7D else %7B%0A            fmt.Println(B)%0A        %7D%0A    %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-05-33",
+            "content": "@@ -199,16 +199,26 @@\n else if \n+%7B%0A        \n A %3E B &&\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-28_17-05-51",
+            "content": "@@ -307,10 +307,15 @@\n %7D%0A    %7D%0A\n-%0A\n+    %0A%7D\n %0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_17-06-01",
+            "content": "@@ -247,16 +247,20 @@\n ntln(A)%0A\n+    \n     %7D el\n@@ -295,15 +295,22 @@\n (B)%0A    \n-%7D%0A\n+    %7D%0A   \n  %7D%0A%0A%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_17-06-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var M int\n    var A int\n    var B int\n\n    fmt.Scan(&M, &A, &B)\n\n    idade := M - (A+B)\n\n    if idade > A && idade > B {\n        fmt.Println(idade)\n    } else if A > B && A > idade {\n            fmt.Println(A)\n    } else {\n            fmt.Println(B)\n    }\n }\n\n\n",
+            "lines": "21"
+        }
+    ]
+}

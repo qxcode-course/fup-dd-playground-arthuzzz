@@ -82,7 +82,22 @@
         },
         {
             "label": "2026-04-10_16-33-41",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var delta float64\n    var a float64\n    var b float64\n    var c float64\n    \n     var Raiz1, Raiz2 float64\n\n    fmt.Scan(&delta, &a, &b, &c)\n\n    delta = (math.Pow(b, 2)) - (4*a*c)\n    Raiz1 = ((-b) + (math.Sqrt(delta))) / 2\n    Raiz2 = ((-b) - (math.Sqrt(delta))) / 2\n\n    if delta >= 0 {\n        fmt.Printf(\"%.2f\\n\",Raiz1)\n        fmt.Printf(\"%.2f\\n\",Raiz2)\n    } else if delta == 0 {\n        fmt.Printf(\"%.2f\\n\",Raiz1)\n    } else {\n        fmt.Println(\"nao ha raiz real\")\n    }\n\n\n\n}\n",
+            "content": "@@ -435,9 +435,9 @@\n lta \n-%3C\n+=\n = 0 \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-27_16-41-05",
+            "content": "@@ -230,15 +230,11 @@\n - (4\n- * a * \n+*a*\n c)%0A \n@@ -270,27 +270,21 @@\n (delta))\n+)\n  / \n-(2 * a))\n+2\n %0A    Rai\n@@ -318,19 +318,13 @@\n ta))\n+)\n  / \n-(2 * a))\n+2\n %0A%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-27_16-44-43",
+            "content": "@@ -172,16 +172,24 @@\n mt.Scan(\n+&delta, \n &a, &b, \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-04-27_16-46-32",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var delta float64\n    var a float64\n    var b float64\n    var c float64\n    \n     var Raiz1, Raiz2 float64\n\n    fmt.Scan(&a, &b, &c)\n\n    delta = (math.Pow(b, 2)) - (4 * a * c)\n    Raiz1 = ((-b) + (math.Sqrt(delta)) / (2 * a))\n    Raiz2 = ((-b) - (math.Sqrt(delta)) / (2 * a))\n\n    if delta >= 0 {\n        fmt.Printf(\"%.2f\\n\",Raiz1)\n        fmt.Printf(\"%.2f\\n\",Raiz2)\n    } else if delta <= 0 {\n        fmt.Printf(\"%.2f\\n\",Raiz1)\n    } else {\n        fmt.Println(\"nao ha raiz real\")\n    }\n\n\n\n}\n",
             "lines": "32"
         }
     ]

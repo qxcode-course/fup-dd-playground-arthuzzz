@@ -12,8 +12,13 @@
         },
         {
             "label": "2026-03-24_17-32-08",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var kmh, tempo, consumo int\n    fmt.Scan(&kmh, &tempo, &consumo)\n\n    T_H := tempo/60\n    DP := kmh*T_H\n    DF := DP/consumo\n}\n",
-            "lines": "10"
+            "content": "@@ -1,172 +1,51 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var kmh, tempo, consumo int%0A    fmt.Scan(&kmh, &tempo, &consumo)%0A%0A%0A    T_H := tempo/60%0A    DP := kmh*T_H%0A    DF := DP/consumo%0A%7D\n+@@ -103,17 +103,16 @@%0A nsumo)%250A%250A%0A-%250A%0A     T_H \n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-04-14_18-22-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var kmh, tempo, consumo int\n    fmt.Scan(&kmh, &tempo, &consumo)\n\n\n    T_H := tempo/60\n    DP := kmh*T_H\n    DF := DP/consumo\n}\n",
+            "lines": "11"
         }
     ]
 }

@@ -42,7 +42,27 @@
         },
         {
             "label": "2026-04-07_16-40-11",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P int\n    var D1, D2 int\n    fmt.Scan(&D1, D2)\n    fmt.Scan(&P)\n\n    soma := (D1 + D2)\n\n    if soma%2 == 0 {\n    if P == 0 {\n        fmt.Println(0)\n    } else {\n        fmt.Println(1)\n    } else {\n        if P == 1 {\n            fmt.Println(1)\n        } else {\n            fmt.Println(0)\n        }\n    }\n\n\n}\n",
+            "content": "@@ -84,17 +84,16 @@\n an(&D1, \n-&\n D2)%0A    \n@@ -114,22 +114,47 @@\n     \n-P = (D1+D2)%252%0A\n+soma := (D1 + D2)%0A%0A    if soma%252 == 0 %7B\n %0A   \n@@ -190,11 +190,9 @@\n tln(\n-%220%22\n+0\n )%0A  \n@@ -226,18 +226,131 @@\n tln(\n-%221%22\n+1\n )%0A    %7D\n+ else %7B%0A        if P == 1 %7B%0A            fmt.Println(1)%0A        %7D else %7B%0A            fmt.Println(0)%0A        %7D%0A    %7D%0A\n %0A%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-16_16-03-58",
+            "content": "@@ -88,16 +88,33 @@\n D1, &D2)\n+%0A    fmt.Scan(&P)\n %0A%0A    P \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-16_16-04-50",
+            "content": "@@ -83,12 +83,8 @@\n can(\n-&P, \n &D1,\n@@ -98,31 +98,21 @@\n     \n-soma := (D1 + D2) %25 2%0A.\n+P = (D1+D2)%252\n %0A%0A  \n@@ -137,195 +137,61 @@\n     \n-if soma == 0 %7B%0A            fmt.Println(0)%0A        %7D else %7B%0A            fmt.Println(1)%0A    %7D%0A    %7D else %7B%0A        if soma == 0 %7B%0A        fmt.Println(%221%22)%0A    %7D else %7B%0A        fmt.Println(0\n+fmt.Println(%220%22)%0A    %7D else %7B%0A        fmt.Println(%221%22\n )%0A  \n@@ -197,10 +197,8 @@\n    %7D%0A%0A%7D%0A\n-%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-16_16-18-56",
+            "content": "@@ -120,16 +120,17 @@\n D2) %25 2%0A\n+.\n %0A%0A    if\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-16_16-19-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P int\n    var D1, D2 int\n    fmt.Scan(&P, &D1, &D2)\n\n    soma := (D1 + D2) % 2\n\n\n    if P == 0 {\n        if soma == 0 {\n            fmt.Println(0)\n        } else {\n            fmt.Println(1)\n    }\n    } else {\n        if soma == 0 {\n        fmt.Println(\"1\")\n    } else {\n        fmt.Println(0)\n    }\n\n}\n}\n",
             "lines": "25"
         }
     ]

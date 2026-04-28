@@ -2,8 +2,88 @@
     "patches": [
         {
             "label": "2026-04-06_17-05-05",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,90 +41,35 @@\n     \n-var valor, parcelas float64%0A    fmt.Scan(&va\n+fmt.Println(%22Hel\n lo\n-r\n , \n-&parcelas)%0A%0A    valor := (1 + 5)%0A%0A\n+World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-14_18-22-19",
+            "content": "@@ -106,25 +106,23 @@\n     \n-fmt.Println(valor\n+valor := (1 + 5\n )%0A%0A%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_16-38-02",
+            "content": "@@ -115,20 +115,11 @@\n rint\n-f(%22%25.2f%5Cn%22, \n+ln(\n valo\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_16-38-44",
+            "content": "@@ -134,40 +134,8 @@\n or)%0A\n-    fmt.Printf(%22%25.2f%5Cn%22, valor)%0A\n %0A%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-28_16-38-58",
+            "content": "@@ -102,45 +102,8 @@\n s)%0A%0A\n-    juros := ((parcelas * 5) - 5)%0A%0A%0A%0A\n     \n@@ -127,13 +127,13 @@\n n%22, \n-juros\n+valor\n )%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-28_16-43-00",
+            "content": "@@ -137,35 +137,10 @@\n 5)%0A%0A\n-    if parcelas == 1 %7B%0A    \n+%0A%0A\n     \n@@ -164,23 +164,14 @@\n n%22, \n-valor)%0A    %7D%0A%0A%0A\n+juros)\n %0A   \n@@ -192,20 +192,19 @@\n .2f%5Cn%22, \n-juros)%0A\n+valor)\n %0A%0A%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-28_16-44-26",
+            "content": "@@ -160,33 +160,8 @@\n 1 %7B%0A\n-        fmt.Println(%220%22)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_16-45-10",
+            "content": "@@ -113,17 +113,16 @@\n os := ((\n-(\n parcelas\n@@ -135,42 +135,8 @@\n - 5)\n-/100)%0A    total := (valor + juros)\n %0A%0A  \n@@ -226,87 +226,8 @@\n    %7D\n- else %7B%0A        fmt.Println(parcelas)%0A        fmt.Printf(%22%25.2f%5Cn%22, total)%0A    %7D\n %0A%0A%0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_16-48-29",
+            "content": "@@ -340,10 +340,45 @@\n    %7D%0A%0A%0A%0A\n+    fmt.Printf(%22%25.2f%5Cn%22, juros)%0A%0A%0A%0A\n %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-28_16-48-39",
+            "content": "@@ -212,17 +212,17 @@\n rintln(%22\n-1\n+0\n %22)%0A     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_16-52-46",
+            "content": "@@ -163,25 +163,15 @@\n or +\n- (valor *\n  juros)\n-)\n %0A%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_16-54-03",
+            "content": "@@ -295,20 +295,23 @@\n Println(\n-juro\n+parcela\n s)%0A     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_16-54-11",
+            "content": "@@ -221,21 +221,19 @@\n Println(\n-valor\n+%221%22\n )%0A      \n@@ -295,24 +295,16 @@\n Println(\n-valor * \n juros)%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_16-54-55",
+            "content": "@@ -214,36 +214,27 @@\n    fmt.Print\n-f(%22%25.2f%5Cn%22, \n+ln(\n valor)%0A     \n@@ -290,36 +290,27 @@\n    fmt.Print\n-f(%22%25.2f%5Cn%22, \n+ln(\n valor * juro\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_16-55-36",
+            "content": "@@ -315,17 +315,16 @@\n .2f%5Cn%22, \n-(\n valor * \n@@ -333,18 +333,8 @@\n ros)\n-/parcelas)\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_16-56-37",
+            "content": "@@ -316,21 +316,29 @@\n 2f%5Cn%22, (\n-total\n+valor * juros\n )/parcel\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_16-57-04",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor, parcelas float64\n    fmt.Scan(&valor, &parcelas)\n\n    juros := (((parcelas * 5) - 5)/100)\n    total := (valor + (valor * juros))\n\n    if parcelas == 1 {\n        fmt.Printf(\"%.2f\\n\", valor)\n        fmt.Printf(\"%.2f\\n\", valor)\n    } else {\n        fmt.Printf(\"%.2f\\n\", (total)/parcelas)\n        fmt.Printf(\"%.2f\\n\", total)\n    }\n\n\n\n}\n",
+            "lines": "20"
         }
     ]
 }

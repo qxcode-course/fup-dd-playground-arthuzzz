@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_16-47-43",
+            "content": "@@ -41,33 +41,35 @@\n     \n-var b int%0A    var t int%0A%0A%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-07-01",
+            "content": "@@ -45,338 +45,29 @@\n var \n-B\n+b\n  int\n- // dist%C3%A2ncia do ponto inicial do corte, na base, para o lado esquerdo da nota.%0A    var T int // dist%C3%A2ncia do ponto final do corte, no topo, para o lado esquerdo da nota.%0A%0A    fmt.Scan(&B,&T)%0A%0A    if B == T %7B%0A        fmt.Println(%220%22)%0A    %7D else if B %3E T %7B%0A        fmt.Println(%221%22)%0A    %7D else %7B%0A        fmt.Println(%222%22)%0A    %7D%0A %7D%0A\n+%0A    var t int%0A%0A%0A%0A%7D\n %0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-28_17-13-30",
+            "content": "@@ -342,17 +342,8 @@\n lse \n-if B %3C T \n %7B%0A  \n@@ -371,13 +371,12 @@\n )%0A    %7D%0A\n-%0A\n  %7D%0A%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-13-56",
+            "content": "@@ -242,64 +242,22 @@\n &T)%0A\n-    metade := (B+T)/2%0A%0A    if B == metade %7C%7C T == metade\n+%0A    if B == T\n  %7B%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-28_17-16-49",
+            "content": "@@ -241,28 +241,8 @@\n ,&T)\n-%0A%0A    area := 70*160\n %0A   \n@@ -256,12 +256,13 @@\n  := \n-area\n+(B+T)\n /2%0A%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-19-37",
+            "content": "@@ -303,10 +303,10 @@\n ade \n-&&\n+%7C%7C\n  T =\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_17-19-53",
+            "content": "@@ -282,10 +282,8 @@\n ea/2\n-00\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_17-21-16",
+            "content": "@@ -290,19 +290,16 @@\n     if B\n-*70\n  == meta\n@@ -309,11 +309,8 @@\n && T\n-*70\n  == \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_17-39-19",
+            "content": "@@ -414,13 +414,13 @@\n  if \n-T %3E B\n+B %3C T\n  %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_17-42-47",
+            "content": "@@ -239,16 +239,58 @@\n &B,&T)%0A%0A\n+    area := 70*160%0A    metade := area/200%0A\n %0A    if \n@@ -294,13 +294,39 @@\n if B\n+*70\n  == \n-T\n+metade && T*70 == metade\n  %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_17-44-56",
+            "content": "@@ -243,56 +243,8 @@\n T)%0A%0A\n-    area := ((B*T)*70/2)%0A%0A    metade := area/2%0A%0A\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-47-08",
+            "content": "@@ -265,16 +265,38 @@\n *70/2)%0A%0A\n+    metade := area/2%0A%0A\n %0A    if \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-28_17-47-16",
+            "content": "@@ -268,75 +268,23 @@\n /2)%0A\n-    at:= 70*160%0A    metade := area/2%0A%0A%0A    if area == (at - metade)\n+%0A%0A    if B == T\n  %7B%0A \n@@ -325,17 +325,13 @@\n  if \n-area %3E at\n+B %3E T\n  %7B%0A \n@@ -372,17 +372,13 @@\n  if \n-area %3C at\n+T %3E B\n  %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_17-51-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var B int // dist\u00e2ncia do ponto inicial do corte, na base, para o lado esquerdo da nota.\n    var T int // dist\u00e2ncia do ponto final do corte, no topo, para o lado esquerdo da nota.\n\n    fmt.Scan(&B,&T)\n\n    area := ((B*T)*70/2)\n    at:= 70*160\n    metade := area/2\n\n\n    if area == (at - metade) {\n        fmt.Println(\"0\")\n    } else if area > at {\n        fmt.Println(\"1\")\n    } else if area < at {\n        fmt.Println(\"2\")\n    }\n\n }\n\n",
+            "lines": "23"
+        }
+    ]
+}
