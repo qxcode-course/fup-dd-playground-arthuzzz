@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-47-00",
+            "content": "@@ -41,192 +41,35 @@\n     \n-var N int%0A    fmt.Scan(&N)%0A%0A    impares:= 0%0A%0A    for i:= N; i %3C= impares; i++ %7B%0A        if i %25 2 == 0 %7B%0A            fmt.Println(i+1)%0A            fmt.Println(i)%0A%0A        %7D%0A        %0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-53-48",
+            "content": "@@ -145,33 +145,8 @@\n 0 %7B%0A\n-            impares += i%0A\n     \n@@ -166,16 +166,18 @@\n rintln(i\n++1\n )%0A      \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-54-56",
+            "content": "@@ -192,16 +192,43 @@\n intln(i)\n+%0A            fmt.Println(i)\n %0A%0A      \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-55-03",
+            "content": "@@ -103,9 +103,10 @@\n ; i \n-%3E\n+%3C=\n  imp\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-56-18",
+            "content": "@@ -167,9 +167,9 @@\n  += \n-1\n+i\n %0A   \n@@ -190,22 +190,16 @@\n rintln(i\n-mpares\n )%0A%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-56-50",
+            "content": "@@ -163,17 +163,17 @@\n ares += \n-i\n+1\n %0A       \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-56-59",
+            "content": "@@ -98,25 +98,78 @@\n i:= \n-1\n+N\n ; i \n-%3C= N; i+=2 %7B\n+%3E impares; i++ %7B%0A        if i %25 2 == 0 %7B%0A            impares += i\n %0A   \n@@ -190,16 +190,22 @@\n rintln(i\n+mpares\n )%0A%0A     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-59-12",
+            "content": "@@ -65,16 +65,33 @@\n an(&N)%0A%0A\n+    impares:= 0%0A%0A\n     for \n@@ -165,9 +165,10 @@\n  %0A    %7D%0A\n+%7D\n %0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-05_17-59-25",
+            "content": "@@ -137,67 +137,8 @@\n   %7D%0A\n-    for i:= N; i %3E= 0; i-=2 %7B%0A        fmt.Println(i)%0A    %7D%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-05_18-00-48",
+            "content": "@@ -162,33 +162,10 @@\n ; i-\n-- %7B%0A        if i %25 2 == 0\n+=2\n  %7B%0A \n@@ -186,26 +186,16 @@\n ntln(i)%0A\n-        %7D%0A\n     %7D%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_18-01-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    for i:= 1; i <= N; i+=2 {\n            fmt.Println(i)\n\n        }\n    for i:= N; i >= 0; i-- {\n        if i % 2 == 0 {\n        fmt.Println(i)\n        }\n    }\n        \n    }\n\n",
+            "lines": "18"
+        }
+    ]
+}
