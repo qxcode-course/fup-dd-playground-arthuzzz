@@ -99,3 +99,31 @@
 2026-05-05 18:02:45, MOVE, v:1, k:fup@ceu, mode:DOWN
 2026-05-05 18:02:48, MOVE, v:1, k:fup@ceu, mode:PICK
 2026-05-05 18:02:50, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:5
+2026-05-05 18:10:06, EXEC, v:1, k:fup@ceu, mode:FULL, size:12, fail:COMP
+2026-05-05 18:12:08, EXEC, v:1, k:fup@ceu, mode:FULL, size:14, fail:COMP
+2026-05-05 18:15:06, EXEC, v:1, k:fup@ceu, mode:FULL, size:17, fail:COMP
+2026-05-05 18:15:23, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:15
+2026-05-05 18:16:10, EXEC, v:1, k:fup@ceu, mode:FULL, size:16, fail:COMP
+2026-05-05 18:16:18, EXEC, v:1, k:fup@ceu, mode:FULL, size:16, fail:COMP
+2026-05-05 18:16:34, EXEC, v:1, k:fup@ceu, mode:FULL, size:16, fail:COMP
+2026-05-05 18:16:41, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-05 18:17:02, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-05 18:17:21, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-05 18:17:44, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:16
+2026-05-05 18:18:51, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0
+2026-05-05 18:23:05, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:19
+2026-05-05 18:23:20, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:19
+2026-05-05 18:23:30, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:19
+2026-05-05 18:24:20, EXEC, v:1, k:fup@ceu, mode:FULL, size:19, fail:COMP
+2026-05-05 18:24:42, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:20
+2026-05-05 18:25:10, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:21
+2026-05-05 18:25:22, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:21
+2026-05-05 18:26:14, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:21
+2026-05-05 18:27:26, EXEC, v:1, k:fup@ceu, mode:FULL, size:21, fail:COMP
+2026-05-05 18:27:38, EXEC, v:1, k:fup@ceu, mode:FULL, size:20, fail:COMP
+2026-05-05 18:28:05, EXEC, v:1, k:fup@ceu, mode:FULL, size:18, fail:COMP
+2026-05-05 18:28:11, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:19
+2026-05-05 18:28:42, MOVE, v:1, k:fup@ceu, mode:PICK
+2026-05-05 18:28:44, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0, size:21
+2026-05-05 18:28:46, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0
+2026-05-05 18:29:12, EXEC, v:1, k:fup@ceu, mode:FULL, rate:0
