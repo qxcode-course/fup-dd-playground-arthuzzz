@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_16-49-30",
+            "content": "@@ -41,216 +41,35 @@\n     \n-var a, b int%0A    %0A    if a %3E b %7B%0A        for i:= a; a %3E b; i++ %7B%0A            if (i%252 == 0) && (i / 3 == 0)%7B%0A            fmt.Println(i)%0A            %7D%0A        %7D%0A    %7D else %7B%0A        fmt.Println(%22invalido%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_16-59-19",
+            "content": "@@ -54,29 +54,8 @@\n int%0A\n-    fmt.Scan(&a, &b)%0A\n     \n@@ -211,17 +211,8 @@\n lse \n-if a %3C b \n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-05_16-59-53",
+            "content": "@@ -154,17 +154,19 @@\n 0) && (i\n-%25\n+ / \n 3 == 0)%7B\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_17-00-25",
+            "content": "@@ -112,17 +112,17 @@\n := a; a \n-%3C\n+%3E\n  b; i++ \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_17-01-22",
+            "content": "@@ -112,17 +112,17 @@\n := a; a \n-%3E\n+%3C\n  b; i++ \n@@ -149,16 +149,29 @@\n 2 == 0) \n+&& (i%253 == 0)\n %7B%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_17-02-10",
+            "content": "@@ -89,9 +89,9 @@\n f a \n-%3C\n+%3E\n  b %7B\n@@ -153,46 +153,9 @@\n  0) \n-&& (i%253 == 0) %7B%0A                i += i\n+%7B\n %0A   \n@@ -214,25 +214,25 @@\n %7D else if a \n-%3E\n+%3C\n  b %7B%0A       \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-05_17-07-08",
+            "content": "@@ -86,17 +86,16 @@\n   if a %3C\n-=\n  b %7B%0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-07-36",
+            "content": "@@ -86,16 +86,17 @@\n   if a %3C\n+=\n  b %7B%0A   \n@@ -257,17 +257,16 @@\n e if a %3E\n-=\n  b %7B%0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-07-53",
+            "content": "@@ -86,17 +86,16 @@\n   if a %3C\n-=\n  b %7B%0A   \n@@ -256,16 +256,17 @@\n e if a %3E\n+=\n  b %7B%0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-08-28",
+            "content": "@@ -115,12 +115,11 @@\n  a; \n-i %3C=\n+a %3E\n  b; \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-09-36",
+            "content": "@@ -206,22 +206,8 @@\n     \n-%7D%0A            \n fmt.\n@@ -216,16 +216,30 @@\n intln(i)\n+%0A            %7D\n %0A       \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-10-11",
+            "content": "@@ -80,26 +80,8 @@\n    %0A\n-    soma:= 0%0A    %0A\n     \n@@ -187,12 +187,9 @@\n     \n-soma\n+i\n  += \n@@ -191,24 +191,33 @@\n i += i%0A     \n+       %7D%0A\n             \n@@ -235,34 +235,8 @@\n (i)%0A\n-            %7D%0A           %0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-05_17-11-19",
+            "content": "@@ -89,16 +89,20 @@\n oma:= 0%0A\n+    \n %0A    if \n@@ -219,32 +219,33 @@\n                 \n+ \n fmt.Println(soma\n@@ -240,20 +240,17 @@\n Println(\n-soma\n+i\n )%0A      \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-05_17-12-34",
+            "content": "@@ -103,9 +103,10 @@\n f a \n-%3E\n+%3C=\n  b %7B\n@@ -114,58 +114,8 @@\n     \n-    fmt.Println(%22invalido%22)%0A        return%0A    %7D%0A%0A\n     \n@@ -125,17 +125,17 @@\n  i:= a; \n-a\n+i\n  %3C= b; i\n@@ -151,30 +151,32 @@\n     \n+  \n+  \n if (i\n- %25 \n+%25\n 2 ==\n+ 0\n ) && (i\n- %25 \n+%25\n 3 ==\n@@ -193,17 +193,24 @@\n         \n-i\n+    soma\n  += i%0A  \n@@ -211,26 +211,24 @@\n = i%0A        \n-%7D%0A\n         fmt.\n@@ -239,17 +239,103 @@\n tln(\n-i)%0A%0A    %7D\n+soma)%0A            %7D%0A           %0A        %7D%0A    %7D else if a %3E b %7B%0A        fmt.Println(%22invalido%22)\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-05_17-16-07",
+            "content": "@@ -281,16 +281,22 @@\n tln(i)%0A%0A\n+    %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-16-14",
+            "content": "@@ -76,16 +76,28 @@\n b)%0A    %0A\n+    soma:= 0\n %0A%0A    if\n@@ -208,18 +208,16 @@\n i %25 2 ==\n- 0\n ) && (i \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-18-02",
+            "content": "@@ -80,21 +80,8 @@\n    %0A\n-    soma:= 0%0A\n %0A%0A  \n@@ -234,12 +234,9 @@\n     \n-soma\n+i\n  += \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-18-21",
+            "content": "@@ -263,24 +263,20 @@\n       %7D%0A\n-%0A\n     \n-%7D%0A%0A\n     fmt.\n@@ -287,12 +287,16 @@\n tln(\n-soma)\n+i)%0A%0A    %7D\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-20-09",
+            "content": "@@ -71,16 +71,34 @@\n &a, &b)%0A\n+    %0A    soma:= 0%0A\n %0A%0A    if\n@@ -158,29 +158,16 @@\n rn%0A    %7D\n-%0A    soma:= 0\n %0A%0A    fo\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-20-34",
+            "content": "@@ -170,17 +170,17 @@\n  i:= a; \n-i\n+a\n  %3C= b; i\n@@ -195,16 +195,17 @@\n      if \n+(\n i %25 2 ==\n@@ -210,12 +210,14 @@\n == 0\n+)\n  && \n+(\n i %25 \n@@ -222,16 +222,17 @@\n %25 3 == 0\n+)\n  %7B%0A     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-21-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n\n    if a > b {\n        fmt.Println(\"invalido\")\n        return\n    }\n    soma:= 0\n\n    for i:= a; i <= b; i++ {\n        if i % 2 == 0 && i % 3 == 0 {\n            soma += i\n        }\n\n    }\n\n    fmt.Println(soma)\n}\n",
+            "lines": "22"
+        }
+    ]
+}

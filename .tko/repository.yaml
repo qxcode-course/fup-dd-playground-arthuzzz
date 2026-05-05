@@ -24,8 +24,9 @@ sources:
 expanded:
 - eval1@eval1
 - fup@base
-- sandbox@sandbox
+- fup@for1
 - fup@if2
+- sandbox@sandbox
 flags:
   inbox: all
   panel: skills
@@ -33,5 +34,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@cortada
-selected_index: 22
+selected: fup@sapatos
+selected_index: 38

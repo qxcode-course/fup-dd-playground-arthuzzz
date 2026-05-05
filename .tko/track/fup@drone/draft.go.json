@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_20-48-41",
+            "content": "@@ -41,220 +41,35 @@\n     \n-var a, b, c int%0A    var h, l int%0A%0A    fmt.Scan(&a, &b, &c, &h, &l)%0A%0A    janela:= h*l%0A    produto:= a*b %7C%7C a*c %7C%7C b*c%0A%0A    if produto %3C= janela %7B%0A        fmt.Println(%22S%22)%0A    %7D else %7B%0A        fmt.Println(%22N%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-04_20-57-54",
+            "content": "@@ -126,69 +126,65 @@\n h*l%0A\n-%0A\n     \n-if (janela %3E\n+produto:\n = a*b\n-)\n  %7C%7C \n-(janela %3E= b*c) %7C%7C (janela %3E= c*a)\n+a*c %7C%7C b*c%0A%0A    if produto %3C= janela\n  %7B%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-04_21-00-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c int\n    var h, l int\n\n    fmt.Scan(&a, &b, &c, &h, &l)\n\n    janela:= h*l\n\n    if (janela >= a*b) || (janela >= b*c) || (janela >= c*a) {\n        fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

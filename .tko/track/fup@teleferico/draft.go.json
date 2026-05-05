@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_21-01-47",
+            "content": "@@ -41,105 +41,35 @@\n     \n-var c int%0A    var a int%0A    fmt.Scan(&c, &a)%0A%0A    capacidade:= c-1%0A%0A%0A    fmt.Println(capacidade/a\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-04_21-19-13",
+            "content": "@@ -109,15 +109,8 @@\n -1%0A%0A\n-    if \n %0A   \n@@ -126,10 +126,8 @@\n tln(\n-a/\n capa\n@@ -136,9 +136,10 @@\n dade\n+/a\n )%0A%7D%0A\n-%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_21-23-48",
+            "content": "@@ -105,16 +105,24 @@\n := c-1%0A%0A\n+    if %0A\n     fmt.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-04_21-23-57",
+            "content": "@@ -106,9 +106,9 @@\n = c-\n-0\n+1\n %0A%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_21-24-09",
+            "content": "@@ -104,12 +104,11 @@\n e:= \n-a -c\n+c-0\n %0A%0A  \n@@ -121,16 +121,18 @@\n Println(\n+a/\n capacida\n@@ -137,17 +137,9 @@\n dade\n-/c)%0A%0A    \n+)\n %0A%7D%0A%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-04_21-27-45",
+            "content": "@@ -104,109 +104,43 @@\n e:= \n-c-1%0A    %0A    if c %3C a %7B%0A        fmt.Println(capacidade/a)%0A    %7D else %7B%0A        fmt.Println(%221%22)%0A    %7D\n+a -c%0A%0A    fmt.Println(capacidade/c)\n %0A%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-04_21-29-55",
+            "content": "@@ -117,25 +117,16 @@\n     if c\n-apacidade\n  %3C a %7B%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_21-31-30",
+            "content": "@@ -157,10 +157,8 @@\n tln(\n-a/\n capa\n@@ -163,16 +163,18 @@\n pacidade\n+/a\n )%0A    %7D \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_21-38-51",
+            "content": "@@ -169,10 +169,8 @@\n dade\n-+1\n )%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_21-41-23",
+            "content": "@@ -156,16 +156,27 @@\n ntln(a/c\n+apacidade+1\n )%0A    %7D \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_21-41-50",
+            "content": "@@ -156,25 +156,16 @@\n ntln(a/c\n-apacidade\n )%0A    %7D \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_21-42-07",
+            "content": "@@ -137,104 +137,8 @@\n a %7B%0A\n-        if ((a/capacidade)/2 == 0) %7B%0A        fmt.Println((a/capacidade)+1)%0A        %7D else %7B%0A    \n     \n@@ -171,18 +171,8 @@\n de)%0A\n-        %7D%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-04_21-47-03",
+            "content": "@@ -288,26 +288,8 @@\n lse \n-if capacidade %3E a \n %7B%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-04_21-47-26",
+            "content": "@@ -117,16 +117,25 @@\n     if c\n+apacidade\n  %3C a %7B%0A \n@@ -288,16 +288,25 @@\n lse if c\n+apacidade\n  %3E a %7B%0A \n@@ -334,12 +334,18 @@\n %22)%0A    %7D\n+%0A%0A    \n %0A%7D%0A%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-04_21-48-01",
+            "content": "@@ -108,35 +108,8 @@\n c-1%0A\n-    viagens:= capacidade/a%0A\n     \n@@ -136,23 +136,30 @@\n     if (\n-viagens\n+(a/capacidade)\n /2 == 0)\n@@ -181,23 +181,30 @@\n Println(\n-viagens\n+(a/capacidade)\n +1)%0A    \n@@ -244,15 +244,20 @@\n tln(\n-viagens\n+a/capacidade\n )%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-04_21-50-14",
+            "content": "@@ -318,11 +318,11 @@\n tln(\n-1+1\n+%221%22\n )%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-04_21-52-53",
+            "content": "@@ -318,11 +318,11 @@\n tln(\n-%222%22\n+1+1\n )%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-04_21-53-10",
+            "content": "@@ -315,17 +315,17 @@\n rintln(%22\n-1\n+2\n %22)%0A    %7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-04_21-53-18",
+            "content": "@@ -122,10 +122,8 @@\n s:= \n-a/\n capa\n@@ -128,16 +128,18 @@\n pacidade\n+/a\n %0A    %0A  \n@@ -314,28 +314,19 @@\n Println(\n-capacidade/a\n+%221%22\n )%0A    %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-04_21-54-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var c int\n    var a int\n    fmt.Scan(&c, &a)\n\n    capacidade:= c-1\n    viagens:= a/capacidade\n    \n    if c < a {\n        if (viagens/2 == 0) {\n        fmt.Println(viagens+1)\n        } else {\n            fmt.Println(viagens)\n        }\n    } else if c > a {\n        fmt.Println(capacidade/a)\n    }\n}\n\n",
+            "lines": "21"
+        }
+    ]
+}
