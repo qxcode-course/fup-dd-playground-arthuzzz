@@ -102,8 +102,18 @@
         },
         {
             "label": "2026-05-05_17-21-09",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n\n    if a > b {\n        fmt.Println(\"invalido\")\n        return\n    }\n    soma:= 0\n\n    for i:= a; i <= b; i++ {\n        if i % 2 == 0 && i % 3 == 0 {\n            soma += i\n        }\n\n    }\n\n    fmt.Println(soma)\n}\n",
+            "content": "@@ -76,46 +76,91 @@\n b)%0A%0A\n+%0A\n     \n-    soma:= 0%0A%0A    if a %3C= b %7B%0A    \n+if a %3E b %7B%0A        fmt.Println(%22invalido%22)%0A        return%0A    %7D%0A    soma:= 0%0A%0A\n     \n@@ -196,39 +196,35 @@\n     \n-    if (i%25\n+if i %25 \n 2 == 0\n-)\n  && \n-(i%25\n+i %25 \n 3 == 0\n-)\n  %7B%0A \n@@ -234,20 +234,16 @@\n         \n-    \n soma += \n@@ -256,154 +256,38 @@\n     \n-        fmt.Println(soma)%0A            %7D%0A           %0A        %7D%0A        fmt.Println(soma)%0A    %7D else if a %3E b %7B%0A        fmt.Println(%22invalido%22)%0A    %7D\n+%7D%0A%0A    %7D%0A%0A    fmt.Println(soma)\n %0A%7D%0A\n",
             "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-24-03",
+            "content": "@@ -80,86 +80,42 @@\n     \n-if a %3E b %7B%0A        fmt.Println(%22invalido%22)%0A        return%0A    %7D%0A    soma:= 0%0A%0A\n+    soma:= 0%0A%0A    if a %3C= b %7B%0A    \n     \n@@ -151,35 +151,39 @@\n     \n-if i %25 \n+    if (i%25\n 2 == 0\n+)\n  && \n-i %25 \n+(i%25\n 3 == 0\n+)\n  %7B%0A \n@@ -189,24 +189,28 @@\n             \n+ \n+   \n soma += i%0A  \n@@ -219,18 +219,74 @@\n     \n-%7D%0A%0A\n+        fmt.Println(soma)%0A            %7D%0A           %0A  \n     \n+  \n %7D\n-%0A\n %0A\n+    \n     \n@@ -303,10 +303,70 @@\n n(soma)%0A\n+    %7D else if a %3E b %7B%0A        fmt.Println(%22invalido%22)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-25-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    if a > b {\n        fmt.Println(\"invalido\")\n        return\n    }\n    soma:= 0\n\n    for i:= a; i <= b; i++ {\n        if i % 2 == 0 && i % 3 == 0 {\n            soma += i\n        }\n\n    }\n\n    fmt.Println(soma)\n}\n",
+            "lines": "21"
         }
     ]
 }

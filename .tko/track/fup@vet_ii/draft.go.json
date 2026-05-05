@@ -122,6 +122,26 @@
         },
         {
             "label": "2026-04-14_18-19-16",
+            "content": "@@ -383,16 +383,15 @@\n (arr, %22 \n-%5D\n %22)%0A%7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_17-43-19",
+            "content": "@@ -383,16 +383,16 @@\n (arr, %22 \n- \n+%5D\n %22)%0A%7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_17-43-28",
+            "content": "@@ -382,16 +382,17 @@\n r(arr, %22\n-%5D\n+  \n %22)%0A%7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_17-43-36",
+            "content": "@@ -382,16 +382,16 @@\n r(arr, %22\n- \n+%5D\n %22)%0A%7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_17-43-41",
             "content": "package main\nimport \"fmt\"\nfunc mostrar_vetor(arr []int, sep string) {\n    fmt.Print(\"[ \")\n    for i, valor:= range arr {\n        if i != 0 {\n            fmt.Print(sep)\n        }\n        fmt.Print(valor)\n    }\n    fmt.Print(\" ]\\n\")\n}\nfunc main() {\n {\n    var qtd int\n    fmt.Scan(&qtd)\n    var arr []int = make([]int, qtd) \n\nfor i := range arr {\n    fmt.Scan(&arr[i])\n}\nmostrar_vetor(arr, \" \")\n}\n}\n",
             "lines": "24"
         }
