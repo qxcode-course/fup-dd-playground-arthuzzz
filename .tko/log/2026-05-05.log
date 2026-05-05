@@ -77,3 +77,6 @@
 2026-05-05 17:43:36, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:25, size:24
 2026-05-05 17:43:41, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75, size:24
 2026-05-05 17:43:46, EXEC, v:1, k:fup@vet_ii, mode:FULL, rate:75
+2026-05-05 17:44:36, MOVE, v:1, k:fup@vet_ii, mode:BACK
+2026-05-05 17:40:12, MOVE, v:1, k:fup@filhos, mode:EDIT
+2026-05-05 17:40:37, MOVE, v:1, k:fup@filhos, mode:EDIT
