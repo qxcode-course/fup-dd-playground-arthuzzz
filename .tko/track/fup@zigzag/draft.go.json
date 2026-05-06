@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-06_21-44-43",
+            "content": "@@ -41,397 +41,35 @@\n     \n-var inicio, fim int%0A    fmt.Scan(&inicio, &fim)%0A%0A    for i:= inicio; i %3E= fim; i++ %7B%0A        if (i %25 3 == 0) %7B%0A            fmt.Println(%22zig%22)%0A            continue%0A        %7D else if (i %25 5 == 0) %7B%0A            fmt.Println(%22zag%22)%0A            continue%0A        %7D else if (i %25 3 == 0) && (i %25 5 == 0) %7B%0A            fmt.Println(%22zigzag%22)%0A            conitnue%0A        %7D%0A        fmt.Println(i)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-06_21-54-30",
+            "content": "@@ -375,34 +375,34 @@\n %0A            con\n-t\n i\n+t\n nue%0A        %7D%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-06_21-54-45",
+            "content": "@@ -430,23 +430,8 @@\n     \n-    %0A    %7D %0A    \n+%7D\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-06_21-56-36",
+            "content": "@@ -44,16 +44,19 @@\n  var ini\n+cio\n , fim in\n@@ -74,16 +74,19 @@\n can(&ini\n+cio\n , &fim)%0A\n@@ -101,16 +101,19 @@\n  i:= ini\n+cio\n ; i %3E= f\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_21-58-20",
+            "content": "@@ -103,9 +103,9 @@\n ; i \n-%3C\n+%3E\n = fi\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_22-04-39",
+            "content": "@@ -140,24 +140,8 @@\n = 0)\n- && (i %25 5 == 0)\n  %7B%0A \n@@ -167,19 +167,16 @@\n tln(%22zig\n-zag\n %22)%0A     \n@@ -294,23 +294,38 @@\n else if \n+(i %25 3 == 0) &&\n  (i %25 \n-3\n+5\n  == 0) %7B\n@@ -345,32 +345,35 @@\n fmt.Println(%22zig\n+zag\n %22)%0A            c\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_22-05-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var ini, fim int\n    fmt.Scan(&ini, &fim)\n\n    for i:= ini; i <= fim; i++ {\n        if (i % 3 == 0) && (i % 5 == 0) {\n            fmt.Println(\"zigzag\")\n            continue\n        } else if (i % 5 == 0) {\n            fmt.Println(\"zag\")\n            continue\n        } else if  (i % 3 == 0) {\n            fmt.Println(\"zig\")\n            continue\n        }\n        fmt.Println(i)\n        \n    } \n    \n}\n",
+            "lines": "22"
+        }
+    ]
+}
