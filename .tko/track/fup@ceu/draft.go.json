@@ -122,8 +122,53 @@
         },
         {
             "label": "2026-05-05_18-28-44",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    fmt.Print(\"[ \")\n\n    for i:= 0; i <= 10; i++ {\n        if i == 10 {\n            fmt.Print( \"ceu\")\n        }\n        \n        if i == N {\n            continue\n        }\n        \n        fmt.Print(i, \" \")\n    }\n    fmt.Print(\"]\")\n}\n",
+            "content": "@@ -167,37 +167,16 @@\n  %22ceu%22)%0A\n-            continue%0A\n         \n",
             "lines": "21"
+        },
+        {
+            "label": "2026-05-06_02-13-25",
+            "content": "@@ -314,15 +314,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_02-13-35",
+            "content": "@@ -320,10 +320,8 @@\n (%22 %5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_02-15-12",
+            "content": "@@ -316,13 +316,15 @@\n rint(%22 %5D\n+%5Cn\n %22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_02-27-12",
+            "content": "@@ -320,10 +320,8 @@\n (%22 %5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_02-27-24",
+            "content": "@@ -164,17 +164,16 @@\n nt( %22ceu\n- \n %22)%0A     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_02-29-59",
+            "content": "@@ -164,16 +164,17 @@\n nt( %22ceu\n+ \n %22)%0A     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_02-30-14",
+            "content": "@@ -128,110 +128,110 @@\n     \n-%0A        if i == N %7B%0A            continue%0A        %7D%0A        if i == 10 %7B%0A            fmt.Print( %22ceu%22)\n+if i == 10 %7B%0A            fmt.Print( %22ceu%22)%0A            continue%0A        %7D%0A        %0A        if i == N %7B\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_02-37-10",
+            "content": "@@ -224,17 +224,16 @@\n nt( %22ceu\n- \n %22)%0A     \n@@ -314,16 +314,17 @@\n .Print(%22\n+ \n %5D%5Cn%22)%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-06_02-37-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    fmt.Print(\"[ \")\n\n    for i:= 0; i <= 10; i++ {\n        \n        if i == N {\n            continue\n        }\n        if i == 10 {\n            fmt.Print( \"ceu \")\n            continue\n        }\n        \n        fmt.Print(i, \" \")\n    }\n    fmt.Print(\"]\\n\")\n}\n",
+            "lines": "22"
         }
     ]
 }
