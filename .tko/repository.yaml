@@ -22,13 +22,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@rec
-- eval1@eval1
-- fup@dict
 - sandbox@sandbox
-- fup@for2
-- fup@struct
-- fup@games
 flags:
   inbox: all
   panel: help
@@ -36,5 +30,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@concentra
+selected: fup@string
 selected_index: 10
