@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_17-42-07",
+            "content": "@@ -41,95 +41,35 @@\n     \n-var C, M int%0A    fmt.Println(&C, &M)%0A%0A    if M == 0 %7B%0A        fmt.Println(%22vazio%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-18_17-45-33",
+            "content": "@@ -79,50 +79,16 @@\n M)%0A%0A\n-    for i := M; i %3E= C; i++ %7B%0A    \n     if \n-i\n+M\n  == \n@@ -123,113 +123,8 @@\n io%22)\n- %0A    %7D else if i %3C C %7B%0A        fmt.Println(%22ainda cabe%22)%0A    %7D else if i == C %7B%0A        %22hora de partir%22\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-05-18_17-51-53",
+            "content": "@@ -242,28 +242,16 @@\n         \n-fmt.Println(\n %22hora de\n@@ -258,17 +258,16 @@\n  partir%22\n-)\n %0A    %7D%0A%7D\n@@ -267,10 +267,8 @@\n     %7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-18_17-52-18",
+            "content": "@@ -78,16 +78,51 @@\n &M)%0A\n+%0A    for i := M; i %3E= C; i++ %7B%0A    \n     if \n-M\n+i\n  == \n@@ -153,16 +153,17 @@\n %22vazio%22)\n+ \n %0A    %7D e\n@@ -170,44 +170,8 @@\n lse \n-%7B%0A    for i := M; i %3E= C; i++ %7B%0A    \n if i\n@@ -278,14 +278,12 @@\n )%0A    %7D%0A%7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_17-53-48",
+            "content": "@@ -78,44 +78,8 @@\n &M)%0A\n-%0A    for i := M; i %3E= (C*2); i++ %7B%0A%0A\n     \n@@ -119,33 +119,16 @@\n vazio%22)%0A\n-        continue%0A\n     %7D el\n@@ -219,51 +219,31 @@\n     \n-    continue%0A    %7D%0A    %7D%0A%7D%0A\n+%7D else \n if i \n-%3E= (C*2) %7B%0A\n+== C %7B%0A    \n     \n@@ -272,14 +272,20 @@\n artir%22)%0A\n+    %7D%0A\n %7D%0A%7D%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-18_17-57-48",
+            "content": "@@ -117,17 +117,17 @@\n %0A    if \n-i\n+M\n  == 0 %7B%0A\n@@ -183,16 +183,52 @@\n  %7D else \n+%7B%0A    for i := M; i %3E= C; i++ %7B%0A    \n if i %3C C\n@@ -264,16 +264,33 @@\n  cabe%22)%0A\n+        continue%0A\n     %7D%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-18_18-00-59",
+            "content": "@@ -228,16 +228,24 @@\n  cabe%22)%0A\n+    %7D%0A  \n   %7D%0A%7D%0Aif\n@@ -294,8 +294,12 @@\n tir%22)%0A%7D%0A\n+%7D%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-18_18-01-18",
+            "content": "@@ -286,10 +286,8 @@\n tir%22)%0A%7D%0A\n-%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-18_18-01-24",
+            "content": "@@ -237,17 +237,17 @@\n  %7D%0A%7D%0Aif \n-M\n+i\n  %3E= (C*2\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-18_18-01-37",
+            "content": "@@ -228,33 +228,16 @@\n  cabe%22)%0A\n-        continue%0A\n   %7D%0A%7D%0Aif\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-18_18-02-31",
+            "content": "@@ -248,22 +248,19 @@\n inue%0A  %7D\n- else \n+%0A%7D%0A\n if M %3E= \n@@ -305,10 +305,8 @@\n r%22)%0A%7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-18_18-08-25",
+            "content": "@@ -93,17 +93,17 @@\n := M; i \n-%3C\n+%3E\n = (C*2);\n@@ -109,16 +109,17 @@\n ; i++ %7B%0A\n+%0A\n     if i\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-18_18-08-50",
+            "content": "@@ -176,20 +176,21 @@\n ue%0A    %7D\n-%0A   \n+ else\n  if i %3C \n@@ -247,18 +247,21 @@\n inue%0A  %7D\n-%0A\n  \n+else\n  if M %3E=\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-18_18-09-37",
+            "content": "@@ -303,18 +303,8 @@\n r%22)%0A\n-    break%0A\n %7D%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-18_18-10-10",
+            "content": "@@ -108,10 +108,10 @@\n ); i\n---\n+++\n  %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-18_18-16-48",
+            "content": "@@ -108,10 +108,10 @@\n ); i\n-++\n+--\n  %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-18_18-16-55",
+            "content": "@@ -254,17 +254,17 @@\n %0A  if M \n-=\n+%3E\n = (C*2) \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-18_18-17-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var C, M int\n    fmt.Println(&C, &M)\n\n    for i := M; i <= (C*2); i++ {\n    if i == 0 {\n        fmt.Println(\"vazio\")\n        continue\n    }\n    if i < C {\n        fmt.Println(\"ainda cabe\")\n        continue\n  }\n  if M == (C*2) {\n    fmt.Println(\"hora de partir\")\n    break\n}\n}\n}\n",
+            "lines": "21"
+        }
+    ]
+}

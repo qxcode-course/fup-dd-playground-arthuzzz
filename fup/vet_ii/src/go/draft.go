@@ -1,15 +1,23 @@
 package main
 import "fmt"
 func mostrar_vetor(arr []int, sep string) {
+
+    if len(arr) == 0 {
+        fmt.Println("[ ]")
+        return
+    }
     fmt.Print("[ ")
     for i, valor:= range arr {
         if i != 0 {
             fmt.Print(sep)
         }
         fmt.Print(valor)
+    
+        }
+        fmt.Print(" ]\n")
     }
-    fmt.Print(" ]\n")
-}
+    
+
 func main() {
  {
     var qtd int
@@ -21,4 +29,5 @@ for i := range arr {
 }
 mostrar_vetor(arr, " ")
 }
+
 }
