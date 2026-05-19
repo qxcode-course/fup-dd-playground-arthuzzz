@@ -3,6 +3,4 @@ import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
-
-
-jgjyfthdftft
+jhhj

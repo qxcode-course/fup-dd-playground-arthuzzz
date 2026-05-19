@@ -87,8 +87,53 @@
         },
         {
             "label": "2026-05-18_18-17-49",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var C, M int\n    fmt.Println(&C, &M)\n\n    for i := M; i <= (C*2); i++ {\n    if i == 0 {\n        fmt.Println(\"vazio\")\n        continue\n    }\n    if i < C {\n        fmt.Println(\"ainda cabe\")\n        continue\n  }\n  if M == (C*2) {\n    fmt.Println(\"hora de partir\")\n    break\n}\n}\n}\n",
+            "content": "@@ -62,11 +62,14 @@\n fmt.\n-Sca\n+Printl\n n(&C\n",
             "lines": "21"
+        },
+        {
+            "label": "2026-05-19_18-18-42",
+            "content": "@@ -110,87 +110,8 @@\n + %7B%0A\n-        if M == (C*2) %7B%0A    fmt.Println(%22hora de partir%22)%0A    break%0A        %7D%0A%0A\n     \n@@ -244,12 +244,76 @@\n nue%0A  %7D%0A\n+  if M == (C*2) %7B%0A    fmt.Println(%22hora de partir%22)%0A    break%0A%7D%0A\n %7D%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-19_18-20-00",
+            "content": "@@ -266,9 +266,9 @@\n f i \n-%3E\n+%3C\n  C %7B\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_18-20-53",
+            "content": "@@ -262,17 +262,17 @@\n    if i \n-%3C\n+%3E\n  C %7B%0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_18-21-04",
+            "content": "@@ -113,25 +113,25 @@\n %0A        if \n-i\n+M\n  == (C*2) %7B%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_18-21-41",
+            "content": "@@ -323,55 +323,8 @@\n nue%0A\n-  %7D else if i == C %7B%0A    fmt.Println(%22lotado%22)%0A\n   %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-19_18-22-46",
+            "content": "@@ -337,9 +337,9 @@\n f i \n-%3E\n+=\n = C \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-19_18-23-03",
+            "content": "@@ -179,29 +179,29 @@\n ak%0A        %7D\n- else\n+%0A%0A   \n  if i == 0 %7B\n@@ -252,21 +252,20 @@\n ue%0A    %7D\n- else\n+%0A   \n  if i %3C \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-19_18-23-34",
+            "content": "@@ -230,16 +230,33 @@\n vazio%22)%0A\n+        continue%0A\n     %7D el\n@@ -303,16 +303,33 @@\n  cabe%22)%0A\n+        continue%0A\n   %7D else\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-19_18-24-21",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var C, M int\n    fmt.Scan(&C, &M)\n\n    for i := M; i <= (C*2); i++ {\n        if i == (C*2) {\n    fmt.Println(\"hora de partir\")\n    break\n        } else if i == 0 {\n        fmt.Println(\"vazio\")\n    } else if i < C {\n        fmt.Println(\"ainda cabe\")\n  } else if i >= C {\n    fmt.Println(\"lotado\")\n  }\n}\n}\n",
+            "lines": "19"
         }
     ]
 }

@@ -20,8 +20,7 @@ sources:
   quests: null
 expanded:
 - sandbox@sandbox
-- fup@string
-- fup@list
+- fup@for2
 flags:
   inbox: all
   panel: help
@@ -29,5 +28,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@vet_ii
-selected_index: 12
+selected: fup@lotado
+selected_index: 13
