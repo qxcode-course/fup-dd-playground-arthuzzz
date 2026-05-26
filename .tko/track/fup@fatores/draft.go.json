@@ -1,0 +1,189 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_03-25-46",
+            "content": "@@ -41,130 +41,35 @@\n     \n-var N int%0A    fmt.Scan(&N)%0A%0A    for i:= 0; i %3C= N; i++ %7B%0A        if (N %25 i == 0) %7B%0A            fmt.Print(i)%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-26_03-33-33",
+            "content": "@@ -83,16 +83,17 @@\n = 0; i %3C\n+=\n  N; i++ \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-26_03-33-48",
+            "content": "@@ -148,46 +148,8 @@\n (i)%0A\n-        %7D else %7B%0A            continue%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-26_03-34-28",
+            "content": "@@ -144,37 +144,16 @@\n rint(i)%0A\n-            continue%0A\n         \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-26_03-34-38",
+            "content": "@@ -86,9 +86,9 @@\n ; i \n-%3E\n+%3C\n  N; \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-26_03-35-08",
+            "content": "@@ -69,41 +69,8 @@\n N)%0A%0A\n-    fator := 2%0A    contagem:= 0%0A%0A\n     \n@@ -86,9 +86,9 @@\n ; i \n-%3C\n+%3E\n  N; \n@@ -109,13 +109,9 @@\n if (\n-fator\n+N\n  %25 i\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-26_03-36-51",
+            "content": "@@ -69,18 +69,16 @@\n N)%0A%0A    \n-//\n fator :=\n@@ -88,10 +88,8 @@\n     \n-//\n cont\n@@ -138,20 +138,123 @@\n     \n-fmt.Print(i)\n+if (fator %25 i == 0) %7B%0A            fmt.Print(i)%0A            continue%0A        %7D else %7B%0A            continue%0A        %7D\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-26_03-38-33",
+            "content": "@@ -120,17 +120,16 @@\n = 0; i %3C\n-=\n  N; i++ \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-26_03-38-46",
+            "content": "@@ -69,16 +69,18 @@\n N)%0A%0A    \n+//\n fator :=\n@@ -135,39 +135,8 @@\n + %7B%0A\n-        if (fator %25 N) == i %7B %0A\n     \n@@ -156,18 +156,8 @@\n (i)%0A\n-        %7D%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-26_03-41-55",
+            "content": "@@ -80,24 +80,39 @@\n or := 2%0A    \n+//contagem:= 0%0A\n %0A    for i:=\n@@ -193,75 +193,9 @@\n     \n-fmt.Print(N/i)%0A        %7D%0A        %0A        //contagem =+ i %0A        \n+%7D\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-26_03-50-34",
+            "content": "@@ -88,32 +88,13 @@\n     \n-contagem:= 0%0A    %0A    //\n+%0A    \n for \n@@ -118,24 +118,8 @@\n + %7B%0A\n-    for N != 1%7B%0A\n     \n@@ -129,35 +129,36 @@\n  if \n-N %25 \n+(\n fator\n+ %25 N)\n  == \n-0\n+i\n  %7B\n-%0A \n  \n+%0A\n         \n   fm\n@@ -145,34 +145,32 @@\n == i %7B %0A        \n-  \n fmt.Print(fator)\n@@ -167,45 +167,11 @@\n int(\n-fator\n+i\n )%0A\n-            contagem =+ 1%0A    \n     \n@@ -184,24 +184,19 @@\n t.Print(\n-contagem\n+N/i\n )%0A      \n@@ -199,23 +199,16 @@\n       %7D%0A\n-     %7D%0A\n         \n@@ -242,15 +242,16 @@\n        %0A\n-\n     \n+%7D\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-26_03-58-37",
+            "content": "@@ -193,21 +193,24 @@\n     \n-N = N / \n+fmt.Print(\n fator\n+)\n %0A   \n@@ -237,29 +237,23 @@\n  1%0A     \n-   %7D%0A\n        \n- \n fmt.Prin\n@@ -258,11 +258,8 @@\n int(\n-N, \n cont\n@@ -264,16 +264,26 @@\n ntagem)%0A\n+        %7D%0A\n      %7D%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-26_04-02-40",
+            "content": "@@ -251,21 +251,8 @@\n     \n-%0A     %7D%0A     \n fmt.\n@@ -270,16 +270,23 @@\n ntagem)%0A\n+     %7D%0A\n         \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-26_04-03-02",
+            "content": "@@ -242,15 +242,8 @@\n    %7D\n- else %7B\n %0A   \n@@ -251,41 +251,16 @@\n     \n-    if contagem %3E 0 %7B%0A  \n+%0A\n      \n-    \n+%7D%0A\n     \n@@ -273,16 +273,10 @@\n rint\n-ln(fator\n+(N\n , co\n@@ -287,83 +287,8 @@\n em)%0A\n-            %7D%0A        %7D%0A        fator++%0A        contagem++%0A        %0A     %7D%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_04-06-29",
+            "content": "@@ -304,24 +304,31 @@\n Println(\n+fator, \n contagem\n , fator)\n@@ -323,15 +323,8 @@\n agem\n-, fator\n )%0A  \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-26_04-06-57",
+            "content": "@@ -308,23 +308,16 @@\n tln(\n-fator, \n contagem\n )%0A  \n@@ -312,16 +312,23 @@\n contagem\n+, fator\n )%0A      \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-26_04-07-07",
+            "content": "@@ -404,68 +404,12 @@\n     \n-if contagem %3E 0 %7B%0A        fmt.Println(fator, contagem)%0A    %7D\n+    \n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-26_04-08-27",
+            "content": "@@ -396,10 +396,114 @@\n %0A     %7D%0A\n+    if contagem %3E 0 %7B%0A        fmt.Println(fator, contagem)%0A    %7D%0A        //contagem =+ i %0A        %0A    %0A\n %7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_04-09-48",
+            "content": "@@ -215,34 +215,37 @@\n         contagem\n-++\n+ =+ 1\n %0A        %7D else \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_04-10-10",
+            "content": "@@ -215,18 +215,16 @@\n         \n-//\n contagem\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_04-10-19",
+            "content": "@@ -380,12 +380,10 @@\n agem\n- = 0\n+++\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_04-11-03",
+            "content": "@@ -98,24 +98,55 @@\n em:= 0%0A    %0A\n+    //for i:= 0; i %3C= N; i++ %7B%0A\n     for N !=\n@@ -207,32 +207,34 @@\n tor%0A            \n+//\n contagem++%0A     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_04-11-36",
+            "content": "@@ -287,16 +287,30 @@\n ntagem)%0A\n+            %7D%0A\n         \n@@ -366,10 +366,8 @@\n     %7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_04-13-02",
+            "content": "@@ -224,18 +224,16 @@\n         \n-//\n if conta\n@@ -299,10 +299,8 @@\n     \n-//\n %7D%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_04-14-43",
+            "content": "@@ -106,39 +106,8 @@\n    %0A\n-    //for i:= 0; i %3C= N; i++ %7B%0A\n     \n@@ -196,13 +196,10 @@\n agem\n- =+ 1\n+++\n %0A   \n@@ -224,16 +224,18 @@\n         \n+//\n if conta\n@@ -297,30 +297,18 @@\n         \n-    %7D%0A        \n+//\n %7D%0A      \n@@ -337,101 +337,29 @@\n agem\n-++%0A        \n+ = 0\n %0A     \n-%7D%0A\n    \n-  fmt.Print(N, contagem)%0A        %0A        //contagem =+ i %0A        \n %0A    \n+ %7D%0A%7D\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_04-15-32",
+            "content": "@@ -335,24 +335,30 @@\n       %7D%0A    \n+    %7D%0A\n         fato\n@@ -380,26 +380,16 @@\n tagem++%0A\n-        %7D%0A\n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-26_04-16-01",
+            "content": "@@ -335,30 +335,24 @@\n       %7D%0A    \n-    %7D%0A\n         fato\n@@ -374,16 +374,26 @@\n tagem++%0A\n+        %7D%0A\n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-26_04-16-25",
+            "content": "@@ -331,24 +331,34 @@\n           %7D%0A\n+        %7D%0A\n         fato\n@@ -392,19 +392,90 @@\n     %0A     %7D%0A\n+     fmt.Print(N, contagem)%0A        %0A        //contagem =+ i %0A        %0A\n     %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-26_04-17-38",
+            "content": "@@ -386,12 +386,15 @@\n %0A     %7D%0A\n-%7D\n+    \n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_04-17-51",
+            "content": "@@ -211,24 +211,8 @@\n     \n-        fator++%0A\n     \n@@ -223,18 +223,21 @@\n contagem\n-++\n+ =+ 1\n %0A       \n@@ -335,16 +335,51 @@\n       %7D%0A\n+        fator++%0A        contagem++%0A\n         \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_04-18-18",
+            "content": "@@ -203,16 +203,55 @@\n / fator%0A\n+            fator++%0A        contagem++%0A\n         \n@@ -368,40 +368,8 @@\n   %7D%0A\n-     fator++%0A        contagem++%0A\n %7D%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_04-18-31",
+            "content": "@@ -207,31 +207,8 @@\n tor%0A\n-            contagem++%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_04-18-53",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var N in\n@@ -47,17 +47,20 @@\n r N int%0A\n-%09\n+    \n fmt.Scan\n@@ -65,17 +65,20 @@\n an(&N)%0A%0A\n-%09\n+    \n fator :=\n@@ -80,25 +80,28 @@\n or := 2%0A\n-%09\n+    \n contagem\n  := 0%0A%0A%09\n@@ -96,16 +96,53 @@\n agem\n- \n := 0%0A\n-%0A%09\n+    %0A    //for i:= 0; i %3C= N; i++ %7B%0A    \n for \n@@ -151,19 +151,25 @@\n != 1\n- \n %7B%0A\n-%0A%09%09\n+        \n if N\n-%25\n+ %25 \n fato\n@@ -177,19 +177,28 @@\n  == 0 %7B%0A\n-%09%09%09\n+            \n N = N / \n@@ -203,19 +203,28 @@\n / fator%0A\n-%09%09%09\n+            \n contagem\n@@ -226,19 +226,24 @@\n tagem++%0A\n-%0A%09%09\n+        \n %7D else %7B\n@@ -243,20 +243,28 @@\n  else %7B%0A\n-%0A%09%09%09\n+            \n if conta\n@@ -277,12 +277,24 @@\n 0 %7B%0A\n-%09%09%09%09\n+                \n fmt.\n@@ -322,115 +322,58 @@\n em)%0A\n-%09%09%09%7D%0A%0A%09%09%09fator++%0A%09%09%09contagem = 0%0A%09%09%7D%0A%09%7D%0A%0A%09// imprime o %C3%BAltimo fator%0A%09if contagem %3E 0 %7B%0A%09%09fmt.Println(fator,\n+            %7D%0A        %0A     %7D%0A     fator++%0A       \n  con\n@@ -381,11 +381,11 @@\n agem\n-)%0A%09\n+++%0A\n %7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_04-21-14",
+            "content": "@@ -291,18 +291,16 @@\n  fator%0A%09\n-//\n if conta\n@@ -311,18 +311,19 @@\n %3E 0 %7B%0A%09%09\n-//\n+fmt\n .Println\n@@ -341,14 +341,12 @@\n tagem)%0A%09\n-//\n %7D%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-26_04-22-09",
+            "content": "@@ -264,16 +264,18 @@\n %09%7D%0A%09%7D%0A%0A%09\n+//\n  imprime\n@@ -290,16 +290,19 @@\n o fator%0A\n+%09//\n if conta\n@@ -313,19 +313,18 @@\n %3E 0 %7B%0A%09%09\n-fmt\n+//\n .Println\n@@ -342,12 +342,14 @@\n tagem)%0A%09\n+//\n %7D%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-26_04-22-34",
+            "content": "@@ -262,17 +262,42 @@\n %0A%09%09%7D%0A%09%7D%0A\n-%09\n+%0A%09 imprime o %C3%BAltimo fator%0A\n if conta\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-26_04-22-56",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar N int\n\tfmt.Scan(&N)\n\n\tfator := 2\n\tcontagem := 0\n\n\tfor N != 1 {\n\n\t\tif N%fator == 0 {\n\t\t\tN = N / fator\n\t\t\tcontagem++\n\n\t\t} else {\n\n\t\t\tif contagem > 0 {\n\t\t\t\tfmt.Println(fator, contagem)\n\t\t\t}\n\n\t\t\tfator++\n\t\t\tcontagem = 0\n\t\t}\n\t}\n\tif contagem > 0 {\n\t\tfmt.Println(fator, contagem)\n\t}\n}\n",
+            "lines": "31"
+        }
+    ]
+}
