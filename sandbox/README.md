@@ -11,3 +11,4 @@ Sinta-se à vontade para organizar seus rascunhos em subpastas dentro do sandbox
 - [ ] `@user_001 🛠️ 👤 type=make xp=1 tier=1 loss=part :self` [Reppolho](user_001/README.md)
 - [ ] `@user_002 🛠️ 👤 type=make xp=1 tier=1 loss=part :self` [beterraba](user_002/README.md)
 
+- [ ] `@user_003 🛠️ 👤 type=make xp=1 tier=1 loss=part :self` [cheiro verde](user_003/README.md)

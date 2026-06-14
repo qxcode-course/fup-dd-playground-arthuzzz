@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-05-07_21-55-58",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,162 +41,35 @@\n     \n-var N int%0A    fmt.Scan(&N)%0A%0A    var nums %5B%5Dint = make(%5B%5Dint, N, N)%0A%0A    if N == 0 %7B%0A        fmt.Println(%22%5B%5D%22)%0A    %7D else %7B%0A        fmt.Println(nums)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-17-42",
+            "content": "@@ -98,17 +98,17 @@\n (%5B%5Dint, \n-0\n+N\n , N)%0A%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-01_17-18-08",
+            "content": "@@ -67,38 +67,8 @@\n (&N)\n-%0A    for i == 0; 0 %3C= N; i++ %7B\n %0A%0A  \n@@ -102,17 +102,15 @@\n nt, \n-i\n+0\n , N)%0A%0A\n-%0A\n-%0A\n     \n@@ -120,18 +120,8 @@\n N ==\n- 0 %7C%7C i ==\n  0 %7B\n@@ -195,10 +195,8 @@\n    %7D%0A%0A%7D%0A\n-%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-01_17-22-04",
+            "content": "@@ -135,16 +135,18 @@\n  i, N)%0A%0A\n+%0A%0A\n     if N\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-01_17-22-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n    for i == 0; 0 <= N; i++ {\n\n    var nums []int = make([]int, i, N)\n\n    if N == 0 || i == 0 {\n        fmt.Println(\"[]\")\n    } else {\n        fmt.Println(nums)\n    }\n\n}\n}\n",
+            "lines": "17"
         }
     ]
 }

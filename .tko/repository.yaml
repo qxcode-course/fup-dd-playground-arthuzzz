@@ -19,8 +19,8 @@ sources:
   writeable: false
   quests: null
 expanded:
+- fup@struct
 - sandbox@sandbox
-- fup@for2
 flags:
   inbox: all
   panel: help
@@ -28,5 +28,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@lotado
-selected_index: 13
+selected: fup@estudante
+selected_index: 16

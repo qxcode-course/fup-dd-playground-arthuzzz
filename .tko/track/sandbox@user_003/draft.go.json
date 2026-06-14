@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_17-23-14",
+            "content": "@@ -54,14 +54,21 @@\n ln(%22\n-boceta\n+Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-27-06",
+            "content": "@@ -54,11 +54,15 @@\n ln(%22\n-mRC\n+boceta%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-27-18",
+            "content": "@@ -53,13 +53,12 @@\n tln(%22mRC\n-%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-27-27",
+            "content": "@@ -37,11 +37,29 @@\n ) %7B%0A    \n+fmt.Println(%22mRC%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-36-20",
+            "content": "@@ -42,385 +42,6 @@\n    %0A\n-    //p == 2%0A   // i== 4%0A   // o == 6%0A   // c == 8%0A   // a == 0%0A%0A    for i == a; i %3C= c; i++ %7B%0A        if i == 2 %7B%0A            fmt.Print(%22p%22)%0A        %7D else if i == 4 %7B%0A            fmt.Print(%22i%22)%0A        %7D else if i == 6 %7B%0A            fmt.Print(%22o%22)%0A        %7D else if i == 8 %7B%0A            fmt.Print(%22c%22)%0A        %7D else if i == 0 %7B%0A            fmt.Print(%22a%22)%0A        %7D%0A    %0A    %7D%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-51-33",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    \n    //p == 2\n   // i== 4\n   // o == 6\n   // c == 8\n   // a == 0\n\n    for i == a; i <= c; i++ {\n        if i == 2 {\n            fmt.Print(\"p\")\n        } else if i == 4 {\n            fmt.Print(\"i\")\n        } else if i == 6 {\n            fmt.Print(\"o\")\n        } else if i == 8 {\n            fmt.Print(\"c\")\n        } else if i == 0 {\n            fmt.Print(\"a\")\n        }\n    \n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}
