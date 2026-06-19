@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-06-14_21-50-11",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -57,18 +57,18 @@\n %22Hel\n-eno malino\n+lo, World!\n %22)%0A%7D\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-14_23-33-28",
+            "content": "@@ -55,27 +55,16 @@\n n(%22H\n-artheobaudo Hidropo\n+eleno ma\n lino\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-14_23-34-00",
+            "content": "@@ -54,11 +54,8 @@\n ln(%22\n-0: \n Hart\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-14_23-34-11",
+            "content": "@@ -10,774 +10,80 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22sort%22%0A)%0A%0Atype Aluno struct %7B%0A%09Nome  string%0A%09N1    float64%0A%09N2    float64%0A%09N3    float64%0A%09Media float64%0A%7D%0A%0Afunc main() %7B%0A%09reader := bufio.NewReader(os.Stdin)%0A%0A%09var n int%0A%09fmt.Fscanln(reader, &n)%0A%0A%09alunos := make(%5B%5DAluno, n)%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09nome, _ := reader.ReadString('%5Cn')%0A%09%09nome = nome%5B:len(nome)-1%5D // remove '%5Cn'%0A%0A%09%09var n1, n2, n3 float64%0A%09%09fmt.Fscanln(reader, &n1, &n2, &n3)%0A%0A%09%09alunos%5Bi%5D = Aluno%7B%0A%09%09%09Nome:  nome,%0A%09%09%09N1:    n1,%0A%09%09%09N2:    n2,%0A%09%09%09N3:    n3,%0A%09%09%09Media: (n1 + n2 + n3) / 3.0,%0A%09%09%7D%0A%09%7D%0A%0A%09sort.Slice(alunos, func(i, j int) bool %7B%0A%09%09return alunos%5Bi%5D.Media %3E alunos%5Bj%5D.Media%0A%09%7D)%0A%0A%09for i, a := range alunos %7B%0A%09%09fmt.Printf(%22%25d %25s %25.2f %25.2f %25.2f %25.2f%5Cn%22,%0A%09%09%09i,%0A%09%09%09a.Nome,%0A%09%09%09a.Media,%0A%09%09%09a.N1,%0A%09%09%09a.N2,%0A%09%09%09a.N3)%0A%09%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%220: Hartheobaudo Hidropolino%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-14_23-52-11",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n)\n\ntype Aluno struct {\n\tNome  string\n\tN1    float64\n\tN2    float64\n\tN3    float64\n\tMedia float64\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscanln(reader, &n)\n\n\talunos := make([]Aluno, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tnome, _ := reader.ReadString('\\n')\n\t\tnome = nome[:len(nome)-1] // remove '\\n'\n\n\t\tvar n1, n2, n3 float64\n\t\tfmt.Fscanln(reader, &n1, &n2, &n3)\n\n\t\talunos[i] = Aluno{\n\t\t\tNome:  nome,\n\t\t\tN1:    n1,\n\t\t\tN2:    n2,\n\t\t\tN3:    n3,\n\t\t\tMedia: (n1 + n2 + n3) / 3.0,\n\t\t}\n\t}\n\n\tsort.Slice(alunos, func(i, j int) bool {\n\t\treturn alunos[i].Media > alunos[j].Media\n\t})\n\n\tfor i, a := range alunos {\n\t\tfmt.Printf(\"%d %s %.2f %.2f %.2f %.2f\\n\",\n\t\t\ti,\n\t\t\ta.Nome,\n\t\t\ta.Media,\n\t\t\ta.N1,\n\t\t\ta.N2,\n\t\t\ta.N3)\n\t}\n}\n",
+            "lines": "55"
         }
     ]
 }

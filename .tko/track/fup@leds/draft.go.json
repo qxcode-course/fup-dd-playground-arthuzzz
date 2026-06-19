@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-15_03-43-29",
+            "content": "@@ -54,14 +54,21 @@\n ln(%22\n-2 leds\n+Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_03-45-33",
+            "content": "@@ -63,32 +63,6 @@\n s%22)%0A\n-    fmt.Println(%225 leds%22)%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-15_03-45-59",
+            "content": "@@ -89,32 +89,6 @@\n s%22)%0A\n-    fmt.Println(%225 leds%22)%0A\n %7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-06-15_03-46-14",
+            "content": "@@ -81,11 +81,40 @@\n n(%225 led\n+s%22)%0A    fmt.Println(%225 leds%22)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-06-15_04-02-46",
+            "content": "@@ -51,9 +51,41 @@\n intln(%222\n+ leds%22)%0A    fmt.Println(%225 led%0A%7D\n %0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-06-15_04-02-51",
+            "content": "@@ -10,347 +10,50 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09in := bufio.NewReader(os.Stdin)%0A%0A%09var n int%0A%09fmt.Fscan(in, &n)%0A%0A%09leds := %5B10%5Dint%7B6, 2, 5, 5, 4, 5, 6, 3, 7, 6%7D%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%09%09var numero string%0A%09%09fmt.Fscan(in, &numero)%0A%0A%09%09total := 0%0A%09%09for _, c := range numero %7B%0A%09%09%09total += leds%5Bc-'0'%5D%0A%09%09%7D%0A%0A%09%09fmt.Printf(%22%25d leds%5Cn%22, total)%0A%09%7D%0A%7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%222\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-06-15_04-02-59",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscan(in, &n)\n\n\tleds := [10]int{6, 2, 5, 5, 4, 5, 6, 3, 7, 6}\n\n\tfor i := 0; i < n; i++ {\n\t\tvar numero string\n\t\tfmt.Fscan(in, &numero)\n\n\t\ttotal := 0\n\t\tfor _, c := range numero {\n\t\t\ttotal += leds[c-'0']\n\t\t}\n\n\t\tfmt.Printf(\"%d leds\\n\", total)\n\t}\n}\n",
+            "lines": "28"
+        }
+    ]
+}
