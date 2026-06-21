@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-21_04-05-34",
+            "content": "@@ -41,112 +41,35 @@\n     \n-var n int%0A%0A    if n%252 == 0 %7B%0A        fmt.Println(%22PAR%22)  %0A    %7D else %7B%0A        fmt.Println(%22IMPAR%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-21_04-07-03",
+            "content": "@@ -60,9 +60,9 @@\n if n\n-:\n+%25\n 2 ==\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-21_04-07-48",
+            "content": "@@ -60,9 +60,9 @@\n if n\n-%25\n+:\n 2 ==\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-21_04-09-17",
+            "content": "@@ -50,25 +50,8 @@\n  int\n-%0A    fmt.Scan(&n)\n %0A%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-21_04-11-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    if n%2 == 0 {\n        fmt.Println(\"PAR\")  \n    } else {\n        fmt.Println(\"IMPAR\")\n    }\n}\n",
+            "lines": "12"
+        }
+    ]
+}

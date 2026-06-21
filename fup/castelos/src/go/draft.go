@@ -9,7 +9,7 @@ func main() {
         if i * i == num {
             fmt.Println("sim")
             break
-        } if i * i == !num {
+        } else if i * i < num  {
             fmt.Println("nao")
         }
     }

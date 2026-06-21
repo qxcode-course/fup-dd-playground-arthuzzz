@@ -42,7 +42,17 @@
         },
         {
             "label": "2026-06-15_14-23-34",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num int\n    fmt.Scan(&num)\n    quad := 0\n\n    for i := quad; i >= num; i++ {\n        if i * i == num {\n            fmt.Println(\"sim\")\n            break\n        } else {\n            fmt.Println(\"nao\")\n        }\n    }\n\n}\n",
+            "content": "@@ -207,24 +207,12 @@\n   %7D \n-if i * i == !num\n+else\n  %7B%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-21_03-56-18",
+            "content": "@@ -206,13 +206,8 @@\n    %7D\n- else\n  if \n@@ -216,15 +216,16 @@\n * i \n-%3C \n+== !\n num \n- \n %7B%0A  \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-21_03-59-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num int\n    fmt.Scan(&num)\n    quad := 0\n\n    for i := quad; i >= num; i++ {\n        if i * i == num {\n            fmt.Println(\"sim\")\n            break\n        } else if i * i < num  {\n            fmt.Println(\"nao\")\n        }\n    }\n\n}\n",
             "lines": "17"
         }
     ]

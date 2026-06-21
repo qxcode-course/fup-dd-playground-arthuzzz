@@ -19,19 +19,18 @@ sources:
   writeable: false
   quests: null
 expanded:
-- sandbox@sandbox
-- fup@for2
+- fup@list
 - fup@if2
+- fup@for2
+- sandbox@sandbox
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   task_graph_mode: executions
   show_time: 'true'
 audit:
   enabled: false
   interval_seconds: null
-audit_enabled: false
-audit_interval_seconds: null
 lang: go
-selected: fup@chute
-selected_index: 22
+selected: fup@sono
+selected_index: 41
