@@ -2,8 +2,58 @@
     "patches": [
         {
             "label": "2026-05-07_21-56-19",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,162 +41,35 @@\n     \n-var x, y, z, a, b int%0A    fmt.Scan(&x, &y ,&z, &a, &b)%0A%0A    trinta:= make(%5B%5Dint, 30, 1)%0A%0A    for i:= 1; i %3C= len(trinta); i++ %7B%0A        fmt.Print(i)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-28_00-03-20",
+            "content": "@@ -120,16 +120,19 @@\n %5Dint, 30\n+, 1\n )%0A%0A    f\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-28_00-03-38",
+            "content": "@@ -122,10 +122,10 @@\n nt, \n-29\n+30\n )%0A%0A \n@@ -183,17 +183,16 @@\n rint(i)%0A\n-%0A\n     %7D%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-28_00-03-58",
+            "content": "@@ -122,10 +122,10 @@\n nt, \n-30\n+29\n )%0A%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-28_00-04-07",
+            "content": "@@ -135,17 +135,17 @@\n for i:= \n-0\n+1\n ; i %3C= l\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-28_00-04-15",
+            "content": "@@ -139,9 +139,9 @@\n i:= \n-1\n+0\n ; i \n@@ -174,152 +174,21 @@\n     \n-if (trinta%5Bi%5D) == x %7C%7C (trinta%5Bi%5D == y %7C%7C (trinta%5Bi%5D) == z %7C%7C (trinta%5Bi%5D) == a) %7B%0A            break%0A            fmt.Println(trinta%5Bi%5D)%0A        %7D\n+fmt.Print(i)%0A\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-28_00-07-44",
+            "content": "@@ -294,17 +294,16 @@\n Println(\n-(\n trinta%5Bi\n@@ -304,17 +304,16 @@\n inta%5Bi%5D)\n-)\n %0A       \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-28_00-08-11",
+            "content": "@@ -268,40 +268,50 @@\n     \n-fmt.Println(i)%0A            break\n+break%0A            fmt.Println((trinta%5Bi%5D))\n %0A   \n@@ -323,10 +323,11 @@\n %7D%0A    %7D%0A\n+%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-28_00-09-18",
+            "content": "@@ -177,44 +177,84 @@\n  if \n-i == x %7C%7C i == y %7C%7C i == z %7C%7C i\n+(trinta%5Bi%5D) == x %7C%7C (trinta%5Bi%5D == y %7C%7C (trinta%5Bi%5D) == z %7C%7C (trinta%5Bi%5D)\n  == a\n+)\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-28_00-09-54",
+            "content": "@@ -214,18 +214,8 @@\n = a \n-%7C%7C i == b \n %7B%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-28_00-10-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var x, y, z, a, b int\n    fmt.Scan(&x, &y ,&z, &a, &b)\n\n    trinta:= make([]int, 30)\n\n    for i:= 1; i <= len(trinta); i++ {\n        if i == x || i == y || i == z || i == a || i == b {\n            fmt.Println(i)\n            break\n        }\n    }\n}\n",
+            "lines": "15"
         }
     ]
 }

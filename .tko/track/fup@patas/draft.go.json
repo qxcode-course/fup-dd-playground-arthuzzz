@@ -12,8 +12,113 @@
         },
         {
             "label": "2026-05-19_13-21-04",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -72,9 +72,4 @@\n )%0A%7D%0A\n-jhhj%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-28_00-11-02",
+            "content": "@@ -68,8 +68,13 @@\n ld!%22)%0A%7D%0A\n+jhhj%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-06-28_00-11-19",
+            "content": "@@ -41,142 +41,35 @@\n     \n-var bento int%0A    var cebola int%0A    var qntd int%0A%0A    fmt.Scan(&bento, &cebola, &qntd)%0A%0A    v := 4%0A    g := 2%0A    c := 4%0A%0A    soma := \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_00-19-54",
+            "content": "@@ -130,41 +130,8 @@\n d)%0A%0A\n-    animais:= make(%5B%5Dint, qntd)%0A%0A\n     \n@@ -172,53 +172,11 @@\n soma\n+ \n := \n-v + g  + c%0A%0A    fmt.Println(soma, animais)%0A\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-28_00-21-51",
+            "content": "@@ -151,14 +151,11 @@\n e(%5B%5D\n-str\n in\n-g\n+t\n , qn\n@@ -210,16 +210,17 @@\n = v + g \n+ \n + c%0A%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-28_00-32-56",
+            "content": "@@ -222,75 +222,8 @@\n  c%0A%0A\n-    for i:= 0; i %3C qntd; i++ %7B%0A        fmt.Scan(animais%5Bi%5D)%0A    %7D%0A%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-28_00-36-29",
+            "content": "@@ -289,258 +289,8 @@\n  %7D%0A%0A\n-    patas:= 0%0A%0A    for i := 0; i %3C patas; qntd++ %7B%0A        if animais%5Bi%5D == %22v%22 %7B%0A            patas += 4%0A        %7D%0A        if animais%5Bi%5D == %22g%22 %7B%0A            patas += 2%0A        %7D%0A        if animais%5Bi%5D == %22c%22 %7B%0A            patas =+ 4%0A        %7D%0A    %7D%0A%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-28_00-42-38",
+            "content": "@@ -535,17 +535,16 @@\n %0A    %7D%0A%0A\n-%0A\n     fmt.\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-28_00-46-58",
+            "content": "@@ -158,24 +158,80 @@\n ing, qntd)%0A%0A\n+    v := 4%0A    g := 2%0A    c := 4%0A%0A    soma:= v + g + c%0A%0A\n     for i:= \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-28_00-47-14",
+            "content": "@@ -501,16 +501,17 @@\n ln(soma,\n+ \n animais)\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-28_00-47-26",
+            "content": "@@ -496,16 +496,21 @@\n Println(\n+soma,\n animais)\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-28_00-47-41",
+            "content": "@@ -231,33 +231,8 @@\n    %7D\n-%0A    fmt.Println(animais)\n %0A%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-28_00-48-10",
+            "content": "@@ -499,24 +499,26 @@\n     %7D%0A    %7D%0A\n+%0A%0A\n     fmt.Prin\n@@ -525,32 +525,16 @@\n tln(\n-patas)%0A    //vencedor:= \n+animais)\n %0A%0A%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-28_00-48-59",
+            "content": "@@ -534,185 +534,21 @@\n     \n-bentov:= (bento - patas) * 1%0A    cebolav:= (cebola - patas) * 1%0A%0A    if cebolav %3C bentov %7B%0A        fmt.Println(%22Cebolinha%22)%0A    %7D else %7B%0A        fmt.Println(%22Chico Bento%22)%0A    %7D\n+//vencedor:= \n %0A%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-28_00-52-32",
+            "content": "@@ -227,16 +227,41 @@\n %5D)%0A    %7D\n+%0A    fmt.Println(animais)\n %0A%0A    pa\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-28_00-52-44",
+            "content": "@@ -259,32 +259,36 @@\n  i := 0; i %3C\n+ patas;\n  qntd\n-; i\n ++ %7B%0A       \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-28_00-53-29",
+            "content": "@@ -640,28 +640,8 @@\n lse \n-if cebolav %3E bentov \n %7B%0A  \n@@ -682,72 +682,8 @@\n    %7D\n- else if cebolav == bentov %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-28_00-56-18",
+            "content": "@@ -445,34 +445,34 @@\n           patas \n-+\n =\n++\n  4%0A        %7D%0A   \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-28_00-58-01",
+            "content": "@@ -210,17 +210,16 @@\n mt.Scan(\n-&\n animais%5B\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-28_00-59-17",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -571,96 +571,8 @@\n  1%0A%0A\n-    if bentov %3C 0 %7B%0A        bentov = -bentov%0A    %7D%0A    if cebolav %3C 0 %7B%0A        %0A    %7D%0A%0A\n     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-28_01-06-01",
+            "content": "@@ -652,26 +652,8 @@\n     \n-cebolav = -cebolav\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-28_01-06-30",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var bento int\n    var cebola int\n    var qntd int\n\n    fmt.Scan(&bento, &cebola, &qntd)\n\n    animais:= make([]string, qntd)\n\n    for i:= 0; i < qntd; i++ {\n        fmt.Scan(&animais[i])\n    }\n\n    patas:= 0\n\n    for i := 0; i < qntd; i++ {\n        if animais[i] == \"v\" {\n            patas += 4\n        }\n        if animais[i] == \"g\" {\n            patas += 2\n        }\n        if animais[i] == \"c\" {\n            patas += 4\n        }\n    }\n    fmt.Println(patas)\n    bentov:= (bento - patas) * 1\n    cebolav:= (cebola - patas) * 1\n\n    if bentov < 0 {\n        bentov = -bentov\n    }\n    if cebolav < 0 {\n        cebolav = -cebolav\n    }\n\n    if cebolav < bentov {\n        fmt.Println(\"Cebolinha\")\n    } else if cebolav > bentov {\n        fmt.Println(\"Chico Bento\")\n    } else if cebolav == bentov {\n        fmt.Println(\"empate\")\n    }\n\n}\n",
+            "lines": "49"
         }
     ]
 }

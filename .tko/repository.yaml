@@ -20,17 +20,14 @@ sources:
   quests: null
 expanded:
 - fup@list
-- fup@if2
-- fup@for2
-- sandbox@sandbox
 flags:
   inbox: all
-  panel: graph
+  panel: logs
   task_graph_mode: executions
   show_time: 'true'
 audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@sono
-selected_index: 41
+selected: fup@patas
+selected_index: 12

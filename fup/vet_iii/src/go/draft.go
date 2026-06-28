@@ -3,15 +3,22 @@ import "fmt"
 func main() {
     var N int
     fmt.Scan(&N)
-    for i == 0; 0 <= N; i++ {
 
-    var nums []int = make([]int, i, N)
+    var nums []int = make([]int, N)
 
-    if N == 0 || i == 0 {
-        fmt.Println("[]")
-    } else {
-        fmt.Println(nums)
+   for i := 0; i < N; i++ {
+		fmt.Scan(&nums[i])
     }
 
+    fmt.Print("[")
+
+    for i := 0; i < N; i++ {
+        if i > 0 {
+            fmt.Print(", ")
+        }
+        fmt.Print(nums[i])
+    }
+    fmt.Print("]\n")
 }
-}
+
+

@@ -5,11 +5,18 @@ func main() {
     var hf, mf, sf int
     fmt.Scan(&h, &m, &s, &hf, &mf, &sf)
 
-    resth:= hf - h
-    restm:= mf - m
-    rests:= sf - s
+    rh:= hf - h
+    rm:= mf - m
+    rs:= sf - s
 
-    if resth < 0 {
-        restm - resth
+    if rh < 0 {
+        
     }
-}
+    }
+
+    fmt.Printf("%02d", rh)
+    fmt.Print(" ")
+    fmt.Printf("%02d", rm)
+    fmt.Print(" ")
+    fmt.Printf("%02d\n", rs)
+    }
