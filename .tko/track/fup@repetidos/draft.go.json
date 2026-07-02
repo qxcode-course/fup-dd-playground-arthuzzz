@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_16-13-39",
+            "content": "@@ -41,267 +41,35 @@\n     \n-var P, N int%0A    fmt.Scan(&P, &N)%0A%0A    contador:= 0%0A    ps:= make(%5B%5D string, N)%0A%0A    for i := 0; i %3C N; i++ %7B%0A        fmt.Scan(&ps%5Bi%5D)%0A    %7D%0A%0A    for i:= 0; i %3C N; i++ %7B%0A        if ps%5Bi%5D == %22P%22 %7B%0A            contador++%0A        %7D%0A    %7D%0A    fmt.Println(contador\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-02_16-19-08",
+            "content": "@@ -232,9 +232,9 @@\n == %22\n-1\n+P\n %22 %7B%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_16-20-02",
+            "content": "@@ -228,17 +228,17 @@\n %5Bi%5D == %22\n-p\n+1\n %22 %7B%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_16-20-12",
+            "content": "@@ -40,16 +40,19 @@\n %0A    var\n+ P,\n  N int%0A \n@@ -63,16 +63,20 @@\n mt.Scan(\n+&P, \n &N)%0A%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_16-20-37",
+            "content": "@@ -221,17 +221,17 @@\n %5Bi%5D == %22\n-P\n+p\n %22 %7B%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_16-20-44",
+            "content": "@@ -44,11 +44,8 @@\n  var\n- P,\n  N i\n@@ -64,12 +64,8 @@\n can(\n-&P, \n &N)%0A\n@@ -112,11 +112,8 @@\n g, N\n-, P\n )%0A%0A \n@@ -221,17 +221,17 @@\n %5Bi%5D == %22\n-p\n+P\n %22 %7B%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_16-22-17",
+            "content": "@@ -231,17 +231,17 @@\n %5Bi%5D == %22\n-P\n+p\n %22 %7B%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_16-22-27",
+            "content": "@@ -115,16 +115,19 @@\n tring, N\n+, P\n )%0A%0A    f\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_16-22-48",
+            "content": "@@ -106,19 +106,22 @@\n make(%5B%5D \n+str\n in\n-t\n+g\n , N)%0A%0A  \n@@ -227,17 +227,19 @@\n s%5Bi%5D == \n-P\n+%22P%22\n  %7B%0A     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-02_16-26-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, N int\n    fmt.Scan(&P, &N)\n\n    contador:= 0\n    ps:= make([] int, N)\n\n    for i := 0; i < N; i++ {\n        fmt.Scan(&ps[i])\n    }\n\n    for i:= 0; i < N; i++ {\n        if ps[i] == P {\n            contador++\n        }\n    }\n    fmt.Println(contador)\n}\n",
+            "lines": "20"
+        }
+    ]
+}

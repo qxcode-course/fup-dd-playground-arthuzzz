@@ -1,0 +1,101 @@
+2026-07-02 14:35:04, MOVE, v:1, k:fup@dindin, mode:PICK
+2026-07-02 14:35:07, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:5
+2026-07-02 14:38:59, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:14
+2026-07-02 14:38:58, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 14:39:08, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 14:40:02, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:16
+2026-07-02 14:44:13, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 14:40:02, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 14:54:04, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:18
+2026-07-02 14:54:03, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 14:54:04, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 14:54:29, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:18
+2026-07-02 14:59:17, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 14:54:29, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 14:59:58, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:39
+2026-07-02 15:00:49, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:39
+2026-07-02 15:01:11, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:39
+2026-07-02 15:04:18, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:54
+2026-07-02 15:04:16, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 15:04:18, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 15:05:08, EXEC, v:1, k:fup@dindin, mode:FULL, rate:0, size:54
+2026-07-02 15:05:24, EXEC, v:1, k:fup@dindin, mode:FULL, rate:12, size:54
+2026-07-02 15:06:39, EXEC, v:1, k:fup@dindin, mode:FULL, rate:37, size:54
+2026-07-02 15:08:15, EXEC, v:1, k:fup@dindin, mode:FULL, rate:100, size:54
+2026-07-02 15:08:19, MOVE, v:1, k:fup@dindin, mode:BACK
+2026-07-02 15:08:25, SELF, v:1, k:fup@dindin, self:1, rate:100, concept:1
+2026-07-02 15:08:14, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 15:08:15, MOVE, v:1, k:fup@dindin, mode:EDIT
+2026-07-02 16:13:35, MOVE, v:1, k:fup@repetidos, mode:DOWN
+2026-07-02 16:13:36, MOVE, v:1, k:fup@repetidos, mode:PICK
+2026-07-02 16:13:39, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:0, size:5
+2026-07-02 16:13:35, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-07-02 16:13:39, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-07-02 16:17:58, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-07-02 16:19:08, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33, size:20
+2026-07-02 16:19:50, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33
+2026-07-02 16:20:02, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33, size:20
+2026-07-02 16:20:12, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33, size:20
+2026-07-02 16:20:37, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33, size:20
+2026-07-02 16:20:44, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33, size:20
+2026-07-02 16:22:17, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33, size:20
+2026-07-02 16:22:27, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33, size:20
+2026-07-02 16:22:48, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:33, size:20
+2026-07-02 16:22:46, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-07-02 16:22:48, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-07-02 16:26:59, EXEC, v:1, k:fup@repetidos, mode:FULL, rate:100, size:20
+2026-07-02 16:27:02, MOVE, v:1, k:fup@repetidos, mode:BACK
+2026-07-02 16:27:08, SELF, v:1, k:fup@repetidos, self:1, rate:100, refactor:1
+2026-07-02 16:27:22, MOVE, v:1, k:fup@batraquios, mode:DOWN
+2026-07-02 16:27:23, MOVE, v:1, k:fup@batraquios, mode:PICK
+2026-07-02 16:27:25, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:5
+2026-07-02 16:26:57, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-07-02 16:26:59, MOVE, v:1, k:fup@repetidos, mode:EDIT
+2026-07-02 16:27:22, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 16:27:25, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 16:32:38, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:18
+2026-07-02 16:32:50, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:18
+2026-07-02 16:32:50, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 16:32:50, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 16:34:51, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:18
+2026-07-02 16:38:03, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 16:34:51, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 16:38:36, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 16:55:41, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 16:59:38, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:26
+2026-07-02 17:00:02, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:27
+2026-07-02 17:03:06, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:00:02, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:07:48, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:36
+2026-07-02 17:07:43, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:07:48, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:08:35, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:57, size:36
+2026-07-02 17:08:46, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:42, size:36
+2026-07-02 17:08:57, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:57, size:36
+2026-07-02 17:10:41, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:36
+2026-07-02 17:10:48, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:57, size:36
+2026-07-02 17:11:03, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:42, size:36
+2026-07-02 17:11:13, MOVE, v:1, k:fup@batraquios, mode:PICK
+2026-07-02 17:11:14, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:42
+2026-07-02 17:13:20, EXEC, v:1, k:fup@batraquios, mode:FULL, size:38, fail:COMP
+2026-07-02 17:13:39, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:0, size:32
+2026-07-02 17:13:56, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:14, size:33
+2026-07-02 17:14:16, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:28, size:32
+2026-07-02 17:15:04, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:28, size:33
+2026-07-02 17:15:04, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:15:03, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:16:33, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:28, size:33
+2026-07-02 17:17:46, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:28, size:32
+2026-07-02 17:17:59, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:14, size:32
+2026-07-02 17:18:20, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:14, size:32
+2026-07-02 17:18:36, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:28, size:32
+2026-07-02 17:21:01, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:18:35, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:22:11, EXEC, v:1, k:fup@batraquios, mode:FULL, rate:100, size:37
+2026-07-02 17:22:18, MOVE, v:1, k:fup@batraquios, mode:BACK
+2026-07-02 17:22:27, SELF, v:1, k:fup@batraquios, self:1, rate:100, concept:1, refactor:1
+2026-07-02 17:22:09, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:22:11, MOVE, v:1, k:fup@batraquios, mode:EDIT
+2026-07-02 17:26:25, MOVE, v:1, k:fup@baruel, mode:DOWN
+2026-07-02 17:26:26, MOVE, v:1, k:fup@baruel, mode:PICK
+2026-07-02 17:27:24, MOVE, v:1, k:fup@baruel, mode:PICK

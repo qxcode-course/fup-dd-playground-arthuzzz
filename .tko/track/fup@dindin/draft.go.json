@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_14-35-07",
+            "content": "@@ -41,160 +41,35 @@\n     \n-var dd int%0A    //var c, l int%0A    //var m, t int%0A%0A    fmt.Scan(&dd)%0A%0A    for i := 0; i %3C dd; i++ %7B%0A    list:= make(%5B%5Dint, dd)%0A    fmt.Scan(list%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-02_14-38-59",
+            "content": "@@ -193,35 +193,8 @@\n     \n-fmt.Println(list)%0A    %7D%0A    \n+%7D\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-07-02_14-40-02",
+            "content": "@@ -114,118 +114,81 @@\n     \n-sabor:= make(%5B%5Dint, dd)%0A    turno:= make(%5B%5Dint, dd)%0A%0A    for i := 0; i %3C dd; i++ %7B%0A    fmt.Scan(&sabor, &turno\n+for i := 0; i %3C dd; i++ %7B%0A    list:= make(%5B%5Dint, dd)%0A    fmt.Scan(list%5Bi%5D\n )%0A  \n@@ -205,20 +205,12 @@\n tln(\n-sabor, turno\n+list\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-07-02_14-54-04",
+            "content": "@@ -121,30 +121,27 @@\n or:= make(%5B%5D\n-str\n in\n-g\n+t\n , dd)%0A    tu\n@@ -157,14 +157,11 @@\n e(%5B%5D\n-str\n in\n-g\n+t\n , dd\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-07-02_14-54-29",
+            "content": "@@ -110,64 +110,8 @@\n d)%0A%0A\n-    choc:= 0%0A    lima:= 0%0A    manha:= 0%0A    tarde:= 0%0A%0A%0A\n     \n@@ -267,278 +267,8 @@\n    %7D\n-%0A%0A    for i:= 0; i %3C dd; i++ %7B%0A        if sabor%5Bi%5D == %22c%22 %7B%0A            choc++%0A        %7D%0A        if sabor%5Bi%5D == %22l%22 %7B%0A            lima++%0A        %7D%0A        if turno%5Bi%5D == %22m%22 %7B%0A            manha++%0A        %7D%0A        if turno%5Bi%5D == %22t%22 %7B%0A            tarde++%0A        %7D%0A    %7D\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-07-02_14-59-58",
+            "content": "@@ -598,30 +598,7 @@\n     \n-fmt.Print(sabor, turno)\n %0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-07-02_15-00-49",
+            "content": "@@ -280,24 +280,54 @@\n or, &turno)%0A\n+    fmt.Println(sabor, turno)%0A\n     %7D%0A%0A    f\n@@ -584,24 +584,26 @@\n       %7D%0A    \n+%7D%0A\n     fmt.Prin\n@@ -622,17 +622,6 @@\n no)%0A\n-    %7D%0A    %0A\n %7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-07-02_15-01-10",
+            "content": "@@ -595,331 +595,8 @@\n    %7D\n-%0A%0A    if choc %3E lima %7B%0A        fmt.Print(%22c%22)%0A    %7D else if choc %3C lima %7B%0A        fmt.Print(%22l%22)%0A    %7D else if choc == lima %7B%0A        fmt.Print(%22empate%22)%0A    %7D%0A    if manha %3E tarde %7B%0A        fmt.Print(%22m%22)%0A    %7D else if manha %3C tarde %7B%0A        fmt.Print(%22t%22)%0A    %7D else if manha == tarde %7B%0A        fmt.Print(%22empate%22)%0A    %7D\n %0A   \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-07-02_15-04-18",
+            "content": "@@ -635,16 +635,14 @@\n rint\n-ln\n (%22c%22)%0A\n+\n     \n@@ -682,18 +682,16 @@\n mt.Print\n-ln\n (%22l%22)%0A  \n@@ -726,34 +726,32 @@\n        fmt.Print\n-ln\n (%22empate%22)%0A    %7D\n@@ -791,18 +791,16 @@\n mt.Print\n-ln\n (%22m%22)%0A  \n@@ -844,18 +844,16 @@\n mt.Print\n-ln\n (%22t%22)%0A  \n@@ -873,32 +873,32 @@\n anha == tarde %7B%0A\n+\n         fmt.Prin\n@@ -902,10 +902,8 @@\n rint\n-ln\n (%22em\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-02_15-05-08",
+            "content": "@@ -550,24 +550,55 @@\n +%0A        %7D%0A\n+        fmt.Print(sabor, turno)\n %0A    %7D%0A%0A    \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-02_15-05-24",
+            "content": "@@ -278,19 +278,16 @@\n abor\n-%5Bi%5D\n , &turno\n %5Bi%5D)\n@@ -282,19 +282,16 @@\n , &turno\n-%5Bi%5D\n )%0A    %7D%0A\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-02_15-06-39",
+            "content": "@@ -745,17 +745,17 @@\n f manha \n-%3C\n+%3E\n  tarde %7B\n@@ -792,33 +792,33 @@\n %7D else if manha \n-%3E\n+%3C\n  tarde %7B%0A       \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-02_15-08-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var dd int\n    //var c, l int\n    //var m, t int\n\n    fmt.Scan(&dd)\n\n    choc:= 0\n    lima:= 0\n    manha:= 0\n    tarde:= 0\n\n\n    sabor:= make([]string, dd)\n    turno:= make([]string, dd)\n\n    for i := 0; i < dd; i++ {\n    fmt.Scan(&sabor[i], &turno[i])\n    }\n\n    for i:= 0; i < dd; i++ {\n        if sabor[i] == \"c\" {\n            choc++\n        }\n        if sabor[i] == \"l\" {\n            lima++\n        }\n        if turno[i] == \"m\" {\n            manha++\n        }\n        if turno[i] == \"t\" {\n            tarde++\n        }\n\n    }\n\n    if choc > lima {\n        fmt.Println(\"c\")\n    } else if choc < lima {\n        fmt.Println(\"l\")\n    } else if choc == lima {\n        fmt.Println(\"empate\")\n    }\n    if manha < tarde {\n        fmt.Println(\"m\")\n    } else if manha > tarde {\n        fmt.Println(\"t\")\n    } else if manha == tarde {\n        fmt.Println(\"empate\")\n    }\n    \n}\n",
+            "lines": "54"
+        }
+    ]
+}
