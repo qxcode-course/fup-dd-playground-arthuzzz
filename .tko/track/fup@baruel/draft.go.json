@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_17-28-34",
+            "content": "@@ -41,355 +41,35 @@\n     \n-var total int%0A    fmt.Scan(&total)%0A%0A    var qntd int%0A    fmt.Scan(&qntd)%0A%0A    fig:= make(%5B%5Dint, qntd)%0A%0A    for i := 0; i %3C qntd; i++ %7B%0A        fmt.Scan(&fig%5Bi%5D)%0A    %7D%0A%0A    for i := 0; i %3C qntd; i++ %7B%0A        if fig%5Bi%5D == fig%5Bi-1%5D %7B%0A            fmt.Println(fig%5Bi%5D)%0A        %7D%0A    %7D%0A%0A    var seq int%0A    fmt.Scan(&seq)%0A%0A    //figu:= make(%5B%5Dint, total\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-02_17-50-42",
+            "content": "@@ -319,232 +319,77 @@\n     \n-    perc:= 0\n+%7D\n %0A%0A    \n- \n-   for u:= 1; u %3C total; u++  %7B%0A            for perc %3C qntd && fig%5Bperc%5D %3C u %7B%0A                perc++%0A            %7D%0A        %7D%0A        if perc %3E= qtnd && fig%5Bperc%5D != u %7B%0A            fmt.Print(u)%0A        %7D%0A%7D\n+var seq int%0A    fmt.Scan(&seq)%0A%0A    //figu:= make(%5B%5Dint, total)\n %0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-02_17-57-40",
+            "content": "@@ -442,32 +442,42 @@\n +%0A            %7D%0A\n+        %7D%0A\n         if perc \n@@ -539,18 +539,12 @@\n       %7D%0A\n-    %7D%0A\n %7D%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-02_17-58-13",
+            "content": "@@ -470,18 +470,18 @@\n erc %3E= q\n-n\n t\n+n\n d && fig\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-02_17-58-24",
+            "content": "@@ -145,33 +145,33 @@\n )%0A%0A    for i := \n-1\n+0\n ; i %3C qntd; i++ \n@@ -218,17 +218,17 @@\n or i := \n-1\n+0\n ; i %3C qn\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-02_18-02-17",
+            "content": "@@ -153,17 +153,17 @@\n or i := \n-0\n+1\n ; i %3C qn\n@@ -311,22 +311,16 @@\n       %7D%0A\n-    %7D%0A\n         \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-02_18-02-55",
+            "content": "@@ -404,10 +404,10 @@\n ntd \n-%7C%7C\n+&&\n  fig\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-02_18-03-26",
+            "content": "@@ -313,24 +313,28 @@\n     %7D%0A    %7D%0A\n+    \n     perc:= 0\n@@ -335,16 +335,20 @@\n rc:= 0%0A%0A\n+    \n     for \n@@ -357,17 +357,16 @@\n = 1; u %3C\n-=\n  total; \n@@ -376,24 +376,28 @@\n   %7B%0A        \n+    \n for perc %3C q\n@@ -438,15 +438,20 @@\n     \n+ \n perc++%0A\n+    \n     \n@@ -543,8 +543,10 @@\n     %7D%0A%7D%0A\n+%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-02_18-04-18",
+            "content": "@@ -315,30 +315,8 @@\n   %7D%0A\n-        fmt.Println()%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-02_18-05-23",
+            "content": "@@ -415,10 +415,10 @@\n ntd \n-&&\n+%7C%7C\n  fig\n@@ -482,26 +482,26 @@\n erc %3E= qntd \n-%7C%7C\n+&&\n  fig%5Bperc%5D !\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-02_18-07-21",
+            "content": "@@ -290,16 +290,18 @@\n mt.Print\n+ln\n (fig%5Bi%5D)\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-02_18-07-51",
+            "content": "@@ -301,13 +301,8 @@\n g%5Bi%5D\n-, %22 %22\n )%0A  \n@@ -309,26 +309,24 @@\n       %7D%0A    \n-%7D%0A\n     fmt.Prin\n@@ -335,16 +335,17 @@\n n()%0A    \n+%7D\n %0A    per\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-02_18-08-47",
+            "content": "@@ -207,27 +207,8 @@\n    %7D\n-%0A    fmt.Print(%22%5B%22)\n %0A%0A  \n@@ -337,32 +337,17 @@\n rint\n-(%22%5D%22\n+ln(\n )%0A    \n-fmt.Println()%0A\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-02_18-09-19",
+            "content": "@@ -220,17 +220,16 @@\n Print(%22%5B\n- \n %22)%0A%0A    \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-02_18-09-25",
+            "content": "@@ -396,28 +396,8 @@\n  0%0A%0A\n-    fmt.Print(%22%5B%22)%0A%0A\n     \n@@ -568,21 +568,16 @@\n .Print(u\n-, %22 %22\n )%0A      \n@@ -586,29 +586,10 @@\n %7D%0A    %7D%0A\n-    fmt.Print(%22%5D%22)%0A\n %7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-02_18-10-07",
+            "content": "@@ -400,33 +400,32 @@\n     fmt.Print(%22%5B\n- \n %22)%0A%0A    for u:= \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-02_18-10-12",
+            "content": "@@ -625,18 +625,16 @@\n mt.Print\n-ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-02_18-10-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var total int\n    fmt.Scan(&total)\n\n    var qntd int\n    fmt.Scan(&qntd)\n\n    fig:= make([]int, qntd)\n\n    for i := 0; i < qntd; i++ {\n        fmt.Scan(&fig[i])\n    }\n    fmt.Print(\"[ \")\n\n    for i := 1; i < qntd; i++ {\n        if fig[i] == fig[i-1] {\n            fmt.Print(fig[i], \" \")\n        }\n    }\n    fmt.Print(\"]\")\n    fmt.Println()\n\n    perc:= 0\n\n    fmt.Print(\"[ \")\n\n    for u:= 1; u <= total; u++  {\n        for perc < qntd && fig[perc] < u {\n               perc++\n        }\n        if perc >= qntd || fig[perc] != u {\n            fmt.Print(u, \" \")\n        }\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "38"
+        }
+    ]
+}
