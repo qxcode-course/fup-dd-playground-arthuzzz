@@ -2,8 +2,63 @@
     "patches": [
         {
             "label": "2026-07-03_17-12-38",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,201 +41,35 @@\n     \n-var frase string%0A    fmt.Scan(&frase)%0A%0A    for i := 0; i %3C len(frase); i++ %7B%0A        if i == %22a%22 %7C%7C i == %22e%22 %7C%7C i ==%22i%22%0A        %7C%7C i == %22o%22 %7C%7C i == %22u%22 %7B%0A            fmt.Print(i)%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-03_17-26-59",
+            "content": "@@ -156,16 +156,24 @@\n  i ==%22i%22\n+%0A       \n  %7C%7C i ==\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-03_17-27-25",
+            "content": "@@ -118,28 +118,8 @@\n + %7B%0A\n-        fmt.Scan(i)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-07-03_17-27-58",
+            "content": "@@ -131,24 +131,17 @@\n mt.Scan(\n-frase%5Bi%5D\n+i\n )%0A      \n@@ -145,24 +145,17 @@\n      if \n-frase%5Bi%5D\n+i\n  == %22a%22 \n@@ -153,32 +153,25 @@\n i == %22a%22 %7C%7C \n-frase%5Bi%5D\n+i\n  == %22e%22 %7C%7C f\n@@ -169,24 +169,17 @@\n  %22e%22 %7C%7C \n-frase%5Bi%5D\n+i\n  ==%22i%22 %7C\n@@ -176,32 +176,25 @@\n  i ==%22i%22 %7C%7C \n-frase%5Bi%5D\n+i\n  == %22o%22 %7C%7C f\n@@ -196,16 +196,9 @@\n  %7C%7C \n-frase%5Bi%5D\n+i\n  == \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-03_17-29-31",
+            "content": "@@ -168,11 +168,11 @@\n  == \n-'a'\n+%22a%22\n  %7C%7C \n@@ -187,11 +187,11 @@\n  == \n-'e'\n+%22e%22\n  %7C%7C \n@@ -205,11 +205,11 @@\n %5D ==\n-'i'\n+%22i%22\n  %7C%7C \n@@ -224,11 +224,11 @@\n  == \n-'o'\n+%22o%22\n  %7C%7C \n@@ -243,11 +243,11 @@\n  == \n-'u'\n+%22u%22\n  %7B%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-03_17-30-50",
+            "content": "@@ -267,24 +267,17 @@\n t.Print(\n-frase%5Bi%5D\n+i\n )%0A      \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-03_17-31-32",
+            "content": "@@ -80,25 +80,8 @@\n e)%0A%0A\n-    vogais:= %22%22%0A%0A\n     \n@@ -261,24 +261,17 @@\n     \n-vogais += string\n+fmt.Print\n (fra\n@@ -297,30 +297,6 @@\n   %7D%0A\n-    fmt.Println(vogais)%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-03_17-33-47",
+            "content": "@@ -95,23 +95,8 @@\n = %22%22\n-%0A    conso:= %22%22\n %0A%0A  \n@@ -162,67 +162,8 @@\n i%5D)%0A\n-        if frase%5Bi%5D == ' '%7B%0A            continue%0A        %7D%0A\n     \n@@ -305,63 +305,8 @@\n i%5D)%0A\n-        %7D else %7B%0A            conso += string(frase%5Bi%5D)%0A\n     \n@@ -343,15 +343,8 @@\n gais\n-, conso\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-07-03_17-38-34",
+            "content": "@@ -472,26 +472,10 @@\n gais\n-)%0A    fmt.Println(\n+, \n cons\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-07-03_17-39-22",
+            "content": "@@ -17,206 +17,68 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc ler() string %7B%7D%0A%09leitor := bufio.NewReader(os.Stdin)%0A%09texto, _ := leitor.ReadString('%5Cn')%0A%09return strings.TrimSpace(texto)%0A%7D%0A%0Afunc main() %7B%0A   frase:= ler(\n+%22fmt%22%0Afunc main() %7B%0A    var frase string%0A    fmt.Scan(&frase\n )%0A%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-03_17-41-00",
+            "content": "@@ -70,16 +70,17 @@\n string %7B\n+%7D\n %0A%09leitor\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-03_17-42-52",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc ler() string {\n\tleitor := bufio.NewReader(os.Stdin)\n\ttexto, _ := leitor.ReadString('\\n')\n\treturn strings.TrimSpace(texto)\n}\n\nfunc main() {\n   frase:= ler()\n\n    vogais:= \"\"\n    conso:= \"\"\n\n    for i := 0; i < len(frase); i++ {\n        fmt.Scan(frase[i])\n        if frase[i] == ' '{\n            continue\n        }\n        if frase[i] == 'a' || frase[i] == 'e' || frase[i] =='i' || frase[i] == 'o' || frase[i] == 'u' {\n            vogais += string(frase[i])\n        } else {\n            conso += string(frase[i])\n        }\n    }\n    fmt.Println(vogais)\n    fmt.Println(conso)\n}\n",
+            "lines": "34"
         }
     ]
 }

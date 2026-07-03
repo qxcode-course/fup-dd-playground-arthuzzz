@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_18-03-58",
+            "content": "@@ -41,46 +41,35 @@\n     \n-var frase string%0A    fmt.Scan(&texto)%0A%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-03_18-09-19",
+            "content": "@@ -17,174 +17,13 @@\n ort \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc ler() string %7B%0A%09leitor := bufio.NewReader(os.Stdin)%0A%09texto, _ := leitor.ReadString('%5Cn')%0A%09return strings.TrimSpace(texto)%0A%7D\n+%22fmt%22\n %0Afun\n@@ -37,189 +37,48 @@\n ) %7B%0A\n-%0A\n     \n-frase:= ler()%0A%09trecho := ler()%0A%0A%09contador:= 0%0A%0A    for i := 0; i %3C len(frase); i++ %7B%0A        if frase%5Bi:i+len(trecho)%5D == trecho %7B%0A%09%09%09contador++%0A%09%09%7D\n+var frase string\n %0A    \n-%7D%0A%09\n fmt.\n-Println(contador\n+Scan(&texto\n )%0A%0A%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-07-03_18-19-38",
+            "content": "@@ -265,17 +265,16 @@\n = 0; i %3C\n-=\n  len(fra\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-03_18-20-07",
+            "content": "@@ -267,17 +267,16 @@\n 0; i %3C= \n-(\n len(fras\n@@ -281,23 +281,8 @@\n ase)\n- - len(trecho))\n ; i+\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-03_18-20-47",
+            "content": "package main\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc ler() string {\n\tleitor := bufio.NewReader(os.Stdin)\n\ttexto, _ := leitor.ReadString('\\n')\n\treturn strings.TrimSpace(texto)\n}\nfunc main() {\n\n    frase:= ler()\n\ttrecho := ler()\n\n\tcontador:= 0\n\n    for i := 0; i <= (len(frase) - len(trecho)); i++ {\n        if frase[i:i+len(trecho)] == trecho {\n\t\t\tcontador++\n\t\t}\n    }\n\tfmt.Println(contador)\n\n\n}\n",
+            "lines": "29"
+        }
+    ]
+}

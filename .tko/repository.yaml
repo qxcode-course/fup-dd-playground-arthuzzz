@@ -33,12 +33,12 @@ expanded:
 - fup@for1
 flags:
   inbox: all
-  panel: logs
+  panel: skills
   task_graph_mode: time
   show_time: 'true'
 audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@ru
-selected_index: 153
+selected: fup@amora
+selected_index: 155
