@@ -133,3 +133,15 @@
 2026-07-02 18:10:24, EXEC, v:1, k:fup@baruel, mode:FULL, rate:100, size:38
 2026-07-02 18:10:27, MOVE, v:1, k:fup@baruel, mode:BACK
 2026-07-02 18:10:35, SELF, v:1, k:fup@baruel, self:1, rate:100, concept:1, refactor:1
+2026-07-02 18:10:22, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-07-02 18:10:24, MOVE, v:1, k:fup@baruel, mode:EDIT
+2026-07-02 18:17:27, MOVE, v:1, k:fup@tazos, mode:DOWN
+2026-07-02 18:17:28, MOVE, v:1, k:fup@tazos, mode:PICK
+2026-07-02 18:17:54, MOVE, v:1, k:fup@tazos, mode:PICK
+2026-07-02 18:17:56, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:5
+2026-07-02 18:17:55, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-07-02 18:21:33, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-07-02 18:24:35, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:16
+2026-07-02 18:26:12, EXEC, v:1, k:fup@tazos, mode:FULL, rate:0, size:16
+2026-07-02 18:26:18, MOVE, v:1, k:fup@tazos, mode:EDIT
+2026-07-02 18:26:12, MOVE, v:1, k:fup@tazos, mode:EDIT

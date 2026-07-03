@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_16-29-27",
+            "content": "@@ -41,181 +41,35 @@\n     \n-var a string%0A    fmt.Scan(&a)%0A%0A    x:= a%5B0%5D%0A%0A    if x %3E= 'A' && x %3C= 'Z' %7B%0A        x = x + 32%0A    %7D else if x  %3E= 'a' && x %3C= 'z' %7B%0A        x = x- 32%0A    %7D%0A    fmt.Println(x\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-03_16-36-46",
+            "content": "@@ -213,16 +213,8 @@\n tln(\n-%22%25c%5Cn%22, \n x)%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-07-03_16-37-18",
+            "content": "@@ -206,17 +206,18 @@\n mt.Print\n-f\n+ln\n (%22%25c%5Cn%22,\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-07-03_16-37-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a string\n    fmt.Scan(&a)\n\n    x:= a[0]\n\n    if x >= 'A' && x <= 'Z' {\n        x = x + 32\n    } else if x  >= 'a' && x <= 'z' {\n        x = x- 32\n    }\n    fmt.Printf(\"%c\\n\", x)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

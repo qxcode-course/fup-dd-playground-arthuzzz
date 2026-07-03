@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-03_16-39-01",
+            "content": "@@ -41,99 +41,35 @@\n     \n-var a string%0A    var x, z int%0A    fmt.Scan(&a)%0A    fmt.Scan(&x, &z)%0A%0A    fmt.Println(a%5Bx:z%5D\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-03_16-45-02",
+            "content": "@@ -62,17 +62,12 @@\n var \n-ini, qntd\n+x, z\n  int\n@@ -102,155 +102,14 @@\n an(&\n-ini, &qntd)%0A%0A    if ini %3C 0 && ini %3E len(a) %7B%0A        fmt.Println(%22 %22)%0A    %7D%0A    end:= ini + qntd%0A%0A    if end %3E len(a) %7B%0A        end = len(a)%0A    %7D\n+x, &z)\n %0A%0A  \n@@ -128,16 +128,11 @@\n n(a%5B\n-ini:qntd\n+x:z\n %5D)%0A%7D\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-07-03_16-50-34",
+            "content": "@@ -150,20 +150,8 @@\n n(a)\n- %7C%7C qntd %3C 0\n  %7B%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-03_16-51-01",
+            "content": "@@ -131,18 +131,18 @@\n ini %3C 0 \n-%7C%7C\n+&&\n  ini %3E l\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-03_16-51-27",
+            "content": "@@ -186,26 +186,12 @@\n ln(%22\n+ \n %22)%0A\n-        return%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-03_16-51-47",
+            "content": "@@ -300,16 +300,17 @@\n n(a%5Bini:\n-en\n+qnt\n d%5D)%0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-03_16-52-08",
+            "content": "@@ -139,17 +139,16 @@\n %7C%7C ini %3E\n-=\n  len(a) \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-03_16-53-02",
+            "content": "@@ -10,202 +10,51 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc ler() string %7B%0A    leitor := bufio.NewReader(os.Stdin)%0A    a, _ := leitor.ReadString('%5Cn')%0A    return strings.TrimSpace(a)%0A%7D%0A%0Afunc main() %7B%0A    a := ler()\n+%22fmt%22%0Afunc main() %7B%0A    var a string\n %0A   \n@@ -72,16 +72,33 @@\n ntd int%0A\n+    fmt.Scan(&a)%0A\n     fmt.\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-03_17-00-20",
+            "content": "@@ -42,22 +42,8 @@\n os%22%0A\n-    %22strings%22%0A\n )%0A%0Af\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-03_17-01-51",
+            "content": "@@ -359,19 +359,19 @@\n   %7D%0A    \n-fim\n+end\n := ini +\n@@ -384,19 +384,19 @@\n %0A    if \n-fim\n+end\n  %3E len(a\n@@ -407,19 +407,19 @@\n         \n-fim\n+end\n  = len(a\n@@ -453,11 +453,11 @@\n ini:\n-fim\n+end\n %5D)%0A%7D\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-03_17-02-38",
+            "content": "@@ -219,24 +219,8 @@\n r()%0A\n-    fmt.Scan(a)%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-03_17-03-13",
+            "content": "@@ -228,17 +228,16 @@\n mt.Scan(\n-&\n a)%0A    v\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-03_17-03-23",
+            "content": "@@ -223,10 +223,8 @@\n     \n-//\n fmt.\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-03_17-06-44",
+            "content": "@@ -38,17 +38,20 @@\n %22%0A%09%22os%22%0A\n-%09\n+    \n %22strings\n@@ -75,17 +75,20 @@\n tring %7B%0A\n-%09\n+    \n leitor :\n@@ -115,22 +115,21 @@\n .Stdin)%0A\n-%09texto\n+    a\n , _ := l\n@@ -151,17 +151,20 @@\n g('%5Cn')%0A\n-%09\n+    \n return s\n@@ -180,21 +180,17 @@\n imSpace(\n-texto\n+a\n )%0A%7D%0A%0Afun\n@@ -204,14 +204,13 @@\n ) %7B%0A\n-%09texto\n+    a\n  := \n@@ -219,38 +219,53 @@\n r()%0A\n-%0A%09var inicio, quantidade\n+    //fmt.Scan(&a)%0A    var ini, qntd\n  int%0A\n-%09\n+    \n fmt.\n@@ -277,47 +277,28 @@\n &ini\n-cio)%0A%09fmt.Scan(&quantidade)%0A%0A%09\n+, &qntd)%0A%0A    \n if ini\n-cio\n  %3C 0\n@@ -308,19 +308,16 @@\n  ini\n-cio\n  %3E= len(\n text\n@@ -316,37 +316,33 @@\n len(\n-texto\n+a\n ) %7C%7C q\n-uantidade %3C 0 %7B%0A%09%09\n+ntd %3C 0 %7B%0A        \n fmt.\n@@ -350,56 +350,62 @@\n rint\n+ln\n (%22%22)%0A\n-%09%09return%0A%09%7D%0A%0A%09\n+        return%0A    %7D%0A    \n fim\n- \n := ini\n-cio\n  + q\n-uantidade%0A%0A%09\n+ntd%0A%0A    \n if f\n@@ -417,41 +417,45 @@\n len(\n-texto) %7B%0A%09%09fim = len(texto)%0A%09%7D%0A%0A%09\n+a) %7B%0A        fim = len(a)%0A    %7D%0A%0A    \n fmt.\n@@ -466,20 +466,13 @@\n tln(\n-texto\n+a\n %5Bini\n-cio\n :fim\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-03_17-10-49",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc ler() string {\n\tleitor := bufio.NewReader(os.Stdin)\n\ttexto, _ := leitor.ReadString('\\n')\n\treturn strings.TrimSpace(texto)\n}\n\nfunc main() {\n\ttexto := ler()\n\n\tvar inicio, quantidade int\n\tfmt.Scan(&inicio)\n\tfmt.Scan(&quantidade)\n\n\tif inicio < 0 || inicio >= len(texto) || quantidade < 0 {\n\t\tfmt.Print(\"\")\n\t\treturn\n\t}\n\n\tfim := inicio + quantidade\n\n\tif fim > len(texto) {\n\t\tfim = len(texto)\n\t}\n\n\tfmt.Println(texto[inicio:fim])\n}\n",
+            "lines": "35"
+        }
+    ]
+}

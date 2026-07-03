@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_18-17-56",
+            "content": "@@ -41,214 +41,35 @@\n     \n-var qntd int%0A    fmt.Scan(&qntd)%0A%0A    fig:= make(%5B%5Dint, qntd)%0A%0A    repete:= 0%0A    for i:= 0; i %3C qntd; i++ %7B%0A        if fig%5Bi%5D == fig%5Bi-1%5D %7B%0A            repete++%0A            fmt.Print(fig%5Bi%5D)%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-02_18-24-35",
+            "content": "@@ -133,17 +133,16 @@\n = 0; i %3C\n-=\n  qntd; i\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-07-02_18-26-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qntd int\n    fmt.Scan(&qntd)\n\n    fig:= make([]int, qntd)\n\n    repete:= 0\n    for i:= 0; i <= qntd; i++ {\n        if fig[i] == fig[i-1] {\n            repete++\n            fmt.Print(fig[i])\n        }\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}
