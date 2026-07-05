@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_00-18-00",
+            "content": "@@ -41,389 +41,35 @@\n     \n-type restaurant struct %7B%0A    nome string%0A    nota int%0A    %7D%0A%0A    var n int%0A    fmt.Scan(&n)%0A%0A    resta:= make(%5B%5Drestaurant, n)%0A%0A    for i:= 0; i %3C n; i++ %7B%0A        fmt.Scan(&resta%5Bi%5D.nome, resta%5Bi%5D.nota)%0A    %7D%0A%0A    melhor:= resta%5B0%5D%0A%0A    for i:= 0; i %3C len(resta); i++ %7B%0A        if resta%5Bi%5D.nota %3E melhor.nota %7B%0A            melhor = resta%5Bi%5D%0A        %7D%0A    %7D%0A%0A    fmt.Println(melhor\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-05_00-38-08",
+            "content": "@@ -416,14 +416,14 @@\n tln(\n-resta)%0A\n+melhor)\n %0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-05_00-38-25",
+            "content": "@@ -383,119 +383,8 @@\n %5Bi%5D%0A\n-        %7D else if resta%5Bi%5D.nota == melhor.nota %7C%7C resta%5Bi%5D.nome %3E melhor.nome  %7B%0A            melhor = resta%5Bi%5D%0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-05_00-41-03",
+            "content": "@@ -523,19 +523,18 @@\n Println(\n-melhor\n+resta\n )%0A%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-05_00-41-17",
+            "content": "@@ -19,17 +19,34 @@\n t %22fmt%22%0A\n-%0A\n+func main() %7B%0A    \n type res\n@@ -102,48 +102,156 @@\n  %7D%0A%0A\n-func ganha(resta %5B%5Drestaurant) string  %7B\n+    var n int%0A    fmt.Scan(&n)%0A%0A    resta:= make(%5B%5Drestaurant, n)%0A%0A    for i:= 0; i %3C n; i++ %7B%0A        fmt.Scan(&resta%5Bi%5D.nome, resta%5Bi%5D.nota)%0A    %7D\n %0A%0A  \n@@ -270,20 +270,16 @@\n esta%5B0%5D%0A\n-    \n %0A    for\n@@ -510,226 +510,31 @@\n   %7D%0A\n-    return melhor.nome%0A%7D%0A%0Afunc main() %7B%0A    var n int%0A    fmt.Scan(&n)%0A%0A    resta:= make(%5B%5Drestaurant, n)%0A%0A    for i:= 0; i %3C n; i++ %7B%0A        fmt.Scan(&resta%5Bi%5D.nome, resta%5Bi%5D.nota)%0A    %7D%0A%0A    fmt.Println(ganha(resta)\n+%0A    fmt.Println(melhor\n )%0A%0A%7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-05_00-46-23",
+            "content": "@@ -322,17 +322,17 @@\n i%5D.nome \n-%3C\n+%3E\n  melhor.\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-05_00-47-01",
+            "content": "@@ -309,10 +309,10 @@\n ota \n-&&\n+%7C%7C\n  res\n@@ -322,17 +322,17 @@\n i%5D.nome \n-%3E\n+%3C\n  melhor.\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-05_00-47-12",
+            "content": "@@ -322,17 +322,17 @@\n i%5D.nome \n-%3C\n+%3E\n  melhor.\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-05_00-47-19",
+            "content": "@@ -553,17 +553,16 @@\n %5D.nome, \n-&\n resta%5Bi%5D\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-05_00-48-48",
+            "content": "package main\nimport \"fmt\"\n\ntype restaurant struct {\n    nome string\n    nota int\n    }\n\nfunc ganha(resta []restaurant) string  {\n\n    melhor:= resta[0]\n    \n    for i:= 0; i < len(resta); i++ {\n        if resta[i].nota > melhor.nota {\n            melhor = resta[i]\n        } else if resta[i].nota == melhor.nota && resta[i].nome < melhor.nome  {\n            melhor = resta[i]\n        }\n    }\n    return melhor.nome\n}\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    resta:= make([]restaurant, n)\n\n    for i:= 0; i < n; i++ {\n        fmt.Scan(&resta[i].nome, &resta[i].nota)\n    }\n\n    fmt.Println(ganha(resta))\n\n}\n",
+            "lines": "35"
+        }
+    ]
+}

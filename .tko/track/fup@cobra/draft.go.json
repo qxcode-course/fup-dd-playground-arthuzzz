@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_01-01-10",
+            "content": "@@ -41,227 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    var x, y int%0A    fmt.Scan(&x, &y)%0A%0A    var c string%0A    var s int%0A    fmt.Scan(&c, &s)%0A%0A    if x %3E n %7B%0A        x = x - n%0A    %7D%0A    if y %3E n %7B%0A        y = y -n%0A    %7D%0A%0A    fmt.Println(x, y)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-05_01-10-34",
+            "content": "@@ -239,50 +239,8 @@\n  %7D%0A%0A\n-    if s + x %3E n %7B%0A        x = x- n%0A    %7D%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-07-05_01-11-47",
+            "content": "@@ -281,51 +281,8 @@\n   %7D%0A\n-    if s + y %3E n %7B%0A        y = y - n%0A    %7D%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-05_01-12-14",
+            "content": "@@ -125,26 +125,8 @@\n ing%0A\n-    fmt.Scan(&c)%0A%0A\n     \n@@ -148,16 +148,20 @@\n mt.Scan(\n+&c, \n &s)%0A%0A   \n@@ -168,16 +168,13 @@\n  if \n-c == %22R%22\n+x %3E n\n  %7B%0A \n@@ -190,27 +190,28 @@\n = x \n-+ s\n+- n\n %0A    \n+%7D%0A\n     if \n-x\n+y\n  %3E\n-=\n  n %7B\n@@ -223,54 +223,40 @@\n     \n-    x = x %25 n%0A        %7D%0A    %7D else if c == %22L%22\n+y = y -n%0A    %7D%0A%0A    if s + x %3E n\n  %7B%0A \n@@ -271,78 +271,34 @@\n  = x\n- \n - \n-s\n+n\n %0A    %7D\n- else if c == %22U%22 %7B%0A        y = y + s%0A    %7D else if c == %22D%22\n+%0A    if s + y %3E n\n  %7B%0A \n@@ -316,17 +316,16 @@\n y - \n-s\n+n\n %0A    %7D%0A\n-%0A\n     \n@@ -343,11 +343,10 @@\n (x, y)%0A%0A\n-%0A\n %7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-05_01-23-33",
+            "content": "@@ -349,60 +349,8 @@\n + s%0A\n-        if y %3E= n %7B%0A            y = y %25 n%0A        %7D%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-05_01-24-07",
+            "content": "@@ -306,61 +306,8 @@\n - s%0A\n-        if x %3C 0 %7B%0A            x = x%25n + n%0A        %7D%0A\n     \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-05_01-26-03",
+            "content": "@@ -341,13 +341,11 @@\n x = \n-(\n x%25n\n-)\n  + n\n@@ -497,65 +497,8 @@\n - s%0A\n-        if y %3C 0 %7B%0A            y = (y %25 n) + n%0A        %7D%0A\n     \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-05_01-27-26",
+            "content": "@@ -345,15 +345,11 @@\n (x%25n\n- + n\n ) \n-%25\n++\n  n%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_01-28-29",
+            "content": "@@ -542,17 +542,13 @@\n (y %25\n- n +\n  n) \n-%25\n++\n  n%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_01-28-45",
+            "content": "@@ -385,9 +385,9 @@\n == %22\n-D\n+U\n %22 %7B%0A\n@@ -468,33 +468,33 @@\n %7D else if c == %22\n-U\n+D\n %22 %7B%0A        y = \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_01-30-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    var x, y int\n    fmt.Scan(&x, &y)\n\n    var c string\n    fmt.Scan(&c)\n\n    var s int\n    fmt.Scan(&s)\n\n    if c == \"R\" {\n        x = x + s\n        if x >= n {\n            x = x % n\n        }\n    } else if c == \"L\" {\n        x = x - s\n        if x < 0 {\n            x = (x%n + n) % n\n        }\n    } else if c == \"D\" {\n        y = y + s\n        if y >= n {\n            y = y % n\n        }\n    } else if c == \"U\" {\n        y = y - s\n        if y < 0 {\n            y = (y % n + n) % n\n        }\n    }\n\n    fmt.Println(x, y)\n\n\n}\n",
+            "lines": "41"
+        }
+    ]
+}
