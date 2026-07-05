@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"sort"
+	"strings"
 )
 
 type Aluno struct {
@@ -25,7 +26,7 @@ func main() {
 
 	for i := 0; i < n; i++ {
 		nome, _ := reader.ReadString('\n')
-		nome = nome[:len(nome)-1] // remove '\n'
+		nome = strings.Trimspace(nome)
 
 		var n1, n2, n3 float64
 		fmt.Fscanln(reader, &n1, &n2, &n3)
@@ -44,7 +45,7 @@ func main() {
 	})
 
 	for i, a := range alunos {
-		fmt.Printf("%d %s %.2f %.2f %.2f %.2f\n",
+		fmt.Printf("%d: %s %.2f %.2f %.2f %.2f\n",
 			i,
 			a.Nome,
 			a.Media,

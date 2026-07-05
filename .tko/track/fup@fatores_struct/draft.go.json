@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_01-41-01",
+            "content": "@@ -23,387 +23,53 @@\n mt%22%0A\n-%0A\n func \n-calculo(num  %5B%5Dint) Fator %7B%0A    var fatores %5B%5DFator%0A    for i := 1; i %3C num; i++ %7B%0A        qtd := 0%0A%0A        for num%252 == 0 %7B%0A            qtd++%0A            num = num %25 i%0A        %7D%0A        if qtd %3E 0 %7B%0A            fatores := append(Fator)%0A        %7D%0A        %7D%0A    %7D%0A%7D%0A%0Afunc main() %7B%0A    type Fator struct %7B%0A        num int%0A        qtd int%0A    %7D%0A%0A    var n int%0A    fmt.Scan(&n\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-05_01-53-20",
+            "content": "@@ -287,31 +287,8 @@\n   %7D%0A\n-        return fatores%0A\n     \n@@ -403,33 +403,7 @@\n (&n)\n-%0A%0A    fmt.Println(fatores)\n %0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-05_01-54-00",
+            "content": "@@ -23,69 +23,8 @@\n mt%22%0A\n-    type Fator struct %7B%0A        num int%0A        qtd int%0A    %7D\n %0Afun\n@@ -312,16 +312,17 @@\n s%0A    %7D%0A\n+%7D\n %0A%0Afunc m\n@@ -328,16 +328,78 @@\n main() %7B\n+%0A    type Fator struct %7B%0A        num int%0A        qtd int%0A    %7D\n %0A%0A    va\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-05_01-54-27",
+            "content": "@@ -98,16 +98,19 @@\n ulo(num \n+ %5B%5D\n int) Fat\n@@ -269,90 +269,8 @@\n    %7D\n-%0A%0A        for num %25 i == 0 %7B%0A            qtd++%0A            num = num %25 i%0A        %7D\n %0A   \n@@ -307,16 +307,17 @@\n fatores \n+:\n = append\n@@ -321,89 +321,13 @@\n end(\n-fatores, Fator %7B%0A                num: i,%0A                qtd: qtd, %0A            %7D\n+Fator\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-07-05_02-04-10",
+            "content": "@@ -580,30 +580,8 @@\n n)%0A%0A\n-    x := calculo(n)%0A%0A%0A\n     \n@@ -596,9 +596,15 @@\n tln(\n-x\n+fatores\n )%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-05_02-05-04",
+            "content": "@@ -127,16 +127,18 @@\n fatores \n+%5B%5D\n Fator%0A  \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_02-07-52",
+            "content": "@@ -131,10 +131,8 @@\n res \n-%5B%5D\n Fato\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_02-10-56",
+            "content": "@@ -103,18 +103,16 @@\n um int) \n-%5B%5D\n Fator %7B%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_02-11-38",
+            "content": "@@ -193,36 +193,34 @@\n %0A        for num\n- %25 i\n+%252\n  == 0 %7B%0A        \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_02-12-44",
+            "content": "@@ -186,16 +186,98 @@\n d := 0%0A%0A\n+        for num %25 i == 0 %7B%0A            qtd++%0A            num = num %25 i%0A        %7D%0A%0A\n         \n@@ -488,24 +488,28 @@\n )%0A        %7D%0A\n+    \n     %7D%0A      \n@@ -529,19 +529,17 @@\n res%0A    \n- %7D%0A\n+%7D\n %0A%0A%0Afunc \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_02-15-04",
+            "content": "@@ -538,11 +538,9 @@\n tln(\n-2,3\n+x\n )%0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-05_02-28-41",
+            "content": "@@ -538,10 +538,11 @@\n tln(\n-x)\n+2,3\n )%0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-05_02-28-53",
+            "content": "@@ -154,9 +154,9 @@\n  := \n-2\n+1\n ; i \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-05_02-29-24",
+            "content": "@@ -536,11 +536,12 @@\n intln(x)\n+)\n %0A%7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-05_02-29-35",
+            "content": "@@ -156,17 +156,16 @@\n = 2; i %3C\n-=\n  num; i+\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-05_02-31-37",
+            "content": "@@ -258,9 +258,9 @@\n num \n-/\n+%25\n  i%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-05_02-32-14",
+            "content": "@@ -522,73 +522,8 @@\n n)%0A%0A\n-    for _, f := range x %7B%0A        fmt.Println(f.num, f.qtd)%0A    %7D\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-07-05_02-33-58",
+            "content": "@@ -584,10 +584,29 @@\n )%0A    %7D%0A\n+    fmt.Println(x)%0A\n %7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-07-05_02-34-08",
+            "content": "package main\nimport \"fmt\"\n    type Fator struct {\n        num int\n        qtd int\n    }\nfunc calculo(num int) []Fator {\n    var fatores []Fator\n    for i := 2; i <= num; i++ {\n        qtd := 0\n\n        for num % i == 0 {\n            qtd++\n            num = num / i\n        }\n        if qtd > 0 {\n            fatores = append(fatores, Fator {\n                num: i,\n                qtd: qtd, \n            })\n        }\n    }\n        return fatores\n     }\n\n\n\nfunc main() {\n\n    var n int\n    fmt.Scan(&n)\n\n    x := calculo(n)\n\n    for _, f := range x {\n        fmt.Println(f.num, f.qtd)\n    }\n}\n",
+            "lines": "38"
+        }
+    ]
+}

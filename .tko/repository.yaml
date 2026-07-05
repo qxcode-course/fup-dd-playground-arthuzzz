@@ -19,8 +19,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@if2
-- fup@struct
+- fup@string
 flags:
   inbox: all
   panel: skills
@@ -30,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@cobra
-selected_index: 13
+selected: fup@fresco
+selected_index: 16

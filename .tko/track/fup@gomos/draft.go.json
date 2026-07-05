@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-07-05_00-55-52",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,66 +41,35 @@\n     \n-type Ponto struct %7B%0A        x int%0A        y int%0A    %7D%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-05_02-52-09",
+            "content": "@@ -96,62 +96,8 @@\n  %7D%0A%0A\n-    var q int%0A    var d string%0A    fmt.Scan(&q, &d)%0A%0A%0A\n     \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-07-05_02-55-04",
+            "content": "@@ -149,18 +149,8 @@\n d)%0A%0A\n-    pos:%0A%0A\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-07-05_02-56-42",
+            "content": "@@ -157,100 +157,8 @@\n pos:\n- make(%5B%5DPonto, q)%0A%0A    for i := 0; i %3C 1; i++ %7B%0A        fmt.Scan(&pos%5Bi%5D.x, &pos%5Bi%5D.y)%0A    %7D\n %0A%0A%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-07-05_02-59-17",
+            "content": "@@ -153,17 +153,16 @@\n     pos:\n-=\n  make(%5B%5D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-05_02-59-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    type Ponto struct {\n        x int\n        y int\n    }\n\n    var q int\n    var d string\n    fmt.Scan(&q, &d)\n\n    pos:= make([]Ponto, q)\n\n    for i := 0; i < 1; i++ {\n        fmt.Scan(&pos[i].x, &pos[i].y)\n    }\n\n\n    \n}\n",
+            "lines": "21"
         }
     ]
 }

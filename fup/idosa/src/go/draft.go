@@ -43,6 +43,6 @@ func main() {
 	if encontrou {
 		fmt.Println(nomeMaisIdosa)
 	} else {
-		fmt.Println("nao te mulher")
+		fmt.Println("nao tem mulher")
 	}
 }

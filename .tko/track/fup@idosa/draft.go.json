@@ -67,7 +67,12 @@
         },
         {
             "label": "2026-06-15_04-25-28",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\ntype Pessoa struct {\n\tnome  string\n\tidade int\n\tsexo  rune\n}\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscan(in, &n)\n\n\tpessoas := make([]Pessoa, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tvar sexo string\n\t\tfmt.Fscan(in, &pessoas[i].nome, &pessoas[i].idade, &sexo)\n\t\tpessoas[i].sexo = rune(sexo[0])\n\t}\n\n\tencontrou := false\n\tmaiorIdade := -1\n\tnomeMaisIdosa := \"\"\n\n\tfor _, p := range pessoas {\n\t\tif p.sexo == 'f' {\n\t\t\tif !encontrou || p.idade > maiorIdade {\n\t\t\t\tencontrou = true\n\t\t\t\tmaiorIdade = p.idade\n\t\t\t\tnomeMaisIdosa = p.nome\n\t\t\t}\n\t\t}\n\t}\n\n\tif encontrou {\n\t\tfmt.Println(nomeMaisIdosa)\n\t} else {\n\t\tfmt.Println(\"nao te mulher\")\n\t}\n}\n",
+            "content": "@@ -669,17 +669,16 @@\n (%22nao te\n-m\n  mulher%22\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-05_02-36-11",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\ntype Pessoa struct {\n\tnome  string\n\tidade int\n\tsexo  rune\n}\n\nfunc main() {\n\tin := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscan(in, &n)\n\n\tpessoas := make([]Pessoa, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tvar sexo string\n\t\tfmt.Fscan(in, &pessoas[i].nome, &pessoas[i].idade, &sexo)\n\t\tpessoas[i].sexo = rune(sexo[0])\n\t}\n\n\tencontrou := false\n\tmaiorIdade := -1\n\tnomeMaisIdosa := \"\"\n\n\tfor _, p := range pessoas {\n\t\tif p.sexo == 'f' {\n\t\t\tif !encontrou || p.idade > maiorIdade {\n\t\t\t\tencontrou = true\n\t\t\t\tmaiorIdade = p.idade\n\t\t\t\tnomeMaisIdosa = p.nome\n\t\t\t}\n\t\t}\n\t}\n\n\tif encontrou {\n\t\tfmt.Println(nomeMaisIdosa)\n\t} else {\n\t\tfmt.Println(\"nao tem mulher\")\n\t}\n}\n",
             "lines": "48"
         }
     ]

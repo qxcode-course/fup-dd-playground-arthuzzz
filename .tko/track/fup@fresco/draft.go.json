@@ -1,0 +1,139 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-05_03-00-41",
+            "content": "@@ -23,299 +23,53 @@\n mt%22%0A\n-%0A%0Afunc ler() string %7B%0A%09leitor := bufio.NewReader(os.Stdin)%0A%09texto, _ := leitor.ReadString('%5Cn')%0A%09return strings.TrimSpace(texto)%0A%7D%0A%0Afunc main() %7B%0A    frase:= ler()%0A%0A    for i := 0; i %3C len(frase); i++ %7B%0A        if frase%5Bi%5D == ' ' %7B%0A            continue%0A        %7D%0A%0A    %7D%0A    fmt.Println(frase\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-05_03-09-32",
+            "content": "@@ -10,52 +10,20 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)\n+%22fmt%22\n %0A%0A%0Af\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-05_03-10-22",
+            "content": "@@ -185,119 +185,8 @@\n o)%0A%7D\n-%0Afunc vogal(c byte) bool %7B%0A        return c == 'a' %7C%7C c =='e' %7C%7C c == 'i' %7C%7C%0A        c == 'o' %7C%7C c == 'u'%0A    %7D\n %0A%0Afu\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-05_03-17-05",
+            "content": "@@ -329,22 +329,8 @@\n er()\n-%0A    resu:= %22%22\n %0A%0A  \n@@ -434,138 +434,9 @@\n     \n-    if vogal(frase%5Bi%5D) %7C%7C len(resu) %3E= 2 && vogal(resu%5Blen(resu)-1%5D) %7B%0A        continue%0A    %7D%0A    resu += string(frase%5Bi%5D)%0A%0A    %7D%0A\n+%7D\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-05_03-21-40",
+            "content": "@@ -591,16 +591,17 @@\n Println(\n-resu\n+frase\n )%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-05_03-21-47",
+            "content": "@@ -424,90 +424,16 @@\n     \n-if vogal(frase%5Bi-1%5D && vogal(frase%5Bi+1%5D)) %7B%0A                continue%0A            %7D\n+continue\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-05_03-30-38",
+            "content": "@@ -439,17 +439,16 @@\n ase%5Bi-1%5D\n-)\n  && voga\n@@ -460,16 +460,17 @@\n se%5Bi+1%5D)\n+)\n  %7B%0A     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-31-02",
+            "content": "@@ -590,36 +590,8 @@\n -1%5D)\n- && vogal(resu%5Blen(resu)-2%5D)\n  %7B%0A \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-32-15",
+            "content": "@@ -541,18 +541,18 @@\n ase%5Bi%5D) \n-&&\n+%7C%7C\n  len(res\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-32-48",
+            "content": "@@ -409,26 +409,8 @@\n  ' '\n- %7C%7C i %3C len(frase)\n  %7B%0A \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-34-36",
+            "content": "@@ -406,18 +406,18 @@\n  == ' ' \n-&&\n+%7C%7C\n  i %3C len\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-34-45",
+            "content": "@@ -423,18 +423,16 @@\n n(frase)\n--2\n  %7B%0A     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-35-03",
+            "content": "@@ -424,17 +424,17 @@\n (frase)-\n-1\n+2\n  %7B%0A     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-35-09",
+            "content": "@@ -412,17 +412,8 @@\n ' &&\n- i %3E 0 &&\n  i %3C\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-36-04",
+            "content": "@@ -574,25 +574,10 @@\n i%5D) \n-%7B%0A            for\n+&&\n  len\n@@ -590,28 +590,16 @@\n  %3E= 2 &&\n-%0A           \n  vogal(r\n@@ -615,45 +615,27 @@\n esu)\n- \n -1%5D) \n-%7B%0A                resu = \n+&& vogal(\n resu%5B\n-:\n len(\n@@ -644,24 +644,13 @@\n su)-\n-1%5D%0A            %7D\n+2%5D) %7B\n %0A   \n@@ -650,25 +650,32 @@\n ) %7B%0A        \n-%7D\n+continue\n %0A    %7D%0A    r\n@@ -698,17 +698,24 @@\n ase%5Bi%5D)%0A\n- \n+%0A    %7D%0A%0A\n     fmt.\n@@ -728,14 +728,10 @@\n n(resu)%0A\n-    \n %7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-07-05_03-49-13",
+            "content": "@@ -712,24 +712,26 @@\n       %7D%0A    \n+%7D%0A\n     resu += \n@@ -747,22 +747,16 @@\n ase%5Bi%5D)%0A\n-    %7D%0A\n      fmt\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_03-49-24",
+            "content": "@@ -603,18 +603,18 @@\n u) %3E= 2 \n-%7C%7C\n+&&\n %0A       \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_03-49-44",
+            "content": "@@ -603,18 +603,18 @@\n u) %3E= 2 \n-&&\n+%7C%7C\n %0A       \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_03-49-50",
+            "content": "@@ -647,36 +647,8 @@\n -1%5D)\n- && vogal(resu%5Blen(resu)-2%5D)\n  %7B%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_03-53-10",
+            "content": "@@ -605,9 +605,9 @@\n  %3E= \n-3\n+2\n  &&%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_03-57-01",
+            "content": "@@ -675,36 +675,8 @@\n -2%5D)\n- && vogal(resu%5Blen(resu)-3%5D)\n  %7B%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_03-58-17",
+            "content": "@@ -741,17 +741,17 @@\n n(resu)-\n-2\n+1\n %5D%0A      \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_03-58-57",
+            "content": "@@ -804,29 +804,8 @@\n %5Bi%5D)\n- + resu%5Blen(resu)-1:%5D\n %0A   \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_03-59-40",
+            "content": "@@ -747,29 +747,8 @@\n )-2%5D\n- + resu%5Blen(resu)-1:%5D\n %0A   \n@@ -800,16 +800,37 @@\n rase%5Bi%5D)\n+ + resu%5Blen(resu)-1:%5D\n %0A    %7D%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_04-01-16",
+            "content": "@@ -584,18 +584,19 @@\n         \n-i\n f\n+or\n  len(res\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_04-02-09",
+            "content": "@@ -584,19 +584,18 @@\n         \n+i\n f\n-or\n  len(res\n@@ -825,210 +825,8 @@\n i%5D)%0A\n-        if len(resu) %3E= 3 &&%0A            vogal(resu%5Blen(resu) -1%5D) && vogal(resu%5Blen(resu)-2%5D) && vogal(resu%5Blen(resu)-3%5D) %7B%0A                resu = resu%5B:len(resu)-2%5D + resu%5Blen(resu)-1:%5D%0A            %7D%0A\n     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-05_04-03-00",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\n\nfunc ler() string {\n\tleitor := bufio.NewReader(os.Stdin)\n\ttexto, _ := leitor.ReadString('\\n')\n\treturn strings.TrimSpace(texto)\n}\nfunc vogal(c byte) bool {\n        return c == 'a' || c =='e' || c == 'i' ||\n        c == 'o' || c == 'u'\n    }\n\nfunc main() {\n    frase:= ler()\n    resu:= \"\"\n\n    for i := 0; i < len(frase); i++ {\n        if frase[i] == ' ' && i > 0 && i < len(frase)-1 {\n            if vogal(frase[i-1]) && vogal(frase[i+1]) {\n                continue\n            }\n        }\n\n        if vogal(frase[i]) {\n            for len(resu) >= 3 &&\n            vogal(resu[len(resu) -1]) && vogal(resu[len(resu)-2]) && vogal(resu[len(resu)-3]) {\n                resu = resu[:len(resu)-2] + resu[len(resu)-1:]\n            }\n        }\n        resu += string(frase[i])\n        if len(resu) >= 3 &&\n            vogal(resu[len(resu) -1]) && vogal(resu[len(resu)-2]) && vogal(resu[len(resu)-3]) {\n                resu = resu[:len(resu)-2] + resu[len(resu)-1:]\n            }\n    }\n     fmt.Println(resu)\n    }\n",
+            "lines": "45"
+        }
+    ]
+}

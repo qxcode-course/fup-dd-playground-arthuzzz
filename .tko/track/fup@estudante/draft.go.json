@@ -22,7 +22,12 @@
         },
         {
             "label": "2026-06-14_23-52-11",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n)\n\ntype Aluno struct {\n\tNome  string\n\tN1    float64\n\tN2    float64\n\tN3    float64\n\tMedia float64\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscanln(reader, &n)\n\n\talunos := make([]Aluno, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tnome, _ := reader.ReadString('\\n')\n\t\tnome = nome[:len(nome)-1] // remove '\\n'\n\n\t\tvar n1, n2, n3 float64\n\t\tfmt.Fscanln(reader, &n1, &n2, &n3)\n\n\t\talunos[i] = Aluno{\n\t\t\tNome:  nome,\n\t\t\tN1:    n1,\n\t\t\tN2:    n2,\n\t\t\tN3:    n3,\n\t\t\tMedia: (n1 + n2 + n3) / 3.0,\n\t\t}\n\t}\n\n\tsort.Slice(alunos, func(i, j int) bool {\n\t\treturn alunos[i].Media > alunos[j].Media\n\t})\n\n\tfor i, a := range alunos {\n\t\tfmt.Printf(\"%d %s %.2f %.2f %.2f %.2f\\n\",\n\t\t\ti,\n\t\t\ta.Nome,\n\t\t\ta.Media,\n\t\t\ta.N1,\n\t\t\ta.N2,\n\t\t\ta.N3)\n\t}\n}\n",
+            "content": "@@ -687,17 +687,16 @@\n intf(%22%25d\n-:\n  %25s %25.2f\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-07-05_02-44-06",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n)\n\ntype Aluno struct {\n\tNome  string\n\tN1    float64\n\tN2    float64\n\tN3    float64\n\tMedia float64\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscanln(reader, &n)\n\n\talunos := make([]Aluno, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tnome, _ := reader.ReadString('\\n')\n\t\tnome = nome[:len(nome)-1] // remove '\\n'\n\n\t\tvar n1, n2, n3 float64\n\t\tfmt.Fscanln(reader, &n1, &n2, &n3)\n\n\t\talunos[i] = Aluno{\n\t\t\tNome:  nome,\n\t\t\tN1:    n1,\n\t\t\tN2:    n2,\n\t\t\tN3:    n3,\n\t\t\tMedia: (n1 + n2 + n3) / 3.0,\n\t\t}\n\t}\n\n\tsort.Slice(alunos, func(i, j int) bool {\n\t\treturn alunos[i].Media > alunos[j].Media\n\t})\n\n\tfor i, a := range alunos {\n\t\tfmt.Printf(\"%d: %s %.2f %.2f %.2f %.2f\\n\",\n\t\t\ti,\n\t\t\ta.Nome,\n\t\t\ta.Media,\n\t\t\ta.N1,\n\t\t\ta.N2,\n\t\t\ta.N3)\n\t}\n}\n",
             "lines": "55"
         }
     ]
