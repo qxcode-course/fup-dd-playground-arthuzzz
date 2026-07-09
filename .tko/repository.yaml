@@ -19,7 +19,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@string
+- fup@list
 flags:
   inbox: all
   panel: skills
@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@fresco
-selected_index: 16
+selected: fup@trilhas
+selected_index: 49

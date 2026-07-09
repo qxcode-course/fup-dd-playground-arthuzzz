@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-09_18-22-04",
+            "content": "@@ -10,560 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc ler() string %7B%0A    leitor:= bufio.NewReader(os.Stdin)%0A    texto, _:= leitor.ReadString('%5Cn')%0A    return strings.TrimSpace(texto)%0A%7D%0A%0Afunc vogal(c byte) bool %7B%0A    return c == 'a' %7C%7C c == 'e' %7C%7C%0A    c == 'i' %7C%7C c == 'o' %7C%7C c == 'u' %7C%7C%0A    c == 'A' %7C%7C c == 'E' %7C%7C c == 'i' %7C%7C%0A    c == 'O' %7C%7C c == 'U'%0A%0A%7D%0A%0Afunc main() %7B%0A    frase:= ler()%0A    word:= strings.Fields(frase)%0A    pos := -1%0A    for i := 0; i %3C len(word); i ++ %7B%0A        if vogal(word%5Bi%5D %7B%0A            pos = i%0A            break%0A%0A        %7D)%0A    %7D%0A\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-09_18-34-44",
+            "content": "@@ -399,17 +399,16 @@\n     word\n-s\n := strin\n@@ -428,94 +428,22 @@\n se)%0A\n-%0A\n     \n-for p := 0; p %3C len(words); p++ %7B%0A        word := words%5Bp%5D%0A        pos := 1%0A%0A    \n+pos := -1%0A\n     \n@@ -484,20 +484,16 @@\n         \n-    \n if vogal\n@@ -504,37 +504,11 @@\n d%5Bi%5D\n-) && !vogal(word%5Bi+1%5D) %7B%0A    \n+ %7B%0A\n     \n@@ -535,20 +535,16 @@\n         \n-    \n break%0A%0A \n@@ -555,16 +555,15 @@\n    %7D\n+)\n %0A    %7D\n-%0A%7D\n %0A%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-09_18-40-24",
+            "content": "@@ -670,26 +670,8 @@\n  %7D%0A%7D\n-%0Afmt.Println(word)\n %0A%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-09_18-41-02",
+            "content": "@@ -669,104 +669,8 @@\n   %7D%0A\n-    otra:= false%0A    if pos != -1 %7B%0A    for i := pos + 1; i %3C len(word)%7D; i ++ %7B%0A        %0A    %7D%0A\n %7D%0Afm\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-07-09_18-43-55",
+            "content": "@@ -661,26 +661,24 @@\n     %7D%0A    %7D%0A\n-%7D%0A\n     otra:= f\n@@ -728,32 +728,33 @@\n 1; i %3C len(word)\n+%7D\n ; i ++ %7B%0A       \n@@ -758,258 +758,34 @@\n     \n-if vogal(word%5Bi%5D) %7B%0A            otra = true %0A            break%0A        %7D%0A    %7D%0A%7D%0A    if pos != -1 && otra %7B%0A        sil := word%5B:pos+1%5D%0A        fmt.Println(sil)%0A        fmt.Print(sil)%0A        fmt.Print(word) %0A    %7D else %7B%0A        fmt.Print\n+%0A    %7D%0A%7D%0Afmt.Println\n (word)%0A\n-    %7D\n %0A%7D%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-07-09_18-54-53",
+            "content": "@@ -665,16 +665,17 @@\n %7D%0A    %7D%0A\n+%7D\n %0A    otr\n@@ -1009,10 +1009,8 @@\n     %7D%0A%7D%0A\n-%7D%0A\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-07-09_18-56-09",
+            "content": "@@ -328,9 +328,9 @@\n == '\n-I\n+i\n ' %7C%7C\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-07-09_18-56-32",
+            "content": "@@ -595,17 +595,17 @@\n l(word%5Bi\n--\n++\n 1%5D) %7B%0A  \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-07-09_18-58-25",
+            "content": "@@ -899,32 +899,34 @@\n        fmt.Print\n+ln\n (sil)%0A        fm\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-07-09_18-58-40",
+            "content": "@@ -1008,62 +1008,8 @@\n   %7D%0A\n-    if p %3C len(word)-1 %7B%0A        fmt.Print(%22 %22)%0A    %7D%0A\n %7D%0A%7D%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-07-09_19-00-05",
+            "content": "@@ -1064,20 +1064,6 @@\n %7D%0A%7D%0A\n-fmt.Println()%0A\n %7D%0A\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-07-09_19-00-21",
+            "content": "@@ -1060,10 +1060,24 @@\n     %7D%0A%7D%0A\n+fmt.Println()%0A\n %7D%0A\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-07-09_19-00-53",
+            "content": "@@ -1064,20 +1064,6 @@\n %7D%0A%7D%0A\n-fmt.Println()%0A\n %7D%0A\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-07-09_19-00-59",
+            "content": "@@ -886,17 +886,17 @@\n ord%5B:pos\n--\n++\n 1%5D%0A     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-07-09_19-04-37",
+            "content": "@@ -886,17 +886,17 @@\n ord%5B:pos\n-+\n+-\n 1%5D%0A     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-07-09_19-04-44",
+            "content": "@@ -504,17 +504,16 @@\n  pos := \n--\n 1%0A%0A     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-07-09_19-04-54",
+            "content": "@@ -504,16 +504,17 @@\n  pos := \n+-\n 1%0A%0A     \n@@ -541,18 +541,16 @@\n en(word)\n--1\n ; i ++ %7B\n@@ -596,17 +596,17 @@\n l(word%5Bi\n-+\n+-\n 1%5D) %7B%0A  \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-07-09_19-07-24",
+            "content": "@@ -504,17 +504,16 @@\n  pos := \n--\n 1%0A%0A     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-07-09_19-07-39",
+            "content": "@@ -1026,17 +1026,16 @@\n len(word\n-s\n )-1 %7B%0A  \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-07-09_19-08-13",
+            "content": "@@ -684,39 +684,165 @@\n a:= \n-pos != -1 && pos %3C len(word)-1%0A\n+false%0A    if pos != -1 %7B%0A    for i := pos + 1; i %3C len(word); i ++ %7B%0A        if vogal(word%5Bi%5D) %7B%0A            otra = true %0A            break%0A        %7D%0A    %7D%0A%7D\n %0A   \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-07-09_19-14-23",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\n\nfunc ler() string {\n    leitor:= bufio.NewReader(os.Stdin)\n    texto, _:= leitor.ReadString('\\n')\n    return strings.TrimSpace(texto)\n}\n\nfunc vogal(c byte) bool {\n    return c == 'a' || c == 'e' ||\n    c == 'i' || c == 'o' || c == 'u' ||\n    c == 'A' || c == 'E' || c == 'I' ||\n    c == 'O' || c == 'U'\n\n}\n\nfunc main() {\n    frase:= ler()\n    words:= strings.Fields(frase)\n\n    for p := 0; p < len(words); p++ {\n        word := words[p]\n        pos := -1\n\n        for i := 0; i < len(word)-1; i ++ {\n            if vogal(word[i]) && !vogal(word[i+1]) {\n                pos = i\n                break\n\n        }\n    }\n\n    otra:= pos != -1 && pos < len(word)-1\n\n    if pos != -1 && otra {\n        sil := word[:pos+1]\n        fmt.Print(sil)\n        fmt.Print(sil)\n        fmt.Print(word) \n    } else {\n        fmt.Print(word)\n    }\n    if p < len(words)-1 {\n        fmt.Print(\" \")\n    }\n}\nfmt.Println()\n}\n",
+            "lines": "55"
+        }
+    ]
+}
