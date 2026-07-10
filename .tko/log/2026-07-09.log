@@ -97,3 +97,7 @@
 2026-07-09 19:17:21, MOVE, v:1, k:fup@trilhas, mode:PICK
 2026-07-09 19:17:23, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:0, size:5
 2026-07-09 19:17:22, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-09 19:25:54, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-09 19:29:03, EXEC, v:1, k:fup@trilhas, mode:FULL, size:21, fail:COMP
+2026-07-09 19:32:13, EXEC, v:1, k:fup@trilhas, mode:FULL, size:28, fail:COMP
+2026-07-09 19:31:28, MOVE, v:1, k:fup@trilhas, mode:EDIT

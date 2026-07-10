@@ -26,7 +26,7 @@ func main() {
 
 	for i := 0; i < n; i++ {
 		nome, _ := reader.ReadString('\n')
-		nome = strings.Trimspace(nome)
+		nome = strings.TrimSpace(nome)
 
 		var n1, n2, n3 float64
 		fmt.Fscanln(reader, &n1, &n2, &n3)
@@ -44,13 +44,13 @@ func main() {
 		return alunos[i].Media > alunos[j].Media
 	})
 
+	sort.Slice(alunos, func(i, j int) bool {
+		return alunos[i].Media > alunos[j].Media
+	})
+
 	for i, a := range alunos {
-		fmt.Printf("%d: %s %.2f %.2f %.2f %.2f\n",
-			i,
-			a.Nome,
-			a.Media,
-			a.N1,
-			a.N2,
-			a.N3)
+		fmt.Printf("%d: %s\n", i, a.Nome)
+		fmt.Printf("   Media: %.2f\n", a.Media)
+		fmt.Printf("  N1: %.2f, N2: %.2f, N3: %.2f\n", a.N1, a.N2, a.N3)
 	}
 }

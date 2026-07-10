@@ -27,8 +27,53 @@
         },
         {
             "label": "2026-07-05_02-59-36",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    type Ponto struct {\n        x int\n        y int\n    }\n\n    var q int\n    var d string\n    fmt.Scan(&q, &d)\n\n    pos:= make([]Ponto, q)\n\n    for i := 0; i < 1; i++ {\n        fmt.Scan(&pos[i].x, &pos[i].y)\n    }\n\n\n    \n}\n",
+            "content": "@@ -252,356 +252,8 @@\n  %7D%0A%0A\n-    cab:= make(%5B%5D Ponto, q)%0A%0A    switch d %7B%0A    case %22L%22:%0A        cab%5B0%5D.x = pos%5B0%5D.x +1%0A        cab%5B0%5D.y = pos%5B0%5D.y%0A%0A    case %22R%22 :%0A        cab%5B0%5D.x = pos%5B0%5D.x -1%0A        cab%5B0%5D.y = pos%5B0%5D.y%0A%0A    case %22U%22:%0A        cab%5B0%5D.x = pos%5B0%5D.x +1%0A        cab%5B0%5D.y = pos%5B0%5D.y%0A%0A    case %22D%22 :%0A        cab%5B0%5D.x = pos%5B0%5D.x -1%0A        cab%5B0%5D.y = pos%5B0%5D.y%0A    %7D%0A%0A\n %0A   \n",
             "lines": "21"
+        },
+        {
+            "label": "2026-07-10_14-41-28",
+            "content": "@@ -600,30 +600,8 @@\n  %7D%0A%0A\n-    fmt.Println(cab)%0A%0A\n %0A   \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-07-10_14-41-48",
+            "content": "@@ -612,19 +612,19 @@\n Println(\n-pos\n+cab\n )%0A%0A%0A    \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-10_14-42-17",
+            "content": "@@ -600,83 +600,8 @@\n  %7D%0A%0A\n-    for i:= 0; i %3C q; i++ %7B%0A        fmt.Println(cab%5Bi%5D.x, cab%5Bi%5D.y)%0A    %7D%0A%0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-07-10_14-43-43",
+            "content": "@@ -671,16 +671,38 @@\n %0A    %7D%0A%0A\n+    fmt.Println(pos)%0A%0A\n %0A    %0A%7D%0A\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-07-10_14-43-51",
+            "content": "@@ -326,34 +326,33 @@\n 0%5D.x = pos%5B0%5D.x \n-- \n++\n 1%0A        cab%5B0%5D\n@@ -401,34 +401,33 @@\n 0%5D.x = pos%5B0%5D.x \n-+ \n+-\n 1%0A        cab%5B0%5D\n@@ -487,10 +487,9 @@\n %5D.x \n-- \n++\n 1%0A  \n@@ -558,18 +558,17 @@\n os%5B0%5D.x \n-+ \n+-\n 1%0A      \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-10_14-44-18",
+            "content": "@@ -602,69 +602,8 @@\n    %7D\n-%0A    for i:= 1; i %3C q ; i++ %7B%0A        cab%5Bi%5D = pos%5Bi-1%5D%0A    %7D\n %0A%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-10_17-22-47",
+            "content": "@@ -185,33 +185,33 @@\n for i := 0; i %3C \n-q\n+1\n ; i++ %7B%0A        \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-10_17-26-55",
+            "content": "@@ -476,32 +476,36 @@\n %5B0%5D.x = pos%5B0%5D.x\n+ - 1\n %0A        cab%5B0%5D.\n@@ -516,20 +516,16 @@\n pos%5B0%5D.y\n- - 1\n %0A%0A    ca\n@@ -560,16 +560,20 @@\n pos%5B0%5D.x\n+ + 1\n %0A       \n@@ -592,20 +592,16 @@\n pos%5B0%5D.y\n- + 1\n %0A    %7D%0A \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-10_17-27-50",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    type Ponto struct {\n        x int\n        y int\n    }\n\n    var q int\n    var d string\n    fmt.Scan(&q, &d)\n\n    pos:= make([]Ponto, q)\n\n    for i := 0; i < q; i++ {\n        fmt.Scan(&pos[i].x, &pos[i].y)\n    }\n\n    cab:= make([] Ponto, q)\n\n    switch d {\n    case \"L\":\n        cab[0].x = pos[0].x - 1\n        cab[0].y = pos[0].y\n\n    case \"R\" :\n        cab[0].x = pos[0].x + 1\n        cab[0].y = pos[0].y\n\n    case \"U\":\n        cab[0].x = pos[0].x\n        cab[0].y = pos[0].y - 1\n\n    case \"D\" :\n        cab[0].x = pos[0].x\n        cab[0].y = pos[0].y + 1\n    }\n    for i:= 1; i < q ; i++ {\n        cab[i] = pos[i-1]\n    }\n\n    for i:= 0; i < q; i++ {\n        fmt.Println(cab[i].x, cab[i].y)\n    }\n\n\n    \n}\n",
+            "lines": "48"
         }
     ]
 }

@@ -1,0 +1,84 @@
+2026-07-10 14:06:24, MOVE, v:1, k:fup@trilhas, mode:PICK
+2026-07-10 14:06:26, EXEC, v:1, k:fup@trilhas, mode:FULL, fail:COMP
+2026-07-10 14:11:16, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:12:09, EXEC, v:1, k:fup@trilhas, mode:FULL, size:38, fail:COMP
+2026-07-10 14:12:49, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:0, size:38
+2026-07-10 14:14:03, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:0, size:38
+2026-07-10 14:14:01, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:14:03, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:21:08, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:22:10, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:18, size:38
+2026-07-10 14:24:43, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:18, size:38
+2026-07-10 14:25:15, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:18
+2026-07-10 14:24:13, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:25:14, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:26:29, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:18, size:38
+2026-07-10 14:28:45, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:43, size:46
+2026-07-10 14:29:40, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:43
+2026-07-10 14:29:39, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:29:39, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:32:26, EXEC, v:1, k:fup@trilhas, mode:FULL, rate:100, size:46
+2026-07-10 14:32:27, MOVE, v:1, k:fup@trilhas, mode:BACK
+2026-07-10 14:32:35, SELF, v:1, k:fup@trilhas, self:1, rate:100, concept:1, refactor:1
+2026-07-10 14:33:13, MOVE, v:1, k:fup@gomos, mode:PICK
+2026-07-10 14:33:14, EXEC, v:1, k:fup@gomos, mode:FULL, rate:0
+2026-07-10 14:32:24, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:32:25, MOVE, v:1, k:fup@trilhas, mode:EDIT
+2026-07-10 14:33:14, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 14:35:54, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 14:41:16, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 14:41:28, EXEC, v:1, k:fup@gomos, mode:FULL, rate:0, size:41
+2026-07-10 14:41:48, EXEC, v:1, k:fup@gomos, mode:FULL, rate:0, size:43
+2026-07-10 14:41:56, EXEC, v:1, k:fup@gomos, mode:FREE
+2026-07-10 14:42:17, EXEC, v:1, k:fup@gomos, mode:FULL, rate:0, size:43
+2026-07-10 14:43:43, EXEC, v:1, k:fup@gomos, mode:FULL, rate:0, size:47
+2026-07-10 14:43:51, EXEC, v:1, k:fup@gomos, mode:FULL, rate:0, size:45
+2026-07-10 14:44:18, EXEC, v:1, k:fup@gomos, mode:FULL, rate:33, size:45
+2026-07-10 14:44:36, MOVE, v:1, k:fup@gomos, mode:BACK
+2026-07-10 14:44:40, MOVE, v:1, k:fup@gomos, mode:PICK
+2026-07-10 14:44:41, EXEC, v:1, k:fup@gomos, mode:FULL, rate:33
+2026-07-10 14:44:17, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 14:44:41, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 14:46:19, MOVE, v:1, k:fup@gomos, mode:BACK
+2026-07-10 17:16:45, MOVE, v:1, k:fup@gomos, mode:PICK
+2026-07-10 17:16:49, EXEC, v:1, k:fup@gomos, mode:FULL, rate:33
+2026-07-10 17:16:49, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 17:22:47, EXEC, v:1, k:fup@gomos, mode:FULL, rate:33, size:48
+2026-07-10 17:22:44, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 17:22:47, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 17:26:55, EXEC, v:1, k:fup@gomos, mode:FULL, rate:50, size:48
+2026-07-10 17:27:50, EXEC, v:1, k:fup@gomos, mode:FULL, rate:100, size:48
+2026-07-10 17:27:52, MOVE, v:1, k:fup@gomos, mode:BACK
+2026-07-10 17:28:01, SELF, v:1, k:fup@gomos, self:1, rate:100, concept:1, problem:1, refactor:1
+2026-07-10 17:28:30, MOVE, v:1, k:fup@estudante, mode:PICK
+2026-07-10 17:28:31, EXEC, v:1, k:fup@estudante, mode:FULL, size:56, fail:COMP
+2026-07-10 17:27:48, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 17:27:50, MOVE, v:1, k:fup@gomos, mode:EDIT
+2026-07-10 17:31:21, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-10 17:32:56, EXEC, v:1, k:fup@estudante, mode:FULL, size:63, fail:COMP
+2026-07-10 17:34:25, EXEC, v:1, k:fup@estudante, mode:FULL, size:65, fail:COMP
+2026-07-10 17:34:23, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-10 17:38:37, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:65
+2026-07-10 17:39:45, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:40:29, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:41:03, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:41:20, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:41:20, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-10 17:41:20, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-10 17:41:26, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:41:30, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:42:40, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:42:47, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:43:04, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:46:12, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:46:12, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-10 17:46:12, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-07-10 17:46:31, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:46:37, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0
+2026-07-10 17:46:46, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:46:57, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:47:09, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:47:25, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:56
+2026-07-10 17:47:30, EXEC, v:1, k:fup@estudante, mode:FULL, rate:100, size:56
+2026-07-10 17:47:35, MOVE, v:1, k:fup@estudante, mode:BACK
+2026-07-10 17:47:45, SELF, v:1, k:fup@estudante, self:1, rate:100, concept:1, problem:1, refactor:1

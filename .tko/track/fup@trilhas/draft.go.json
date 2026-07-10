@@ -2,8 +2,58 @@
     "patches": [
         {
             "label": "2026-07-09_19-17-23",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,252 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    //best:= 1%0A    //menos:= 100000%0A%0A    for t:= 1; t %3C= n; t++ %7B%0A        var m int%0A        fmt.Scan(&m)%0A%0A    alt:= make(%5B%5Dint, m)%0A%0A    for i:= 0; i %3C m- 1; i++ %7B%0A        fmt.Scan(&alt%5Bi%5D)%0A    %7D%0A    %7D%0A    for  i := m \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-09_19-29-03",
+            "content": "@@ -268,158 +268,25 @@\n     \n-%0A    e1 := 0%0A    e2:= 0%0A    for  i := m - 1; i  %3E 0; i-- %7B%0A        if alt%5Bi+1%5D %3E alt%5Bi%5D %7B%0A            e2 += alt%5Bi-1%5D - alt%5Bi%5D%0A        %7D%0A        %7D%0A    %7D\n+%7D%0A    for  i := m \n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-09_19-32-13",
+            "content": "@@ -65,24 +65,26 @@\n an(&n)%0A%0A    \n+//\n best:= 1%0A   \n@@ -80,24 +80,26 @@\n est:= 1%0A    \n+//\n menos:= 1000\n@@ -418,192 +418,8 @@\n     \n-    es:= e1%0A%0A        if e2 %3C es %7B%0A            menos = es%0A        %7D%0A        if es %3C menos %7B%0A            menos = es%0A            best = t%0A        %7D%0A        fmt.Println(menos)%0A        %7D%0A    \n+%7D%0A\n %7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-07-10_14-12-09",
+            "content": "@@ -575,20 +575,21 @@\n Println(\n-best\n+menos\n )%0A      \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-10_14-12-49",
+            "content": "@@ -551,34 +551,24 @@\n t%0A        %7D%0A\n-        %7D%0A\n         fmt.\n@@ -581,14 +581,24 @@\n n(best)%0A\n+        %7D%0A\n     %7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-10_14-14-03",
+            "content": "@@ -96,17 +96,16 @@\n = 100000\n-0\n %0A%0A    fo\n@@ -335,17 +335,17 @@\n if alt%5Bi\n--\n++\n 1%5D %3E alt\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-10_14-22-09",
+            "content": "@@ -466,17 +466,17 @@\n enos = e\n-2\n+s\n %0A       \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-10_14-24-43",
+            "content": "@@ -214,16 +214,19 @@\n 0; i %3C m\n+- 1\n ; i++ %7B%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-10_14-26-29",
+            "content": "@@ -285,125 +285,8 @@\n := 0\n-%0A%0A    for i := 0; i %3C m-1; i++ %7B%0A        if alt%5Bi+1%5D %3E alt%5Bi%5D %7B%0A            e1 += alt%5Bi+1%5D - alt%5Bi%5D%0A        %7D%0A    %7D%0A%0A\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-10_14-28-45",
+            "content": "@@ -571,17 +571,20 @@\n         \n-e\n+meno\n s = e2%0A \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-10_14-32-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    best:= 1\n    menos:= 1000000\n\n    for t:= 1; t <= n; t++ {\n        var m int\n        fmt.Scan(&m)\n\n    alt:= make([]int, m)\n\n    for i:= 0; i < m; i++ {\n        fmt.Scan(&alt[i])\n    }\n    \n    e1 := 0\n    e2:= 0\n\n    for i := 0; i < m-1; i++ {\n        if alt[i+1] > alt[i] {\n            e1 += alt[i+1] - alt[i]\n        }\n    }\n\n\n    for  i := m - 1; i  > 0; i-- {\n        if alt[i-1] > alt[i] {\n            e2 += alt[i-1] - alt[i]\n        }\n        }\n        es:= e1\n\n        if e2 < es {\n            es = e2\n        }\n        if es < menos {\n            menos = es\n            best = t\n        }\n        }\n        fmt.Println(best)\n    }\n",
+            "lines": "46"
         }
     ]
 }

@@ -29,5 +29,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@trilhas
-selected_index: 49
+selected: fup@struct
+selected_index: 61

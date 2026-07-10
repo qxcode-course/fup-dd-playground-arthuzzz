@@ -27,8 +27,108 @@
         },
         {
             "label": "2026-07-05_02-44-06",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n)\n\ntype Aluno struct {\n\tNome  string\n\tN1    float64\n\tN2    float64\n\tN3    float64\n\tMedia float64\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscanln(reader, &n)\n\n\talunos := make([]Aluno, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tnome, _ := reader.ReadString('\\n')\n\t\tnome = nome[:len(nome)-1] // remove '\\n'\n\n\t\tvar n1, n2, n3 float64\n\t\tfmt.Fscanln(reader, &n1, &n2, &n3)\n\n\t\talunos[i] = Aluno{\n\t\t\tNome:  nome,\n\t\t\tN1:    n1,\n\t\t\tN2:    n2,\n\t\t\tN3:    n3,\n\t\t\tMedia: (n1 + n2 + n3) / 3.0,\n\t\t}\n\t}\n\n\tsort.Slice(alunos, func(i, j int) bool {\n\t\treturn alunos[i].Media > alunos[j].Media\n\t})\n\n\tfor i, a := range alunos {\n\t\tfmt.Printf(\"%d: %s %.2f %.2f %.2f %.2f\\n\",\n\t\t\ti,\n\t\t\ta.Nome,\n\t\t\ta.Media,\n\t\t\ta.N1,\n\t\t\ta.N2,\n\t\t\ta.N3)\n\t}\n}\n",
+            "content": "@@ -50,19 +50,8 @@\n rt%22%0A\n-%09%22strings%22%0A\n )%0A%0At\n@@ -340,31 +340,41 @@\n e = \n-strings.Trimspace(nome)\n+nome%5B:len(nome)-1%5D // remove '%5Cn'\n %0A%0A%09%09\n",
             "lines": "55"
+        },
+        {
+            "label": "2026-07-10_17-28-31",
+            "content": "@@ -780,138 +780,6 @@\n %0A%09%7D%0A\n-%09sort.Slice(alunos)%0A%0A%09for i, a := range alunos %7B%0A%09%09fmt.Println(i, a.Nome)%0A%09%09fmt.Println(a.Media)%0A%09%09fmt.Println(a.N1, a.N2, a.N3)%0A%09%7D%0A\n %7D%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-32-56",
+            "content": "@@ -798,77 +798,8 @@\n unos\n-, func(i, j int) bool %7B%0A%09%09return alunos%5Bi%5D.Media %3E alunos%5Bj%5D.Media%0A%09%7D\n )%0A%0A%09\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-07-10_17-34-25",
+            "content": "@@ -359,17 +359,17 @@\n ngs.Trim\n-S\n+s\n pace(nom\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-07-10_17-38-37",
+            "content": "@@ -643,17 +643,148 @@\n dia%0A%09%7D)%0A\n-%09\n+%0A%09for i, a := range alunos %7B%0A%09%09fmt.Printf(%22%25d: %25s %25.2f %25.2f %25.2f %25.2f%5Cn%22,%0A%09%09%09i,%0A%09%09%09a.Nome,%0A%09%09%09a.Media,%0A%09%09%09a.N1,%0A%09%09%09a.N2,%0A%09%09%09a.N3)%0A%09%7D\n %0A%09sort.S\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-07-10_17-39-45",
+            "content": "@@ -643,16 +643,17 @@\n dia%0A%09%7D)%0A\n+%09\n %0A%09sort.S\n@@ -778,22 +778,11 @@\n rint\n-f(%22%25d: %25s%5Cn%22, \n+ln(\n i, a\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-40-29",
+            "content": "@@ -813,26 +813,11 @@\n rint\n-f(%22Media:%25.2f%5Cn%22, \n+ln(\n a.Me\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-41-03",
+            "content": "@@ -812,17 +812,16 @@\n Printf(%22\n- \n Media:%25.\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-41-20",
+            "content": "@@ -812,17 +812,16 @@\n Printf(%22\n- \n  Media:%25\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-41-26",
+            "content": "@@ -814,17 +814,16 @@\n intf(%22  \n- \n Media:%25.\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-41-30",
+            "content": "@@ -854,44 +854,11 @@\n rint\n-f(%22N1: %25.2f, N2: %25.2f, N3: %25.2f%5Cn%22, \n+ln(\n a.N1\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-42-40",
+            "content": "@@ -853,19 +853,16 @@\n Printf(%22\n-   \n N1: %25.2f\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-42-47",
+            "content": "@@ -856,17 +856,16 @@\n ntf(%22   \n- \n N1: %25.2f\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-43-04",
+            "content": "@@ -821,17 +821,16 @@\n   Media:\n- \n %25.2f%5Cn%22,\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-46-12",
+            "content": "@@ -821,17 +821,16 @@\n   Media:\n- \n  %25.2f%5Cn%22\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-46-31",
+            "content": "@@ -821,16 +821,18 @@\n   Media:\n+  \n %25.2f%5Cn%22,\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-46-46",
+            "content": "@@ -821,19 +821,16 @@\n   Media:\n-   \n %25.2f%5Cn%22,\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-46-57",
+            "content": "@@ -823,16 +823,17 @@\n Media:  \n+ \n %25.2f%5Cn%22,\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-47-08",
+            "content": "@@ -821,16 +821,17 @@\n   Media:\n+ \n  %25.2f%5Cn%22\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-47-25",
+            "content": "@@ -857,16 +857,17 @@\n ntf(%22   \n+ \n N1: %25.2f\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-07-10_17-47-29",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"sort\"\n\t\"strings\"\n)\n\ntype Aluno struct {\n\tNome  string\n\tN1    float64\n\tN2    float64\n\tN3    float64\n\tMedia float64\n}\n\nfunc main() {\n\treader := bufio.NewReader(os.Stdin)\n\n\tvar n int\n\tfmt.Fscanln(reader, &n)\n\n\talunos := make([]Aluno, n)\n\n\tfor i := 0; i < n; i++ {\n\t\tnome, _ := reader.ReadString('\\n')\n\t\tnome = strings.TrimSpace(nome)\n\n\t\tvar n1, n2, n3 float64\n\t\tfmt.Fscanln(reader, &n1, &n2, &n3)\n\n\t\talunos[i] = Aluno{\n\t\t\tNome:  nome,\n\t\t\tN1:    n1,\n\t\t\tN2:    n2,\n\t\t\tN3:    n3,\n\t\t\tMedia: (n1 + n2 + n3) / 3.0,\n\t\t}\n\t}\n\n\tsort.Slice(alunos, func(i, j int) bool {\n\t\treturn alunos[i].Media > alunos[j].Media\n\t})\n\n\tsort.Slice(alunos, func(i, j int) bool {\n\t\treturn alunos[i].Media > alunos[j].Media\n\t})\n\n\tfor i, a := range alunos {\n\t\tfmt.Printf(\"%d: %s\\n\", i, a.Nome)\n\t\tfmt.Printf(\"   Media: %.2f\\n\", a.Media)\n\t\tfmt.Printf(\"   N1: %.2f, N2: %.2f, N3: %.2f\\n\", a.N1, a.N2, a.N3)\n\t}\n}\n",
+            "lines": "56"
         }
     ]
 }
