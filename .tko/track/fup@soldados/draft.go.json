@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-10_18-47-28",
+            "content": "@@ -41,72 +41,35 @@\n     \n-var nl, nc int%0A    fmt.Scan(&nl, &nc)%0A%0A    mt:= make(%5B%5D%5B%5Dint, nl\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-10_18-50-02",
+            "content": "@@ -106,152 +106,7 @@\n  nl)\n-%0A%0A    for i := 0; i %3C nl; i++ %7B%0A        mt%5Bi%5D = make(%5B%5Dint, nc)%0A        for j := 0; j %3C nc; j++ %7B%0A            fmt.Scan(&mt%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-07-10_18-53-01",
+            "content": "@@ -252,16 +252,6 @@\n   %7D%0A\n-    c:= 0%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-07-10_18-57-07",
+            "content": "@@ -262,85 +262,6 @@\n = 0%0A\n-    for i:= 0; i %3C nl; i++ %7B%0A        for j:= 0; j %3C nl; i ++ %7B%0A        %7D%0A    %7D%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-07-10_18-58-28",
+            "content": "@@ -325,137 +325,8 @@\n + %7B%0A\n-            for k := i + 1; k %3C nl; k++ %7B%0A%0A            if mt%5Bi%5D%5Bj%5D %3E mt%5Bj%5D%5Bk%5D %7B%0A                c++%0A            %7D %0A            %7D%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-10_18-59-44",
+            "content": "@@ -359,24 +359,25 @@\n %3C nl; k++ %7B%0A\n+%0A\n             \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-10_19-00-01",
+            "content": "@@ -396,12 +396,12 @@\n  mt%5B\n-k%5D%5Bj\n+j%5D%5Bk\n %5D %7B%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-01-50",
+            "content": "@@ -396,12 +396,12 @@\n  mt%5B\n-j%5D%5Bk\n+k%5D%5Bj\n %5D %7B%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-01-57",
+            "content": "@@ -278,17 +278,17 @@\n 0; i %3C n\n-c\n+l\n ; i++ %7B%0A\n@@ -343,16 +343,20 @@\n r k := i\n+ + 1\n ; k %3C nl\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-02-20",
+            "content": "@@ -270,33 +270,33 @@\n for i:= 0; i %3C n\n-l\n+c\n ; i++ %7B%0A        \n@@ -311,17 +311,17 @@\n 0; j %3C n\n-c\n+l\n ; i ++ %7B\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-02-29",
+            "content": "@@ -278,17 +278,17 @@\n 0; i %3C n\n-c\n+l\n ; i++ %7B%0A\n@@ -311,17 +311,17 @@\n 0; j %3C n\n-l\n+c\n ; i ++ %7B\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-08-27",
+            "content": "@@ -381,12 +381,12 @@\n  mt%5B\n-j%5D%5Bi\n+i%5D%5Bj\n %5D %3E \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-08-43",
+            "content": "@@ -388,17 +388,17 @@\n i%5D %3E mt%5B\n-i\n+j\n %5D%5Bk%5D %7B%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-08-50",
+            "content": "@@ -388,20 +388,20 @@\n i%5D %3E mt%5B\n-j%5D%5Bi\n+i%5D%5Bk\n %5D %7B%0A    \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-09-00",
+            "content": "@@ -383,17 +383,17 @@\n t%5Bj%5D%5Bi%5D \n-%3C\n+%3E\n  mt%5Bj%5D%5Bi\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-09-15",
+            "content": "@@ -387,14 +387,14 @@\n %5Bi%5D \n-%3E\n+%3C\n  mt%5B\n-k\n+j\n %5D%5Bi%5D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-09-34",
+            "content": "@@ -314,17 +314,17 @@\n j %3C nl; \n-j\n+i\n  ++ %7B%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-11-08",
+            "content": "@@ -465,23 +465,6 @@\n   %7D%0A\n-    fmt.Print(c)%0A\n %7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_19-11-21",
+            "content": "@@ -377,20 +377,20 @@\n   if mt%5B\n-i%5D%5Bj\n+j%5D%5Bi\n %5D %3E mt%5Bk\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-10_19-11-49",
+            "content": "@@ -346,13 +346,9 @@\n  := \n-j + 1\n+i\n ; k \n@@ -381,12 +381,12 @@\n  mt%5B\n-j%5D%5Bi\n+i%5D%5Bj\n %5D %3E \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-10_19-12-28",
+            "content": "@@ -482,10 +482,8 @@\n rint\n-ln\n (c)%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-10_19-12-37",
+            "content": "@@ -316,16 +316,54 @@\n %3C nl\n- - 1\n ; j \n+++ %7B%0A            for k := j + 1; k %3C nl; k\n ++ %7B\n@@ -459,24 +459,26 @@\n       %7D%0A    \n+%7D%0A\n     fmt.Prin\n@@ -484,14 +484,10 @@\n ntln(c)%0A\n-    \n %7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-07-10_19-15-26",
+            "content": "@@ -358,11 +358,9 @@\n  mt%5B\n-j-1\n+k\n %5D%5Bi%5D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-10_19-15-37",
+            "content": "@@ -355,17 +355,17 @@\n %5D %3E mt%5Bj\n-+\n+-\n 1%5D%5Bi%5D %7B%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-07-10_19-16-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nl, nc int\n    fmt.Scan(&nl, &nc)\n\n    mt:= make([][]int, nl)\n\n    for i := 0; i < nl; i++ {\n        mt[i] = make([]int, nc)\n        for j := 0; j < nc; j++ {\n            fmt.Scan(&mt[i][j])\n        }\n    }\n    c:= 0\n    for i:= 0; i < nc; i++ {\n        for j:= 0; j < nl - 1; j ++ {\n            if mt[j][i] > mt[j+1][i] {\n                c++\n            } \n            }\n        }\n        fmt.Println(c)\n    }\n",
+            "lines": "24"
+        }
+    ]
+}

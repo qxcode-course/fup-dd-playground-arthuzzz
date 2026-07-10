@@ -20,6 +20,7 @@ sources:
   quests: null
 expanded:
 - fup@string
+- fup@if2
 - fup@mat
 flags:
   inbox: all
@@ -30,5 +31,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@coluna
-selected_index: 57
+selected: fup@americano
+selected_index: 27

@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-10_19-22-38",
+            "content": "@@ -41,256 +41,35 @@\n     \n-var j1, j2, j3, j4 int%0A    fmt.Scan(&j1, &j2, &j3, &j4)%0A%0A    dedos:= 0%0A%0A    j1+= dedos%0A    j2+= dedos%0A    j3+= dedos%0A    j4+= dedos%0A%0A    if dedos %25 4 == 0 %7B%0A        fmt.Println(%22jog4%22) %0A    %7Delse if dedos %25 4 == 2 %7B%0A        fmt.Println(%22jog2%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-10_19-27-49",
+            "content": "@@ -285,51 +285,8 @@\n 2%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22nenhum%22)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-10_19-28-07",
+            "content": "@@ -174,64 +174,8 @@\n os%0A%0A\n-    if dedos == 0 %7B%0A        fmt.Println(%22nenhum%22)%0A    %7D%0A\n     \n@@ -281,12 +281,59 @@\n %22jog2%22)%0A\n+    %7D else %7B%0A        fmt.Println(%22nenhum%22)%0A    \n %7D%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-10_19-29-27",
+            "content": "@@ -229,13 +229,12 @@\n    %7D\n- else\n+%0A   \n  if \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-07-10_19-29-38",
+            "content": "@@ -309,22 +309,8 @@\n 4 ==\n- 2 %7C%7C dedos ==\n  2 %7B\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-10_19-30-15",
+            "content": "@@ -244,12 +244,16 @@\n dos \n+%25 4 \n == \n-4\n+0\n  %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-10_19-31-47",
+            "content": "@@ -284,24 +284,42 @@\n     %7Delse if\n+ dedos %25 4 == 2 %7C%7C\n  dedos == 2 \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-10_19-31-57",
+            "content": "@@ -110,25 +110,70 @@\n s:= \n-j1 + j2 + j3 + j4\n+0%0A%0A    j1+= dedos%0A    j2+= dedos%0A    j3+= dedos%0A    j4+= dedos\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-10_19-32-32",
+            "content": "@@ -289,118 +289,8 @@\n 2%22)%0A\n-    %7D else if dedos == 1 %7B%0A        fmt.Print(%22jog1%22)%0A    %7D else if dedos == 3 %7B%0A        fmt.Print(%22jog3%22)%0A    \n %7D%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-07-10_19-33-57",
+            "content": "@@ -201,26 +201,8 @@\n s ==\n- 4 %7C%7C dedos / 2 ==\n  4 %7B\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-10_19-34-40",
+            "content": "@@ -343,26 +343,24 @@\n    fmt.Print\n-ln\n (%22jog1%22)%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-10_19-34-49",
+            "content": "@@ -398,26 +398,24 @@\n    fmt.Print\n-ln\n (%22jog3%22)%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-10_19-34-56",
+            "content": "@@ -329,26 +329,8 @@\n s ==\n- 1 %7C%7C dedos - 4 ==\n  1 %7B\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-10_19-36-00",
+            "content": "@@ -274,26 +274,8 @@\n s ==\n- 2 %7C%7C dedos / 7 ==\n  2 %7B\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-10_19-36-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var j1, j2, j3, j4 int\n    fmt.Scan(&j1, &j2, &j3, &j4)\n\n    dedos:= j1 + j2 + j3 + j4\n\n    if dedos == 0 {\n        fmt.Println(\"nenhum\")\n    } else if dedos == 4 || dedos / 2 == 4 {\n        fmt.Println(\"jog4\") \n    }else if dedos == 2 || dedos / 7 == 2 {\n        fmt.Println(\"jog2\")\n    } else if dedos == 1 || dedos - 4 == 1 {\n        fmt.Println(\"jog1\")\n    } else if dedos == 3 {\n        fmt.Println(\"jog3\")\n    }\n}\n",
+            "lines": "20"
+        }
+    ]
+}
