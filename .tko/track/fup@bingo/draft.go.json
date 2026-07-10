@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-10_18-20-18",
+            "content": "@@ -41,139 +41,35 @@\n     \n-cartela := %5B4%5D%5B4%5D int %7B%0A        %7B1, 9, 27, 23%7D,%0A        %7B34, 20, 37, 47%7D, %0A        %7B30, 87, 55, 69%7D,%0A        %7B13, 60, 99, 66%7D,%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-10_18-23-54",
+            "content": "@@ -174,89 +174,6 @@\n   %7D%0A\n-    var nums %5B6%5Dint %0A%0A    for i:= 0; i %3C 6; i++ %7B%0A        fmt.Scan(&nums%5Bi%5D)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-07-10_18-24-53",
+            "content": "@@ -257,189 +257,6 @@\n   %7D%0A\n-    c:= 0%0A%0A    for i:= 0; i %3C 6; i++ %7B%0A        for a := 0; a %3C 4; a++ %7B%0A            if nums%5Bi%5D == cartela%5Ba%5D%5Bi%5D %7B%0A                c++%0A            %7D%0A        %7D%0A    %7D%0A    fmt.Println(c)%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-07-10_18-27-04",
+            "content": "@@ -329,45 +329,8 @@\n + %7B%0A\n-            for b := 0; b %3C 4; b++ %7B%0A\n     \n@@ -407,34 +407,24 @@\n %7D%0A        %7D%0A\n-        %7D%0A\n     %7D%0A    fm\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-10_18-28-23",
+            "content": "@@ -399,17 +399,17 @@\n tela%5Ba%5D%5B\n-b\n+i\n %5D %7B%0A    \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-10_18-29-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    cartela := [4][4] int {\n        {1, 9, 27, 23},\n        {34, 20, 37, 47}, \n        {30, 87, 55, 69},\n        {13, 60, 99, 66},\n    }\n    var nums [6]int \n\n    for i:= 0; i < 6; i++ {\n        fmt.Scan(&nums[i])\n    }\n    c:= 0\n\n    for i:= 0; i < 6; i++ {\n        for a := 0; a < 4; a++ {\n            for b := 0; b < 4; b++ {\n            if nums[i] == cartela[a][b] {\n                c++\n            }\n        }\n        }\n    }\n    fmt.Println(c)\n}\n",
+            "lines": "27"
+        }
+    ]
+}
