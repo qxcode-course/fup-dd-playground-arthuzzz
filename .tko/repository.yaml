@@ -19,9 +19,8 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@string
+- sandbox@sandbox
 - fup@if2
-- fup@mat
 flags:
   inbox: all
   panel: skills
@@ -31,5 +30,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@americano
-selected_index: 27
+selected: fup@taxi
+selected_index: 26

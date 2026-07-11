@@ -1,0 +1,89 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-11_14-50-24",
+            "content": "@@ -41,324 +41,35 @@\n     \n-var n int %0A    fmt.Scan(&n)%0A    mt := make(%5B%5D%5B%5Dstring, n)%0A%0A    ll := 1%0A    lc:= 1%0A%0A    for i := 0; i %3C n; i++ %7B%0A        mt%5Bi%5D = make(string, n)%0A        for j:= 0; j %3C o; j++ %7B%0A            fmt.Scan(&mt%5Bi%5D%5Bj%5D)%0A            if mt%5Bi%5D%5Bj%5D == %22L%22 %7B%0A                ll = j %0A                lc = i%0A            %7D%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-11_15-03-51",
+            "content": "@@ -170,18 +170,16 @@\n  = make(\n-%5B%5D\n string, \n@@ -204,17 +204,17 @@\n  0; j %3C \n-0\n+o\n ; j++ %7B%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-11_15-04-36",
+            "content": "@@ -361,454 +361,6 @@\n   %7D%0A\n-    glad:= 0%0A    cond := 0%0A%0Afor i := 0; i %3C n; i++ %7B%0A    for j := 0; j %3C n; j++ %7B%0A        if ll != -1 %7C%7C i == ll %7C%7C j == lc %7B%0A            continue%0A        %7D%0A%0A        if mt%5Bi%5D%5Bj%5D == %22G%22 %7B%0A            glad += 1%0A        %7D%0A        if i+j == n-1 %7B%0A            cond += 2%0A        %7D%0A     %7D%0A%7D%0Aif glad %3E cond %7B%0A    fmt.Println(%22Gladiadores%22)%0A%7D else if cond %3E glad %7B%0A        fmt.Println(%22Condenados a morte%22)%0A    %7D else %7B%0A        fmt.Println(%22Ninguem%22)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-11_15-16-51",
+            "content": "@@ -575,21 +575,24 @@\n        %7D\n- else\n+%0A       \n  if i+j \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-11_15-20-00",
+            "content": "@@ -106,17 +106,16 @@\n   ll := \n--\n 1%0A    lc\n@@ -117,17 +117,16 @@\n    lc:= \n--\n 1%0A%0A    f\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-11_15-20-32",
+            "content": "@@ -118,16 +118,17 @@\n    lc:= \n+-\n 1%0A%0A    f\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-11_15-20-55",
+            "content": "@@ -561,25 +561,25 @@\n     glad += \n-2\n+1\n %0A        %7D e\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-11_15-22-00",
+            "content": "@@ -565,17 +565,17 @@\n glad += \n-1\n+2\n %0A       \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-11_15-22-06",
+            "content": "@@ -624,44 +624,8 @@\n = 2%0A\n-        %7D else %7B%0A            cond++%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-11_15-23-53",
+            "content": "@@ -464,11 +464,10 @@\n  -1 \n-&& \n+%7C%7C\n  i =\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-11_15-25-01",
+            "content": "@@ -463,17 +463,17 @@\n = -1 && \n-(\n+ \n i == ll \n@@ -482,17 +482,16 @@\n  j == lc\n-)\n  %7B%0A     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-11_15-25-11",
+            "content": "@@ -118,17 +118,16 @@\n    lc:= \n--\n 1%0A%0A    f\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-11_15-25-51",
+            "content": "@@ -200,33 +200,33 @@\n  for j:= 0; j %3C \n-n\n+0\n ; j++ %7B%0A        \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-11_15-35-24",
+            "content": "@@ -303,17 +303,17 @@\n    ll = \n-i\n+j\n  %0A      \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-11_15-35-46",
+            "content": "@@ -327,17 +327,17 @@\n    lc = \n-j\n+i\n %0A       \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-11_15-35-51",
+            "content": "@@ -564,25 +564,25 @@\n     glad += \n-2\n+1\n %0A        %7D e\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-11_15-37-03",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int \n    fmt.Scan(&n)\n    mt := make([][]string, n)\n\n    ll := -1\n    lc:= -1\n\n    for i := 0; i < n; i++ {\n        mt[i] = make([]string, n)\n        for j:= 0; j < n; j++ {\n            fmt.Scan(&mt[i][j])\n            if mt[i][j] == \"L\" {\n                ll = i \n                lc = j\n            }\n        }\n    }\n    glad:= 0\n    cond := 0\n\nfor i := 0; i < n; i++ {\n    for j := 0; j < n; j++ {\n        if ll != -1 && (i == ll || j == lc) {\n            continue\n        }\n\n        if mt[i][j] == \"G\" {\n            glad += 2\n        } else if i+j == n-1 {\n            cond += 2\n        } else {\n            cond++\n        }\n     }\n}\nif glad > cond {\n    fmt.Println(\"Gladiadores\")\n} else if cond > glad {\n        fmt.Println(\"Condenados a morte\")\n    } else {\n        fmt.Println(\"Ninguem\")\n    }\n}\n",
+            "lines": "46"
+        }
+    ]
+}

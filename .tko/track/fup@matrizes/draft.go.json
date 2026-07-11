@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-11_14-13-22",
+            "content": "@@ -41,242 +41,35 @@\n     \n-var nl, nc int%0A    fmt.Scan(&nl, &nc)%0A%0A    a:= make(%5B%5D%5B%5D int, nl)%0A    b:= make(%5B%5D%5B%5D int, nc)%0A%0A    for i := 0; i %3C nl; i++ %7B%0A        a%5Bi%5D = make(%5B%5Dint, nc)%0A        for j := 0; j %3C nc; j++ %7B%0A            fmt.Scan(&a%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-11_14-24-26",
+            "content": "@@ -277,234 +277,6 @@\n   %7D%0A\n-    for i:= 0; i %3C nl; i++ %7B%0A        fmt.Print(%22%5B %22)%0A        for j:= 0; j %3C nc; j++ %7B%0A%0A        fmt.Print((a%5Bi%5D%5Bj%5D + b%5Bi%5D%5Bj%5D))%0A        if j %3C nc- 1 %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A        %7D%0A        fmt.Println(%22 %5D%22)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-07-11_14-30-55",
+            "content": "@@ -276,152 +276,8 @@\n    %7D\n-%0A%0A    for i := 0; i %3C nl; i++ %7B%0A        b%5Bi%5D = make(%5B%5Dint, nc)%0A        for j:= 0; j %3C nc; j++ %7B%0A            fmt.Scan(&b%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A%0A\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-07-11_14-36-48",
+            "content": "@@ -127,17 +127,17 @@\n %5D int, n\n-l\n+c\n )%0A%0A    f\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-11_14-41-51",
+            "content": "@@ -96,25 +96,25 @@\n (%5B%5D%5B%5D int, n\n-c\n+l\n )%0A    b:= ma\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-11_14-42-14",
+            "content": "@@ -127,17 +127,17 @@\n %5D int, n\n-c\n+l\n )%0A%0A    f\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-11_14-48-07",
+            "content": "@@ -100,17 +100,17 @@\n %5D int, n\n-l\n+c\n )%0A    b:\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-11_14-49-41",
+            "content": "@@ -127,17 +127,17 @@\n %5D int, n\n-l\n+c\n )%0A%0A    f\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-07-11_14-49-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nl, nc int\n    fmt.Scan(&nl, &nc)\n\n    a:= make([][] int, nl)\n    b:= make([][] int, nl)\n\n    for i := 0; i < nl; i++ {\n        a[i] = make([]int, nc)\n        for j := 0; j < nc; j++ {\n            fmt.Scan(&a[i][j])\n        }\n    }\n\n    for i := 0; i < nl; i++ {\n        b[i] = make([]int, nc)\n        for j:= 0; j < nc; j++ {\n            fmt.Scan(&b[i][j])\n        }\n    }\n\n\n    for i:= 0; i < nl; i++ {\n        fmt.Print(\"[ \")\n        for j:= 0; j < nc; j++ {\n\n        fmt.Print((a[i][j] + b[i][j]))\n        if j < nc- 1 {\n            fmt.Print(\" \")\n        }\n        }\n        fmt.Println(\" ]\")\n    }\n}\n",
+            "lines": "36"
+        }
+    ]
+}

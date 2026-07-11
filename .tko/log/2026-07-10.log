@@ -287,3 +287,5 @@
 2026-07-10 19:36:36, EXEC, v:1, k:fup@americano, mode:FULL, rate:100, size:20
 2026-07-10 19:36:38, MOVE, v:1, k:fup@americano, mode:BACK
 2026-07-10 19:36:42, SELF, v:1, k:fup@americano, self:1, rate:100
+2026-07-10 19:36:36, MOVE, v:1, k:fup@americano, mode:EDIT
+2026-07-10 19:36:36, MOVE, v:1, k:fup@americano, mode:EDIT

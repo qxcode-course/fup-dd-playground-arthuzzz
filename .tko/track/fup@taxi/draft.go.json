@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-11_17-10-11",
+            "content": "@@ -41,186 +41,35 @@\n     \n-var a, g, ra, rg float64%0A    fmt.Scan(&a, &g, &ra, &rg)%0A%0A    ca := a / ra%0A    cg := g / rg %0A%0A    if ca %3C cg %7B%0A        fmt.Println(%22A%22)%0A    %7D else %7B%0A        fmt.Println(%22G%22)%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-11_17-20-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, g, ra, rg float64\n    fmt.Scan(&a, &g, &ra, &rg)\n\n    ca := a / ra\n    cg := g / rg \n\n    if ca < cg {\n        fmt.Println(\"A\")\n    } else {\n        fmt.Println(\"G\")\n    }\n\n}\n",
+            "lines": "16"
+        }
+    ]
+}

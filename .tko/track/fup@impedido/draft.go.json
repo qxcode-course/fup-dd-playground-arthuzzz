@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-11_16-50-59",
+            "content": "@@ -41,35 +41,35 @@\n     \n-var l, r, d int%0A    fmt.Scan\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-11_17-02-22",
+            "content": "@@ -69,25 +69,7 @@\n Scan\n-(&l, &r, &d)%0A%0A    \n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-07-11_17-03-18",
+            "content": "@@ -87,105 +87,7 @@\n     \n-if l %3E 50 && l %3C r && l %3C d %7B%0A        fmt.Println(%22S%22)%0A    %7D else %7B%0A        fmt.Println(%22N%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-07-11_17-07-23",
+            "content": "@@ -142,56 +142,8 @@\n S%22)%0A\n-    %7D else if l == d %7B%0A        fmt.Println(%22N%22)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-07-11_17-09-06",
+            "content": "@@ -109,11 +109,11 @@\n  && \n-r %3E\n+l %3C\n  d %7B\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-07-11_17-09-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var l, r, d int\n    fmt.Scan(&l, &r, &d)\n\n    if l > 50 && l < r && r > d {\n        fmt.Println(\"S\")\n    } else if l == d {\n        fmt.Println(\"N\")\n    } else {\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "14"
+        }
+    ]
+}

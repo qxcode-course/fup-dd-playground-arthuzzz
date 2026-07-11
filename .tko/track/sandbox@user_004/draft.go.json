@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-11_16-53-28",
+            "content": "@@ -41,261 +41,35 @@\n     \n-var a, c int%0A    var b string%0A    fmt.Scan(&a, &b, &c)%0A%0A    if b == %22+%22 %7B%0A        fmt.Println(a+c)%0A    %7D else if b == %22-%22 %7B%0A        fmt.Println(a-c)%0A    %7D else if b == %22*%22 %7B%0A        fmt.Println(a*c)%0A    %7D else if b == %22/%22 %7B%0A        fmt.Println(a/c)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-11_16-59-00",
+            "content": "@@ -131,21 +131,16 @@\n Println(\n-%22=%22, \n a+c)%0A   \n@@ -181,21 +181,16 @@\n Println(\n-%22=%22, \n a-c)%0A   \n@@ -231,21 +231,16 @@\n Println(\n-%22=%22, \n a*c)%0A   \n@@ -285,13 +285,8 @@\n tln(\n-%22=%22, \n a/c)\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-07-11_17-01-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, c int\n    var b string\n    fmt.Scan(&a, &b, &c)\n\n    if b == \"+\" {\n        fmt.Println(\"=\", a+c)\n    } else if b == \"-\" {\n        fmt.Println(\"=\", a-c)\n    } else if b == \"*\" {\n        fmt.Println(\"=\", a*c)\n    } else if b == \"/\" {\n        fmt.Println(\"=\", a/c)\n    }\n}\n",
+            "lines": "17"
+        }
+    ]
+}
