@@ -31,5 +31,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: fup@valdiskley
-selected_index: 73
+selected: fup@numeros
+selected_index: 81
