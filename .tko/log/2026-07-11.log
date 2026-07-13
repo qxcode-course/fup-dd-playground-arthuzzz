@@ -206,3 +206,5 @@
 2026-07-11 17:20:44, EXEC, v:1, k:fup@taxi, mode:FULL, rate:100, size:16
 2026-07-11 17:20:46, MOVE, v:1, k:fup@taxi, mode:BACK
 2026-07-11 17:20:51, SELF, v:1, k:fup@taxi, self:1, rate:100
+2026-07-11 17:20:42, MOVE, v:1, k:fup@taxi, mode:EDIT
+2026-07-11 17:20:44, MOVE, v:1, k:fup@taxi, mode:EDIT

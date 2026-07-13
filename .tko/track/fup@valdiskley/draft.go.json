@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-13_18-31-20",
+            "content": "@@ -41,192 +41,35 @@\n     \n-var s string%0A    var rot string%0A    fmt.Scan(&s, &rot)%0A%0A    n:= int(s%5B0%5D - 'a')%0A    resu:= (n+ rot) %25 26%0A    if resu %3C0 %7B%0A        resu+=26%0A    %7D%0A    fmt.Println(string(byte(resu)+ 'a')\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-13_18-34-59",
+            "content": "@@ -62,19 +62,22 @@\n var rot \n+str\n in\n-t\n+g\n %0A    fmt\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-07-13_18-35-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var s string\n    var rot int\n    fmt.Scan(&s, &rot)\n\n    n:= int(s[0] - 'a')\n    resu:= (n+ rot) % 26\n    if resu <0 {\n        resu+=26\n    }\n    fmt.Println(string(byte(resu)+ 'a'))\n}\n",
+            "lines": "14"
+        }
+    ]
+}

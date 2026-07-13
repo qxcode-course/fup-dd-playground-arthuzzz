@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-13_18-14-10",
+            "content": "@@ -41,271 +41,35 @@\n     \n-var c1, c2 byte%0A    var op string%0A    fmt.Scan(&c1, &c2, &op)%0A%0A    var resu int%0A%0A    n1 := int(c1 -'a')%0A    n2:= int(c2 - 'a')%0A%0A    if op == %22+%22 %7B%0A    resu = (n1+n2) %25 26%0A    %7D else %7B%0A        resu = (n1 + n2 + 26) %25 26%0A    %7D%0A    fmt.Println(string(byte(resu)+'a')\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-13_18-21-50",
+            "content": "@@ -94,15 +94,15 @@\n 1, &\n-op, &c2\n+c2, &op\n )%0A%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-13_18-23-20",
+            "content": "@@ -91,41 +91,15 @@\n (&c1\n-)%0A    fmt.Scan(&op)%0A    fmt.Scan(\n+, &op, \n &c2)\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-13_18-23-52",
+            "content": "@@ -266,17 +266,17 @@\n u = (n1 \n--\n++\n  n2 + 26\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-13_18-25-26",
+            "content": "@@ -48,22 +48,20 @@\n  c1, c2 \n-string\n+byte\n %0A    var\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-13_18-26-59",
+            "content": "@@ -156,31 +156,47 @@\n   n1\n+ \n := \n-c1%5B0%5D%0A    n2:= c2%5B0%5D\n+int(c1 -'a')%0A    n2:= int(c2 - 'a')\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-13_18-27-45",
+            "content": "@@ -45,13 +45,13 @@\n var \n-s1, s\n+c1, c\n 2 st\n@@ -87,17 +87,17 @@\n t.Scan(&\n-s\n+c\n 1)%0A    f\n@@ -123,17 +123,17 @@\n t.Scan(&\n-s\n+c\n 2)%0A%0A    \n@@ -154,14 +154,14 @@\n     \n-c\n+n\n 1:= \n-s\n+c\n 1%5B0%5D\n@@ -169,14 +169,14 @@\n     \n-c\n+n\n 2:= \n-s\n+c\n 2%5B0%5D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-13_18-28-33",
+            "content": "@@ -212,12 +212,12 @@\n  = (\n-c1+c\n+n1+n\n 2) %25\n@@ -253,14 +253,14 @@\n  = (\n-c\n+n\n 1 - \n-c\n+n\n 2 + \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-13_18-29-09",
+            "content": "@@ -181,53 +181,8 @@\n 0%5D%0A%0A\n-    n1:= int(c1 -'a')%0A    n2:= int(c2 -'a')%0A%0A\n     \n@@ -212,12 +212,12 @@\n  = (\n-n1+n\n+c1+c\n 2) %25\n@@ -253,14 +253,14 @@\n  = (\n-n\n+c\n 1 - \n-n\n+c\n 2 + \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-07-13_18-30-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var s1, s2 string\n    var op string\n    fmt.Scan(&s1)\n    fmt.Scan(&op)\n    fmt.Scan(&s2)\n\n    var resu int\n\n    c1:= s1[0]\n    c2:= s2[0]\n\n    n1:= int(c1 -'a')\n    n2:= int(c2 -'a')\n\n    if op == \"+\" {\n    resu = (n1+n2) % 26\n    } else {\n        resu = (n1 - n2 + 26) % 26\n    }\n    fmt.Println(string(byte(resu)+'a'))\n}\n",
+            "lines": "24"
+        }
+    ]
+}

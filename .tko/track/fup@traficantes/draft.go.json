@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-13_17-57-39",
+            "content": "@@ -10,378 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strings%22%0A)%0A%0Afunc ler() string %7B%0A%09leitor := bufio.NewReader(os.Stdin)%0A%09texto, _ := leitor.ReadString('%5Cn')%0A%09return strings.TrimSpace(texto)%0A%7D%0A%0Afunc main() %7B%0A    texto:= ler()%0A    ant:= ler()%0A    nov:= ler()%0A%0A    resu:= %22%22%0A%0A    for i:= 0; i %3C len(texto); %7B%0A        if i+len(ant) %3C= len(texto) %7B%0A            resu += nov%0A        %7D%0A    %7D%0A    \n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-13_18-04-12",
+            "content": "@@ -361,85 +361,8 @@\n nov%0A\n-            i+= len(ant)%0A        %7D else %7B%0A            res+= string(texto%5Bi%5D)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-13_18-05-28",
+            "content": "@@ -414,17 +414,16 @@\n      res\n-u\n += strin\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-13_18-05-34",
+            "content": "@@ -415,17 +415,16 @@\n     resu\n- \n += strin\n@@ -459,24 +459,7 @@\n     \n-fmt.Println(resu)\n %0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-13_18-05-52",
+            "content": "@@ -440,24 +440,8 @@\n i%5D)%0A\n-            i++%0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-13_18-06-03",
+            "content": "@@ -292,20 +292,16 @@\n (texto);\n- i++\n  %7B%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-13_18-06-08",
+            "content": "@@ -338,46 +338,8 @@\n xto)\n- %7C%7C%0A        texto%5Bi:i+len(ant)%5D == ant\n  %7B%0A \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-07-13_18-10-43",
+            "content": "@@ -339,10 +339,10 @@\n to) \n-&&\n+%7C%7C\n %0A   \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-13_18-10-50",
+            "content": "@@ -292,16 +292,20 @@\n (texto);\n+ i++\n  %7B%0A     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-13_18-10-59",
+            "content": "@@ -55,19 +55,38 @@\n %22%0A)%0A\n-var \n+%0Afunc ler() string %7B%0A%09\n leitor \n+:\n = bu\n@@ -109,36 +109,16 @@\n .Stdin)%0A\n-func ler() string %7B%0A\n %09texto, \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-07-13_18-13-32",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strings\"\n)\nvar leitor = bufio.NewReader(os.Stdin)\nfunc ler() string {\n\ttexto, _ := leitor.ReadString('\\n')\n\treturn strings.TrimSpace(texto)\n}\n\nfunc main() {\n    texto:= ler()\n    ant:= ler()\n    nov:= ler()\n\n    resu:= \"\"\n\n    for i:= 0; i < len(texto); {\n        if i+len(ant) <= len(texto) &&\n        texto[i:i+len(ant)] == ant {\n            resu += nov\n            i+= len(ant)\n        } else {\n            resu += string(texto[i])\n            i++\n        }\n    }\n    fmt.Println(resu)\n}\n",
+            "lines": "33"
+        }
+    ]
+}
